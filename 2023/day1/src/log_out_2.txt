@@ -1,0 +1,3002 @@
+Advent of Code 2023!
+Line: 7jlncfksix7rjgrpglmn9
+Numbers: [7, 6, 7, 9]
+Line sum: 79
+Line: vcgkgxninerqjltdbhqzzpd4nine23
+Numbers: [9, 4, 9, 2, 3]
+Line sum: 93
+Line: fx3
+Numbers: [3]
+Line sum: 33
+Line: 8nrbjbpjpnineseven
+Numbers: [8, 9, 7]
+Line sum: 87
+Line: 7qlfhcsnxn7fpfhjcgr6eightsevenjlpchjtzpztwo
+Numbers: [7, 7, 6, 8, 7, 2]
+Line sum: 72
+Line: 28rzgskgk94ninefive
+Numbers: [2, 8, 9, 4, 9, 5]
+Line sum: 25
+Line: zdpxcql1eight5
+Numbers: [1, 8, 5]
+Line sum: 15
+Line: 8two5six37
+Numbers: [8, 2, 5, 6, 3, 7]
+Line sum: 87
+Line: 9khfphjl71trppsrtwo
+Numbers: [9, 7, 1, 2]
+Line sum: 92
+Line: lxthkgbbf2jdcssfiveqksvbqvm8four4
+Numbers: [2, 5, 8, 4, 4]
+Line sum: 24
+Line: seven9tjcgztctxzzttct
+Numbers: [7, 9]
+Line sum: 79
+Line: onetljcfh9fivesvgcqnklz9four
+Numbers: [1, 9, 5, 9, 4]
+Line sum: 14
+Line: 4mptgcnzmvvsevenzmjjzhndzdvxmz59bm
+Numbers: [4, 7, 5, 9]
+Line sum: 49
+Line: 1hrqthmr
+Numbers: [1]
+Line sum: 11
+Line: 7eightqmfmsn
+Numbers: [7, 8]
+Line sum: 78
+Line: jkgdnpzjkzzceighttklsfiveqxgsvxdq4
+Numbers: [8, 5, 4]
+Line sum: 84
+Line: hdk28lqhhttjz6one2
+Numbers: [2, 8, 6, 1, 2]
+Line sum: 22
+Line: 2five524
+Numbers: [2, 5, 5, 2, 4]
+Line sum: 24
+Line: 363mtk
+Numbers: [3, 6, 3]
+Line sum: 33
+Line: qlmtpch9eightlzddxs7one
+Numbers: [9, 8, 7, 1]
+Line sum: 91
+Line: one6five1hxphtl687rllvb
+Numbers: [1, 6, 5, 1, 6, 8, 7]
+Line sum: 17
+Line: 31gdnsxtpnn
+Numbers: [3, 1]
+Line sum: 31
+Line: sqvbcqlnjhk135
+Numbers: [1, 3, 5]
+Line sum: 15
+Line: eightgcdszrsghmmfsevendr2844
+Numbers: [8, 7, 2, 8, 4, 4]
+Line sum: 84
+Line: eightthreecdpccfj7
+Numbers: [8, 3, 7]
+Line sum: 87
+Line: ljfgt9kvnine175kpnrbttktktf
+Numbers: [9, 9, 1, 7, 5]
+Line sum: 95
+Line: zjfeightfive9nine44seven4
+Numbers: [8, 5, 9, 9, 4, 4, 7, 4]
+Line sum: 84
+Line: sixshbrtr4nmjr
+Numbers: [6, 4]
+Line sum: 64
+Line: 3two54
+Numbers: [3, 2, 5, 4]
+Line sum: 34
+Line: 26sixbhmmgdcl
+Numbers: [2, 6, 6]
+Line sum: 26
+Line: drxfnbsdzf3gnxbtmmggvkxrsevenbbzdfxnrdnkfivefive
+Numbers: [3, 7, 5, 5]
+Line sum: 35
+Line: two8591mrvchg4
+Numbers: [2, 8, 5, 9, 1, 4]
+Line sum: 24
+Line: 3jjhfzlnklpvvfcnsjbdmgvlfkeight2snxrkzzsx
+Numbers: [3, 8, 2]
+Line sum: 32
+Line: ztwo79onesix56seven
+Numbers: [2, 7, 9, 1, 6, 5, 6, 7]
+Line sum: 27
+Line: threeeightrhlxptmtwofivenfourthree3
+Numbers: [3, 8, 2, 5, 4, 3, 3]
+Line sum: 33
+Line: fbhcqcttgxlrstcqeight4dbfjp
+Numbers: [8, 4]
+Line sum: 84
+Line: prsevenfournineglccpgssix7
+Numbers: [7, 4, 9, 6, 7]
+Line sum: 77
+Line: hzprzdvbsxzllgvttworstxtwodstxbtjnzm6
+Numbers: [2, 2, 6]
+Line sum: 26
+Line: 99sevenfive
+Numbers: [9, 9, 7, 5]
+Line sum: 95
+Line: fdvnvc2
+Numbers: [2]
+Line sum: 22
+Line: vmpnpqg32llcxpbzcxqvseven
+Numbers: [3, 2, 7]
+Line sum: 37
+Line: dc9fgvrvsqqhlj2nq97three
+Numbers: [9, 2, 9, 7, 3]
+Line sum: 93
+Line: four77twothreeonenine9
+Numbers: [4, 7, 7, 2, 3, 1, 9, 9]
+Line sum: 49
+Line: 3kfkfour
+Numbers: [3, 4]
+Line sum: 34
+Line: xfg58six8cjtvmrgvsq5l
+Numbers: [5, 8, 6, 8, 5]
+Line sum: 55
+Line: gmfxvhftld2hbmmprpppzchcqmxninethreethree3mmplrvbtkf
+Numbers: [2, 9, 3, 3, 3]
+Line sum: 23
+Line: 3fourqndl6
+Numbers: [3, 4, 6]
+Line sum: 36
+Line: rj6ninenzkbktfqsc2
+Numbers: [6, 9, 2]
+Line sum: 62
+Line: 9konehdmllc
+Numbers: [9, 1]
+Line sum: 91
+Line: mneightzzqvdm14
+Numbers: [8, 1, 4]
+Line sum: 84
+Line: 8oneseventlrsrzflccrbv
+Numbers: [8, 1, 7]
+Line sum: 87
+Line: 9vvvgqdkrckjlzcfsbdgrqrhhtbb7fnhcxzmk9nine7
+Numbers: [9, 7, 9, 9, 7]
+Line sum: 97
+Line: 825ngddfhpfrsl6
+Numbers: [8, 2, 5, 6]
+Line sum: 86
+Line: mc6tjxxll9seven
+Numbers: [6, 9, 7]
+Line sum: 67
+Line: fxbgccqmmh2
+Numbers: [2]
+Line sum: 22
+Line: five7three4vmxjlqcnc3
+Numbers: [5, 7, 3, 4, 3]
+Line sum: 53
+Line: 9mninehkmlpcxqnfkqfbg6six3
+Numbers: [9, 9, 6, 6, 3]
+Line sum: 93
+Line: 3onefourrv1ninesixfour8
+Numbers: [3, 1, 4, 1, 9, 6, 4, 8]
+Line sum: 38
+Line: fourtwosdtz817fivevjvlzr
+Numbers: [4, 2, 8, 1, 7, 5]
+Line sum: 45
+Line: seventhvxk1fournqqqfjrvdvbpkvd
+Numbers: [7, 1, 4]
+Line sum: 74
+Line: v733rklzvnslkonefive6zbvq
+Numbers: [7, 3, 3, 1, 5, 6]
+Line sum: 76
+Line: 178ncllbfkkh4eightwoq
+Numbers: [1, 7, 8, 4, 8]
+Line sum: 18
+Line: glbxfjhskzbseven6mjzlxccfive3
+Numbers: [7, 6, 5, 3]
+Line sum: 73
+Line: fptwoneonefivefive2ztxpndjdq2
+Numbers: [2, 1, 5, 5, 2, 2]
+Line sum: 22
+Line: lxzhsgqkx5mjxtrmbkdtfeightsrchzmq6
+Numbers: [5, 8, 6]
+Line sum: 56
+Line: 1nngc2338ninedjkvszdmnjrl
+Numbers: [1, 2, 3, 3, 8, 9]
+Line sum: 19
+Line: five6six7
+Numbers: [5, 6, 6, 7]
+Line sum: 57
+Line: bcpxbcbssbtmdfninefivesevendtm9eighthxtvxb
+Numbers: [9, 5, 7, 9, 8]
+Line sum: 98
+Line: mzdttqmfpssevensixeight3twoone4
+Numbers: [7, 6, 8, 3, 2, 1, 4]
+Line sum: 74
+Line: rrtzlhkgrgtmrvlcthreeonefour5
+Numbers: [3, 1, 4, 5]
+Line sum: 35
+Line: 75threeeight4
+Numbers: [7, 5, 3, 8, 4]
+Line sum: 74
+Line: 3ttcjsdrj6one91t
+Numbers: [3, 6, 1, 9, 1]
+Line sum: 31
+Line: 3twofgdpfqxxp
+Numbers: [3, 2]
+Line sum: 32
+Line: seven3gjslxpltpbonemt
+Numbers: [7, 3, 1]
+Line sum: 71
+Line: 82jcvqkrgzkx8three8rmszgdj4
+Numbers: [8, 2, 8, 3, 8, 4]
+Line sum: 84
+Line: ctwone41fnjksbxb1mxxzznsvg35fivesix
+Numbers: [2, 4, 1, 1, 3, 5, 5, 6]
+Line sum: 26
+Line: four7bzfeight3one
+Numbers: [4, 7, 8, 3, 1]
+Line sum: 41
+Line: heightwo24cxs
+Numbers: [8, 2, 4]
+Line sum: 84
+Line: fdtwone8sevenfour37
+Numbers: [2, 8, 7, 4, 3, 7]
+Line sum: 27
+Line: 1sevenmdmlrgmqnnth1mrone
+Numbers: [1, 7, 1, 1]
+Line sum: 11
+Line: 7nqxzdrblffcdm22six
+Numbers: [7, 2, 2, 6]
+Line sum: 76
+Line: 5ttpzlv
+Numbers: [5]
+Line sum: 55
+Line: zhqjlfive3
+Numbers: [5, 3]
+Line sum: 53
+Line: jvzpgppblkb6
+Numbers: [6]
+Line sum: 66
+Line: nine77lmfour
+Numbers: [9, 7, 7, 4]
+Line sum: 94
+Line: kqnvgtkgphxcxsixfoursix2
+Numbers: [6, 4, 6, 2]
+Line sum: 62
+Line: pjjdlnineltbcknfqvhj8tworbkqhdcp
+Numbers: [9, 8, 2]
+Line sum: 92
+Line: nine65fiveeightjmeight
+Numbers: [9, 6, 5, 5, 8, 8]
+Line sum: 98
+Line: j1sptkfhsczt
+Numbers: [1]
+Line sum: 11
+Line: 4czpqqglpc41bzkss1
+Numbers: [4, 4, 1, 1]
+Line sum: 41
+Line: qd28j
+Numbers: [2, 8]
+Line sum: 28
+Line: three1fourfourm
+Numbers: [3, 1, 4, 4]
+Line sum: 34
+Line: four5seven4twodvmzzdtn
+Numbers: [4, 5, 7, 4, 2]
+Line sum: 42
+Line: zj4
+Numbers: [4]
+Line sum: 44
+Line: dzzrdkjjdxspfrjsonefive8brrzlrjvzfour
+Numbers: [1, 5, 8, 4]
+Line sum: 14
+Line: zrjzfxxddn66
+Numbers: [6, 6]
+Line sum: 66
+Line: fourrnsphsdzmv9xznt6seven
+Numbers: [4, 9, 6, 7]
+Line sum: 47
+Line: 56eightcbhkmjfourone
+Numbers: [5, 6, 8, 4, 1]
+Line sum: 51
+Line: fivejzlbvqzb3sixsix
+Numbers: [5, 3, 6, 6]
+Line sum: 56
+Line: fiveghfclksgqffdpb7
+Numbers: [5, 7]
+Line sum: 57
+Line: cmmplbcnml36threetrxnhrrdonelmspsbhfd9twonenn
+Numbers: [3, 6, 3, 1, 9, 2]
+Line sum: 32
+Line: ccxrlmzrreightone9three9
+Numbers: [8, 1, 9, 3, 9]
+Line sum: 89
+Line: zg6four1eight
+Numbers: [6, 4, 1, 8]
+Line sum: 68
+Line: 1ngv
+Numbers: [1]
+Line sum: 11
+Line: bfhptfjzlgkxtftwo7gthree
+Numbers: [2, 7, 3]
+Line sum: 23
+Line: txrpbzgjzg272three9jlstdb8
+Numbers: [2, 7, 2, 3, 9, 8]
+Line sum: 28
+Line: 3seven6twofxvxdlcqj33
+Numbers: [3, 7, 6, 2, 3, 3]
+Line sum: 33
+Line: six3eightjrdxgkrkm5five
+Numbers: [6, 3, 8, 5, 5]
+Line sum: 65
+Line: one67one3
+Numbers: [1, 6, 7, 1, 3]
+Line sum: 13
+Line: gnfhhkffqfctxmvznmftwo34gjsrpxlv43
+Numbers: [2, 3, 4, 4, 3]
+Line sum: 23
+Line: five6zjdjpptnthreefour7sevenqfjlpshg
+Numbers: [5, 6, 3, 4, 7, 7]
+Line sum: 57
+Line: onesevenninesvnnrvxxeightrdbvsbdnzgtmlmf1
+Numbers: [1, 7, 9, 8, 1]
+Line sum: 11
+Line: 2six8seven
+Numbers: [2, 6, 8, 7]
+Line sum: 27
+Line: 3eightjrpqdrtwoxjvmgzpbffjnfdps9
+Numbers: [3, 8, 2, 9]
+Line sum: 39
+Line: tptlcldftc3
+Numbers: [3]
+Line sum: 33
+Line: lcpqlbjfgmhkjpkhc4eight9ninesixsixseven
+Numbers: [4, 8, 9, 9, 6, 6, 7]
+Line sum: 47
+Line: eightxjfqqtxnsbsnrdxdjv8six79
+Numbers: [8, 8, 6, 7, 9]
+Line sum: 89
+Line: tvkthbbrr8five
+Numbers: [8, 5]
+Line sum: 85
+Line: seven35threerrkdqjgps58two
+Numbers: [7, 3, 5, 3, 5, 8, 2]
+Line sum: 72
+Line: 5dln1rqqgdjlcmmrvm2pmhvhcxhfsbxkfqngp5
+Numbers: [5, 1, 2, 5]
+Line sum: 55
+Line: sixnpvbq36514one
+Numbers: [6, 3, 6, 5, 1, 4, 1]
+Line sum: 61
+Line: mxdvxfgdfzmkjcrtl2
+Numbers: [2]
+Line sum: 22
+Line: onejv7lxmbrbzjsthreesevenninesm
+Numbers: [1, 7, 3, 7, 9]
+Line sum: 19
+Line: threehbhnm8nine
+Numbers: [3, 8, 9]
+Line sum: 39
+Line: bvhgqz6
+Numbers: [6]
+Line sum: 66
+Line: 9two89sixfxjz37
+Numbers: [9, 2, 8, 9, 6, 3, 7]
+Line sum: 97
+Line: 8xninepvggctk85fivefkj
+Numbers: [8, 9, 8, 5, 5]
+Line sum: 85
+Line: 8sixdjndzzzrkk
+Numbers: [8, 6]
+Line sum: 86
+Line: five61oneightr
+Numbers: [5, 6, 1, 1]
+Line sum: 51
+Line: cmthreesixeight7jlvdvmdjfzbv3
+Numbers: [3, 6, 8, 7, 3]
+Line sum: 33
+Line: 9two1onefour1clxjonetwo
+Numbers: [9, 2, 1, 1, 4, 1, 1, 2]
+Line sum: 92
+Line: 9sixtzphqltmeightlbrhjone1ktrvjldff6
+Numbers: [9, 6, 8, 1, 1, 6]
+Line sum: 96
+Line: five68eightfourqpfcxftzlxrhgdcvpd
+Numbers: [5, 6, 8, 8, 4]
+Line sum: 54
+Line: nxvdtfkltwozzl72fourhzxtqjf1
+Numbers: [2, 7, 2, 4, 1]
+Line sum: 21
+Line: 91fiveeightthree65twoneh
+Numbers: [9, 1, 5, 8, 3, 6, 5, 2]
+Line sum: 92
+Line: 3eight6ninexqqgxzxfgmsixseveneightfqk
+Numbers: [3, 8, 6, 9, 6, 7, 8]
+Line sum: 38
+Line: dlpsfmsthree2zgfpdnftvfqgsgr
+Numbers: [3, 2]
+Line sum: 32
+Line: 4kggfpxg8jpxzdqsixeight
+Numbers: [4, 8, 6, 8]
+Line sum: 48
+Line: fivefourtwo923
+Numbers: [5, 4, 2, 9, 2, 3]
+Line sum: 53
+Line: z3gx
+Numbers: [3]
+Line sum: 33
+Line: six4prlsp84tgvc
+Numbers: [6, 4, 8, 4]
+Line sum: 64
+Line: 1foursrznv62k
+Numbers: [1, 4, 6, 2]
+Line sum: 12
+Line: vmzr829nkxtlf
+Numbers: [8, 2, 9]
+Line sum: 89
+Line: 3dzsx2two7sixfivebkktgfbzdt
+Numbers: [3, 2, 2, 7, 6, 5]
+Line sum: 35
+Line: fourpzpmvxc2zvvrhrbhf
+Numbers: [4, 2]
+Line sum: 42
+Line: frpddtknqjxpqqzhdnfour9sixdqjbqxh
+Numbers: [4, 9, 6]
+Line sum: 46
+Line: 89sevengkbeight6mn
+Numbers: [8, 9, 7, 8, 6]
+Line sum: 86
+Line: two7jcpnxhbtmhtwo39twoone
+Numbers: [2, 7, 2, 3, 9, 2, 1]
+Line sum: 21
+Line: cvdqlfkrs821fourrrgnmm
+Numbers: [8, 2, 1, 4]
+Line sum: 84
+Line: 6onefhnnbrzgx7fourxcj
+Numbers: [6, 1, 7, 4]
+Line sum: 64
+Line: seveneighthfr6rz
+Numbers: [7, 8, 6]
+Line sum: 76
+Line: 9vvqlpnzbxfct8
+Numbers: [9, 8]
+Line sum: 98
+Line: two8three2fpseveneight
+Numbers: [2, 8, 3, 2, 7, 8]
+Line sum: 28
+Line: 2three75three2
+Numbers: [2, 3, 7, 5, 3, 2]
+Line sum: 22
+Line: znvbrbrqlfive8
+Numbers: [5, 8]
+Line sum: 58
+Line: lnfjqfkk8
+Numbers: [8]
+Line sum: 88
+Line: 14tvvmdlntrv6three
+Numbers: [1, 4, 6, 3]
+Line sum: 13
+Line: 5twor2chtvj
+Numbers: [5, 2, 2]
+Line sum: 52
+Line: threetwomgrcfivefive7
+Numbers: [3, 2, 5, 5, 7]
+Line sum: 37
+Line: five4qbvxthrfxdkjkk
+Numbers: [5, 4]
+Line sum: 54
+Line: sixthreethree5scmqrfq4vf3
+Numbers: [6, 3, 3, 5, 4, 3]
+Line sum: 63
+Line: rjsljnqcrttbpfhfxbfourone4
+Numbers: [4, 1, 4]
+Line sum: 44
+Line: threeseventwoseven87dnmqjbbxfoneighttfz
+Numbers: [3, 7, 2, 7, 8, 7, 1]
+Line sum: 31
+Line: seven4four9eightxqlsixthreeone
+Numbers: [7, 4, 4, 9, 8, 6, 3, 1]
+Line sum: 71
+Line: 1ninesix43bmsttggvzn14
+Numbers: [1, 9, 6, 4, 3, 1, 4]
+Line sum: 14
+Line: seven1sixbmnxmz
+Numbers: [7, 1, 6]
+Line sum: 76
+Line: grqhlkrcdzbhstgtvpclvtphph4twoseven
+Numbers: [4, 2, 7]
+Line sum: 47
+Line: fgfprscb27pzfvvblxhkvonefive
+Numbers: [2, 7, 1, 5]
+Line sum: 25
+Line: five77fivethreefive3vddgfngng
+Numbers: [5, 7, 7, 5, 3, 5, 3]
+Line sum: 53
+Line: 13nllfsevenfour6four
+Numbers: [1, 3, 7, 4, 6, 4]
+Line sum: 14
+Line: threenineeightfour173three
+Numbers: [3, 9, 8, 4, 1, 7, 3, 3]
+Line sum: 33
+Line: fourqvsbxxzmfh2hhcjxsrkz
+Numbers: [4, 2]
+Line sum: 42
+Line: 4jdtxgltkkkvlnhrztwofxppsdlcqztwo3gdlctj
+Numbers: [4, 2, 2, 3]
+Line sum: 43
+Line: 5four334rvfour9
+Numbers: [5, 4, 3, 3, 4, 4, 9]
+Line sum: 59
+Line: 551threenine
+Numbers: [5, 5, 1, 3, 9]
+Line sum: 59
+Line: eightonenineeight8
+Numbers: [8, 1, 9, 8, 8]
+Line sum: 88
+Line: qmjqmjvvfkdbnjgkrqh8two
+Numbers: [8, 2]
+Line sum: 82
+Line: sevenjzqnv32lldmr5one
+Numbers: [7, 3, 2, 5, 1]
+Line sum: 71
+Line: 6five8fivefour
+Numbers: [6, 5, 8, 5, 4]
+Line sum: 64
+Line: ljvhqqvqxqsix1367
+Numbers: [6, 1, 3, 6, 7]
+Line sum: 67
+Line: two6kvjtwonenzf
+Numbers: [2, 6, 2]
+Line sum: 22
+Line: 2p5chjdcseven9
+Numbers: [2, 5, 7, 9]
+Line sum: 29
+Line: lnrrrkkdsvfhkl9vfqfgnvonegtwo6
+Numbers: [9, 1, 2, 6]
+Line sum: 96
+Line: twoseven4lhhpcvthree4tkrone
+Numbers: [2, 7, 4, 3, 4, 1]
+Line sum: 21
+Line: 8hllnnmpm3rjxndcmpt9jfjqng
+Numbers: [8, 3, 9]
+Line sum: 89
+Line: qbnlgqeight2csvjshglqzmgkqqxqzq95
+Numbers: [8, 2, 9, 5]
+Line sum: 85
+Line: two2nine
+Numbers: [2, 2, 9]
+Line sum: 29
+Line: rrpffkq15foureighttwo2
+Numbers: [1, 5, 4, 8, 2, 2]
+Line sum: 12
+Line: five3ninetpx5fmrzsqvfzq
+Numbers: [5, 3, 9, 5]
+Line sum: 55
+Line: mrqhcpgvblhvskv5pdsdzzfzfsix
+Numbers: [5, 6]
+Line sum: 56
+Line: two7fvmhvseventwo7
+Numbers: [2, 7, 7, 2, 7]
+Line sum: 27
+Line: 3sixone94three8fdplbm2
+Numbers: [3, 6, 1, 9, 4, 3, 8, 2]
+Line sum: 32
+Line: loneightseveng79
+Numbers: [1, 7, 7, 9]
+Line sum: 19
+Line: fourone7
+Numbers: [4, 1, 7]
+Line sum: 47
+Line: zvgjt1
+Numbers: [1]
+Line sum: 11
+Line: xpgbfghsmj2six8eight8mzlnvmv7
+Numbers: [2, 6, 8, 8, 8, 7]
+Line sum: 27
+Line: grjtwo48
+Numbers: [2, 4, 8]
+Line sum: 28
+Line: jhcgjlgxt1seven1
+Numbers: [1, 7, 1]
+Line sum: 11
+Line: 5dhtppxrxcsbjsm37
+Numbers: [5, 3, 7]
+Line sum: 57
+Line: cbhmtp56xbqzppjjfivezhtxxvkrzsix
+Numbers: [5, 6, 5, 6]
+Line sum: 56
+Line: hctwonelcninefourfive2
+Numbers: [2, 9, 4, 5, 2]
+Line sum: 22
+Line: four4rcxpkzbeight95xxdb3
+Numbers: [4, 4, 8, 9, 5, 3]
+Line sum: 43
+Line: fivejlplgzflone963two
+Numbers: [5, 1, 9, 6, 3, 2]
+Line sum: 52
+Line: trgninefourtwo6five
+Numbers: [9, 4, 2, 6, 5]
+Line sum: 95
+Line: 66fournine535foursxbvsfvf
+Numbers: [6, 6, 4, 9, 5, 3, 5, 4]
+Line sum: 64
+Line: 1bskfour
+Numbers: [1, 4]
+Line sum: 14
+Line: dvlmbrxssevenhldvjxdzcfdvbfourthree2seven6
+Numbers: [7, 4, 3, 2, 7, 6]
+Line sum: 76
+Line: 6two92635
+Numbers: [6, 2, 9, 2, 6, 3, 5]
+Line sum: 65
+Line: 8dzszone
+Numbers: [8, 1]
+Line sum: 81
+Line: hfcm6
+Numbers: [6]
+Line sum: 66
+Line: dxrfhpdbrqmqq8four
+Numbers: [8, 4]
+Line sum: 84
+Line: bfclp5sixeight81three
+Numbers: [5, 6, 8, 8, 1, 3]
+Line sum: 53
+Line: eightffsqgkmt53gfjxqsskpsfpbcmqvdfour9
+Numbers: [8, 5, 3, 4, 9]
+Line sum: 89
+Line: 6sevensevenfour1v
+Numbers: [6, 7, 7, 4, 1]
+Line sum: 61
+Line: 9threetfspsfxhnzblgsxz
+Numbers: [9, 3]
+Line sum: 93
+Line: seven5tz7pfhlpt9qxrqz
+Numbers: [7, 5, 7, 9]
+Line sum: 79
+Line: pmbeightwooneonefiveseventft4
+Numbers: [8, 1, 1, 5, 7, 4]
+Line sum: 84
+Line: xhjhmzljnx7
+Numbers: [7]
+Line sum: 77
+Line: twotgdvhkpmg1rthzfc6
+Numbers: [2, 1, 6]
+Line sum: 26
+Line: onesevennpcsbfive9sixseven
+Numbers: [1, 7, 5, 9, 6, 7]
+Line sum: 17
+Line: 7sevenmbhlrjxrpddcnl
+Numbers: [7, 7]
+Line sum: 77
+Line: 8fsvntpptctwobjmkgzvc4two
+Numbers: [8, 2, 4, 2]
+Line sum: 82
+Line: onetwosix4
+Numbers: [1, 2, 6, 4]
+Line sum: 14
+Line: fourthree4fourlqbvscdponeights
+Numbers: [4, 3, 4, 4, 1]
+Line sum: 41
+Line: 1glkfrdb69sixsrvvb
+Numbers: [1, 6, 9, 6]
+Line sum: 16
+Line: ninetwoeight7cvjtdmgpsfivefnlvgsqtstwo9
+Numbers: [9, 2, 8, 7, 5, 2, 9]
+Line sum: 99
+Line: 9threejtfoureightseven
+Numbers: [9, 3, 4, 8, 7]
+Line sum: 97
+Line: 38nine8
+Numbers: [3, 8, 9, 8]
+Line sum: 38
+Line: 87two7onetwo
+Numbers: [8, 7, 2, 7, 1, 2]
+Line sum: 82
+Line: 2vkkcgxdqpnthreehklfmfmjdpkz9fivetwofour
+Numbers: [2, 3, 9, 5, 2, 4]
+Line sum: 24
+Line: one5oneone5oneone
+Numbers: [1, 5, 1, 1, 5, 1, 1]
+Line sum: 11
+Line: three5hlxkxrmxsbgrzqsgrone
+Numbers: [3, 5, 1]
+Line sum: 31
+Line: twokbbnbjp7
+Numbers: [2, 7]
+Line sum: 27
+Line: mvxpdllxrvfthreeone51eight
+Numbers: [3, 1, 5, 1, 8]
+Line sum: 38
+Line: rrqvfiveseven5two1qgqppn
+Numbers: [5, 7, 5, 2, 1]
+Line sum: 51
+Line: 92s
+Numbers: [9, 2]
+Line sum: 92
+Line: fourxcj8frbvlxzgpvoneone
+Numbers: [4, 8, 1, 1]
+Line sum: 41
+Line: 648211
+Numbers: [6, 4, 8, 2, 1, 1]
+Line sum: 61
+Line: 4eightgzxnsixlvksllptszztmkjb3four
+Numbers: [4, 8, 6, 3, 4]
+Line sum: 44
+Line: fivegqg6
+Numbers: [5, 6]
+Line sum: 56
+Line: foureightmmnknlseven1
+Numbers: [4, 8, 7, 1]
+Line sum: 41
+Line: 83kx
+Numbers: [8, 3]
+Line sum: 83
+Line: sixeight12kskzhrjjpslmprtwo
+Numbers: [6, 8, 1, 2, 2]
+Line sum: 62
+Line: 1xzncrsfrlfivetwoxptv46nine
+Numbers: [1, 5, 2, 4, 6, 9]
+Line sum: 19
+Line: fourmxfq6twotwo4
+Numbers: [4, 6, 2, 2, 4]
+Line sum: 44
+Line: oneht8
+Numbers: [1, 8]
+Line sum: 18
+Line: 3prjdlrcznine
+Numbers: [3, 9]
+Line sum: 39
+Line: btkpqmxxmggkzftmkxbzqvdccchxdmjlqztzfgfour7
+Numbers: [4, 7]
+Line sum: 47
+Line: tvbstznine9z
+Numbers: [9, 9]
+Line sum: 99
+Line: two1fivemmnlcnmqlrnbp95gjjh
+Numbers: [2, 1, 5, 9, 5]
+Line sum: 25
+Line: dq671ninezk
+Numbers: [6, 7, 1, 9]
+Line sum: 69
+Line: 6cmxtt769
+Numbers: [6, 7, 6, 9]
+Line sum: 69
+Line: 629rkhc198
+Numbers: [6, 2, 9, 1, 9, 8]
+Line sum: 68
+Line: 2fourfiver
+Numbers: [2, 4, 5]
+Line sum: 25
+Line: three5nqkjdsixfrjnf4gcbjrznine
+Numbers: [3, 5, 6, 4, 9]
+Line sum: 39
+Line: xjhqqf7oneeightrgkdprrssmxp63
+Numbers: [7, 1, 8, 6, 3]
+Line sum: 73
+Line: 5fourfivekpvmnlpfrt1
+Numbers: [5, 4, 5, 1]
+Line sum: 51
+Line: xnqkjcldhttbpjr8
+Numbers: [8]
+Line sum: 88
+Line: fdntjsb957sevenhbmntp
+Numbers: [9, 5, 7, 7]
+Line sum: 97
+Line: jlmmmmdv482three
+Numbers: [4, 8, 2, 3]
+Line sum: 43
+Line: 63lnbhmdhpsp32
+Numbers: [6, 3, 3, 2]
+Line sum: 62
+Line: 99cmntldfdflqkfkv
+Numbers: [9, 9]
+Line sum: 99
+Line: kqnlqqkpr9eighteightthree15threenine
+Numbers: [9, 8, 8, 3, 1, 5, 3, 9]
+Line sum: 99
+Line: 6threefttghrvjsjg6
+Numbers: [6, 3, 6]
+Line sum: 66
+Line: spmrjzfm6eightwokn
+Numbers: [6, 8]
+Line sum: 68
+Line: bdcjfqvsdronertfztlblqbgfgtkjv8qhbjfhthree6nine
+Numbers: [1, 8, 3, 6, 9]
+Line sum: 19
+Line: 9fvltpsxtcbtjxbtlfdvm7
+Numbers: [9, 7]
+Line sum: 97
+Line: 6jxvxrdmpjthreefstfgrsixfourzbfznjjlqtjx
+Numbers: [6, 3, 6, 4]
+Line sum: 64
+Line: 8onesixkmhgvsnfhqnxlkn
+Numbers: [8, 1, 6]
+Line sum: 86
+Line: rrjxvqjbnvvsgddtvmb3six5
+Numbers: [3, 6, 5]
+Line sum: 35
+Line: eight8sevenbmtgbvdzcpqnzqone1hbhlgcfour
+Numbers: [8, 8, 7, 1, 1, 4]
+Line sum: 84
+Line: 2nineseven41
+Numbers: [2, 9, 7, 4, 1]
+Line sum: 21
+Line: 8xptgrh1njz
+Numbers: [8, 1]
+Line sum: 81
+Line: geightwo93sevenseventwobpdhhjsrbfour57
+Numbers: [8, 9, 3, 7, 7, 2, 4, 5, 7]
+Line sum: 87
+Line: m4kd9four
+Numbers: [4, 9, 4]
+Line sum: 44
+Line: 6nine5seven9v
+Numbers: [6, 9, 5, 7, 9]
+Line sum: 69
+Line: glzc1fiveeightvbmvk
+Numbers: [1, 5, 8]
+Line sum: 18
+Line: ninesixone3sevenzmvrqbtwo4four
+Numbers: [9, 6, 1, 3, 7, 2, 4, 4]
+Line sum: 94
+Line: 9onefoureightfivefour
+Numbers: [9, 1, 4, 8, 5, 4]
+Line sum: 94
+Line: fjqpgnjdd1twoninecgsqsmtonenine1f
+Numbers: [1, 2, 9, 1, 9, 1]
+Line sum: 11
+Line: 94sixthreedflcddxnvvrthree
+Numbers: [9, 4, 6, 3, 3]
+Line sum: 93
+Line: vvfnbgpkgsnjtszxhrsixfive5rrdtfpkdhdvsg
+Numbers: [6, 5, 5]
+Line sum: 65
+Line: 39four1pjfkt
+Numbers: [3, 9, 4, 1]
+Line sum: 31
+Line: 45sixkhlfc1fivetcvnlstnine
+Numbers: [4, 5, 6, 1, 5, 9]
+Line sum: 49
+Line: sevenone2seven
+Numbers: [7, 1, 2, 7]
+Line sum: 77
+Line: twofiveonenine6eight5
+Numbers: [2, 5, 1, 9, 6, 8, 5]
+Line sum: 25
+Line: grxzndnqpd56
+Numbers: [5, 6]
+Line sum: 56
+Line: xnpdfnfgt5fivetwotwo
+Numbers: [5, 5, 2, 2]
+Line sum: 52
+Line: 9four6two
+Numbers: [9, 4, 6, 2]
+Line sum: 92
+Line: sgmlzbpnkrmfivesbdzbnhkcxndpone49
+Numbers: [5, 1, 4, 9]
+Line sum: 59
+Line: 88six2hrmkl2
+Numbers: [8, 8, 6, 2, 2]
+Line sum: 82
+Line: mthree3eightfiveone
+Numbers: [3, 3, 8, 5, 1]
+Line sum: 31
+Line: smrzqc7twothree2three
+Numbers: [7, 2, 3, 2, 3]
+Line sum: 73
+Line: nmtwo8cr
+Numbers: [2, 8]
+Line sum: 28
+Line: 378one47four
+Numbers: [3, 7, 8, 1, 4, 7, 4]
+Line sum: 34
+Line: 27four
+Numbers: [2, 7, 4]
+Line sum: 24
+Line: 5two7seven68six
+Numbers: [5, 2, 7, 7, 6, 8, 6]
+Line sum: 56
+Line: 9onecnonethree9
+Numbers: [9, 1, 1, 3, 9]
+Line sum: 99
+Line: nineqhvbjqbrkpjhjhdbpk3twoseven
+Numbers: [9, 3, 2, 7]
+Line sum: 97
+Line: rq4qldc
+Numbers: [4]
+Line sum: 44
+Line: 86bqzct2nine
+Numbers: [8, 6, 2, 9]
+Line sum: 89
+Line: eightsnfgrjzhsnxbfivethree6ljxx
+Numbers: [8, 5, 3, 6]
+Line sum: 86
+Line: oneeight1threevzdcplnqrbk92
+Numbers: [1, 8, 1, 3, 9, 2]
+Line sum: 12
+Line: 8k9dkqmqhndthreethree
+Numbers: [8, 9, 3, 3]
+Line sum: 83
+Line: 9sp6j5two
+Numbers: [9, 6, 5, 2]
+Line sum: 92
+Line: 4rsone1seven2seventwo
+Numbers: [4, 1, 1, 7, 2, 7, 2]
+Line sum: 42
+Line: ninehhdcbxfgs7fljclncb6vpzhqphxz
+Numbers: [9, 7, 6]
+Line sum: 96
+Line: drplsnsch3zfr
+Numbers: [3]
+Line sum: 33
+Line: 86nine
+Numbers: [8, 6, 9]
+Line sum: 89
+Line: 2threeeightsixvzpcqjs
+Numbers: [2, 3, 8, 6]
+Line sum: 26
+Line: dmkhbxsggeight7seven9
+Numbers: [8, 7, 7, 9]
+Line sum: 89
+Line: fourshjlmrbbcnznstgj2sx
+Numbers: [4, 2]
+Line sum: 42
+Line: gcbzbldk6nine
+Numbers: [6, 9]
+Line sum: 69
+Line: fourskpc1vzfxsrjckcmccljtt9
+Numbers: [4, 1, 9]
+Line sum: 49
+Line: 1oneone53oneeight6
+Numbers: [1, 1, 1, 5, 3, 1, 8, 6]
+Line sum: 16
+Line: six3fourqxqbs9nkbsixthreesix
+Numbers: [6, 3, 4, 9, 6, 3, 6]
+Line sum: 66
+Line: pmlrkrhqdjgg121nineseven9
+Numbers: [1, 2, 1, 9, 7, 9]
+Line sum: 19
+Line: dmgnq6
+Numbers: [6]
+Line sum: 66
+Line: kpmponeone5
+Numbers: [1, 1, 5]
+Line sum: 15
+Line: mxmhbqnrcjj1threeeightxzfive
+Numbers: [1, 3, 8, 5]
+Line sum: 15
+Line: onebzxnrqqfltfourglvkqfive4nine5
+Numbers: [1, 4, 5, 4, 9, 5]
+Line sum: 15
+Line: threezvmfl7vsdrthsdsjsix9mbrqqmz1
+Numbers: [3, 7, 6, 9, 1]
+Line sum: 31
+Line: boneight8onelrtjkj
+Numbers: [1, 8, 1]
+Line sum: 11
+Line: tqxbbceight9rqbthreek
+Numbers: [8, 9, 3]
+Line sum: 83
+Line: 3h32nklscdkfhtztwontprj
+Numbers: [3, 3, 2, 2]
+Line sum: 32
+Line: 2threesix
+Numbers: [2, 3, 6]
+Line sum: 26
+Line: qkzmpvkvsixxfzlrfrgv682
+Numbers: [6, 6, 8, 2]
+Line sum: 62
+Line: 3seven6mvkeight2fourvhvvqone
+Numbers: [3, 7, 6, 8, 2, 4, 1]
+Line sum: 31
+Line: three389sixeight
+Numbers: [3, 3, 8, 9, 6, 8]
+Line sum: 38
+Line: bx664nine
+Numbers: [6, 6, 4, 9]
+Line sum: 69
+Line: nine82rcdvqtj91dbffscng4
+Numbers: [9, 8, 2, 9, 1, 4]
+Line sum: 94
+Line: 2sixsixtbqhvcndjtcvrrbtdzsxrlrvdxjtd7fzdtlrhlxvbpvhknmm
+Numbers: [2, 6, 6, 7]
+Line sum: 27
+Line: 6zbpblsznhlzljtmstwothree28ngdcfkk
+Numbers: [6, 2, 3, 2, 8]
+Line sum: 68
+Line: eight8nbfmdqlcvonenine
+Numbers: [8, 8, 1, 9]
+Line sum: 89
+Line: 8two4sx7rffstvxlq1seven4
+Numbers: [8, 2, 4, 7, 1, 7, 4]
+Line sum: 84
+Line: gmzbd8nine5nine1one
+Numbers: [8, 9, 5, 9, 1, 1]
+Line sum: 81
+Line: sevenfivezdfbn7six
+Numbers: [7, 5, 7, 6]
+Line sum: 76
+Line: 5892
+Numbers: [5, 8, 9, 2]
+Line sum: 52
+Line: ss9
+Numbers: [9]
+Line sum: 99
+Line: 8xcvzgzkjcdg
+Numbers: [8]
+Line sum: 88
+Line: 1seven7three
+Numbers: [1, 7, 7, 3]
+Line sum: 13
+Line: 8four1fourtwonezs
+Numbers: [8, 4, 1, 4, 2]
+Line sum: 82
+Line: hnjzk8
+Numbers: [8]
+Line sum: 88
+Line: xfour5mrj
+Numbers: [4, 5]
+Line sum: 45
+Line: vnkspgtkxspdtwofxlvtlkqpqcffxbqth13cll
+Numbers: [2, 1, 3]
+Line sum: 23
+Line: mmjkshtmtwofour1
+Numbers: [2, 4, 1]
+Line sum: 21
+Line: sixthree6
+Numbers: [6, 3, 6]
+Line sum: 66
+Line: seven9mzmbkkrzsix5five
+Numbers: [7, 9, 6, 5, 5]
+Line sum: 75
+Line: 9cbrsqjlhntpzfivegmgn1six
+Numbers: [9, 5, 1, 6]
+Line sum: 96
+Line: bdbnlrdpsninenine3twotwocpvjd3
+Numbers: [9, 9, 3, 2, 2, 3]
+Line sum: 93
+Line: twonine193
+Numbers: [2, 9, 1, 9, 3]
+Line sum: 23
+Line: twothree1twor8cmtxtd
+Numbers: [2, 3, 1, 2, 8]
+Line sum: 28
+Line: bvgtninevfrjs6
+Numbers: [9, 6]
+Line sum: 96
+Line: eightsix8
+Numbers: [8, 6, 8]
+Line sum: 88
+Line: sixfbzsxfjtfv8
+Numbers: [6, 8]
+Line sum: 68
+Line: 5onethreeone
+Numbers: [5, 1, 3, 1]
+Line sum: 51
+Line: dgzcksnqz8foursix
+Numbers: [8, 4, 6]
+Line sum: 86
+Line: 9onetsrtwotwothreerbv
+Numbers: [9, 1, 2, 2, 3]
+Line sum: 93
+Line: 4dnzc8
+Numbers: [4, 8]
+Line sum: 48
+Line: fivenine4sjzsdgvdqsix3511
+Numbers: [5, 9, 4, 6, 3, 5, 1, 1]
+Line sum: 51
+Line: 7twofivefivefourqdgpmfblgv
+Numbers: [7, 2, 5, 5, 4]
+Line sum: 74
+Line: oneonelgjsk9
+Numbers: [1, 1, 9]
+Line sum: 19
+Line: zcfhrrpseven8tlffkfnineeightttwoknlfdjpj
+Numbers: [7, 8, 9, 8, 2]
+Line sum: 72
+Line: nine5nine
+Numbers: [9, 5, 9]
+Line sum: 99
+Line: 8sixtwotwooneoneeightcdklzjgvnqrsvvkbtfj
+Numbers: [8, 6, 2, 2, 1, 1, 8]
+Line sum: 88
+Line: 7one9vxjdkbhqmfbpt
+Numbers: [7, 1, 9]
+Line sum: 79
+Line: 6twoeighttwo
+Numbers: [6, 2, 8, 2]
+Line sum: 62
+Line: sixthreesix162
+Numbers: [6, 3, 6, 1, 6, 2]
+Line sum: 62
+Line: 5jhxxchf69twosxjckh5
+Numbers: [5, 6, 9, 2, 5]
+Line sum: 55
+Line: sevenxspmvxpmc788one
+Numbers: [7, 7, 8, 8, 1]
+Line sum: 71
+Line: 9fseven4
+Numbers: [9, 7, 4]
+Line sum: 94
+Line: vxzqgxbmtgxnm588seventwoqtmfsb9
+Numbers: [5, 8, 8, 7, 2, 9]
+Line sum: 59
+Line: four8nine4ftn5
+Numbers: [4, 8, 9, 4, 5]
+Line sum: 45
+Line: eighteightrhjzcmxql28four
+Numbers: [8, 8, 2, 8, 4]
+Line sum: 84
+Line: twogqjdbmmxqgtxdppchr2xxhcptq2mrvgsdccs
+Numbers: [2, 2, 2]
+Line sum: 22
+Line: six24
+Numbers: [6, 2, 4]
+Line sum: 64
+Line: nqdptone3drgtwoone8
+Numbers: [1, 3, 2, 1, 8]
+Line sum: 18
+Line: threesixnine8hlkrj
+Numbers: [3, 6, 9, 8]
+Line sum: 38
+Line: four7pvvljkscc6hvsppgxrsixknrnrvfjqqfive
+Numbers: [4, 7, 6, 6, 5]
+Line sum: 45
+Line: 7tdnbzqqxftqtxjqxgmbdhbvsqdone22drc
+Numbers: [7, 1, 2, 2]
+Line sum: 72
+Line: 59rqhzrfrps
+Numbers: [5, 9]
+Line sum: 59
+Line: six1scbkqjd4
+Numbers: [6, 1, 4]
+Line sum: 64
+Line: 89blbn
+Numbers: [8, 9]
+Line sum: 89
+Line: lqhoneightthree96tppmhtpmlt7
+Numbers: [1, 3, 9, 6, 7]
+Line sum: 17
+Line: threeqpnsevengfx3
+Numbers: [3, 7, 3]
+Line sum: 33
+Line: sixk27lfjrvhvtsixtwo
+Numbers: [6, 2, 7, 6, 2]
+Line sum: 62
+Line: four5slf8onefournine5
+Numbers: [4, 5, 8, 1, 4, 9, 5]
+Line sum: 45
+Line: ninehgczrdslkstltfive96bqtz5
+Numbers: [9, 5, 9, 6, 5]
+Line sum: 95
+Line: scfkzsr4fournine325
+Numbers: [4, 4, 9, 3, 2, 5]
+Line sum: 45
+Line: 5eighthzn9rjdzxllvg
+Numbers: [5, 8, 9]
+Line sum: 59
+Line: 1six1threedrfpflhqfour64
+Numbers: [1, 6, 1, 3, 4, 6, 4]
+Line sum: 14
+Line: fivekdtgcdsjxone8nine
+Numbers: [5, 1, 8, 9]
+Line sum: 59
+Line: 7sevensevenhronepdgbxvfd5
+Numbers: [7, 7, 7, 1, 5]
+Line sum: 75
+Line: 619nine6threetwo6
+Numbers: [6, 1, 9, 9, 6, 3, 2, 6]
+Line sum: 66
+Line: fivehchdssjrlshfqjlptsxghzrcsfcglm4
+Numbers: [5, 4]
+Line sum: 54
+Line: 6two73smnqbbmsix
+Numbers: [6, 2, 7, 3, 6]
+Line sum: 66
+Line: 84fivermpjpjgkn
+Numbers: [8, 4, 5]
+Line sum: 85
+Line: oneeighteightfhjtxbjc94threefrnnnncdz
+Numbers: [1, 8, 8, 9, 4, 3]
+Line sum: 13
+Line: lrckglbdn94eightqbfxp
+Numbers: [9, 4, 8]
+Line sum: 98
+Line: mtztmbhthzone26sixgjvnbzsjfmthreevqdqrld
+Numbers: [1, 2, 6, 6, 3]
+Line sum: 13
+Line: pnrtpgzcnznfive3eightwogkq
+Numbers: [5, 3, 8]
+Line sum: 58
+Line: threevfpkrjddtpszxddckhftt6txkszsbxnn
+Numbers: [3, 6]
+Line sum: 36
+Line: ninecxdtmdnineseveneight5fivesd
+Numbers: [9, 9, 7, 8, 5, 5]
+Line sum: 95
+Line: xjvv7one
+Numbers: [7, 1]
+Line sum: 71
+Line: 5eightfiveseven
+Numbers: [5, 8, 5, 7]
+Line sum: 57
+Line: twodpfdzvqmpzmvs7tpjnpmv5
+Numbers: [2, 7, 5]
+Line sum: 25
+Line: 75fivethreesixsfqpzdonefive4
+Numbers: [7, 5, 5, 3, 6, 1, 5, 4]
+Line sum: 74
+Line: 4onefive6bsvtplblfbmnjjlb
+Numbers: [4, 1, 5, 6]
+Line sum: 46
+Line: eight75one73pjgdqq
+Numbers: [8, 7, 5, 1, 7, 3]
+Line sum: 83
+Line: ntcnmnkvjzpvxpmb7twokqfour1
+Numbers: [7, 2, 4, 1]
+Line sum: 71
+Line: zd1sevenmgdrgrzvvh
+Numbers: [1, 7]
+Line sum: 17
+Line: 65four
+Numbers: [6, 5, 4]
+Line sum: 64
+Line: 3kzfztjxjbseven67bnfcntfknlxlv
+Numbers: [3, 7, 6, 7]
+Line sum: 37
+Line: eightfive8xnnkeightfive
+Numbers: [8, 5, 8, 8, 5]
+Line sum: 85
+Line: 6three95eighttwonineonevkrtwonebgs
+Numbers: [6, 3, 9, 5, 8, 2, 9, 1, 2]
+Line sum: 62
+Line: 92seven2cndf
+Numbers: [9, 2, 7, 2]
+Line sum: 92
+Line: onezxphkcrsix7klrhnhdcxrpz
+Numbers: [1, 6, 7]
+Line sum: 17
+Line: mgl8ldbxzdlgtwo6cdvxbp
+Numbers: [8, 2, 6]
+Line sum: 86
+Line: foursix7lzcddxnjdrfqtthree7six
+Numbers: [4, 6, 7, 3, 7, 6]
+Line sum: 46
+Line: hxheightwoncdcrkczbninefour3lfdtgnqgcnbfxbqlnt
+Numbers: [8, 9, 4, 3]
+Line sum: 83
+Line: 2pmcvctfml1one92
+Numbers: [2, 1, 1, 9, 2]
+Line sum: 22
+Line: nineone9eight
+Numbers: [9, 1, 9, 8]
+Line sum: 98
+Line: 6crppdpp4cmngqseven3mmv
+Numbers: [6, 4, 7, 3]
+Line sum: 63
+Line: 473sevensqpvvhfdrfiventgvmvrhtqx
+Numbers: [4, 7, 3, 7, 5]
+Line sum: 45
+Line: gpnzc1rmfxqgj8nine271
+Numbers: [1, 8, 9, 2, 7, 1]
+Line sum: 11
+Line: 84sixtwo
+Numbers: [8, 4, 6, 2]
+Line sum: 82
+Line: frcrtsqhfour3threefivesix
+Numbers: [4, 3, 3, 5, 6]
+Line sum: 46
+Line: bhcvf6
+Numbers: [6]
+Line sum: 66
+Line: seven2seveneightzqmdqhb9
+Numbers: [7, 2, 7, 8, 9]
+Line sum: 79
+Line: 28hjjrgqklqgbm
+Numbers: [2, 8]
+Line sum: 28
+Line: 98three
+Numbers: [9, 8, 3]
+Line sum: 93
+Line: jqzjntlc541
+Numbers: [5, 4, 1]
+Line sum: 51
+Line: oneq22
+Numbers: [1, 2, 2]
+Line sum: 12
+Line: 7fc92ljfmqt19
+Numbers: [7, 9, 2, 1, 9]
+Line sum: 79
+Line: sixzpzkgfiveonezjvrzfdcf43lbqxqseven
+Numbers: [6, 5, 1, 4, 3, 7]
+Line sum: 67
+Line: 1two4kfxglzcdjc3dpvb
+Numbers: [1, 2, 4, 3]
+Line sum: 13
+Line: fivembfkfdq6
+Numbers: [5, 6]
+Line sum: 56
+Line: nplrclbrbf5ks6five4hzzbsnine
+Numbers: [5, 6, 5, 4, 9]
+Line sum: 59
+Line: 3mkmbgxhn
+Numbers: [3]
+Line sum: 33
+Line: seven9d
+Numbers: [7, 9]
+Line sum: 79
+Line: vnfj8qng
+Numbers: [8]
+Line sum: 88
+Line: eightrgtjpdjjktwo1lphnlrtjfxtvghhbncj2two
+Numbers: [8, 2, 1, 2, 2]
+Line sum: 82
+Line: eight66frbpds5g
+Numbers: [8, 6, 6, 5]
+Line sum: 85
+Line: 3one8four9two5
+Numbers: [3, 1, 8, 4, 9, 2, 5]
+Line sum: 35
+Line: 9ninefouronefcckhcdfb1mnmdsltdrsix
+Numbers: [9, 9, 4, 1, 1, 6]
+Line sum: 96
+Line: eightsvsix122241
+Numbers: [8, 6, 1, 2, 2, 2, 4, 1]
+Line sum: 81
+Line: 3fgpmgxcdqfourkhnrptlktrchfqbxcbbcxvjgznfjkj
+Numbers: [3, 4]
+Line sum: 34
+Line: eighthbhsgrqkgcxtwofour2nzj
+Numbers: [8, 2, 4, 2]
+Line sum: 82
+Line: 93xnjrphktk6vshpvnftblggghskg34
+Numbers: [9, 3, 6, 3, 4]
+Line sum: 94
+Line: seven2sixsdvmcfgq64
+Numbers: [7, 2, 6, 6, 4]
+Line sum: 74
+Line: twothreefive3hrmkbmrskcvknineninebnjksp
+Numbers: [2, 3, 5, 3, 9, 9]
+Line sum: 29
+Line: 82fourninetwothree8
+Numbers: [8, 2, 4, 9, 2, 3, 8]
+Line sum: 88
+Line: 2two158threeninesix
+Numbers: [2, 2, 1, 5, 8, 3, 9, 6]
+Line sum: 26
+Line: hgltdx48onetwofvnsmmsdzjthree
+Numbers: [4, 8, 1, 2, 3]
+Line sum: 43
+Line: k38
+Numbers: [3, 8]
+Line sum: 38
+Line: ninenine4sixctnznsb3tkpx
+Numbers: [9, 9, 4, 6, 3]
+Line sum: 93
+Line: pvfzqtgpntnfhfp47rhllqrlx22
+Numbers: [4, 7, 2, 2]
+Line sum: 42
+Line: 815qxtrghrsg
+Numbers: [8, 1, 5]
+Line sum: 85
+Line: 5vhfourvdblpninemdzbbgmvsfone
+Numbers: [5, 4, 9, 1]
+Line sum: 51
+Line: nine8nine6four
+Numbers: [9, 8, 9, 6, 4]
+Line sum: 94
+Line: threebcbsmxbks2two5twon
+Numbers: [3, 2, 2, 5, 2]
+Line sum: 32
+Line: kzpsc74qxflxpsix6jgmzgqxvsngc
+Numbers: [7, 4, 6, 6]
+Line sum: 76
+Line: 7dbrsmpksixqttqsphqpd7twoeight
+Numbers: [7, 6, 7, 2, 8]
+Line sum: 78
+Line: kffivefourdknzqsevenvkssgvhxf1
+Numbers: [5, 4, 7, 1]
+Line sum: 51
+Line: sixeight5sljd5fourxkkxv6
+Numbers: [6, 8, 5, 5, 4, 6]
+Line sum: 66
+Line: rnsjsmfcbp4twofour
+Numbers: [4, 2, 4]
+Line sum: 44
+Line: zdfour5pktmsmxf3
+Numbers: [4, 5, 3]
+Line sum: 43
+Line: threen42
+Numbers: [3, 4, 2]
+Line sum: 32
+Line: stgtphmjk7onexfour2foursrpj8
+Numbers: [7, 1, 4, 2, 4, 8]
+Line sum: 78
+Line: pjbgtsevenseven7zzhgxlmz
+Numbers: [7, 7, 7]
+Line sum: 77
+Line: sixeightfivefourseven9bpjbcmvkrfive
+Numbers: [6, 8, 5, 4, 7, 9, 5]
+Line sum: 65
+Line: hfhxfqlbqtwo4cdfksbbtlcsix
+Numbers: [2, 4, 6]
+Line sum: 26
+Line: 778lkffbzmpdbxjbpfoursdbp
+Numbers: [7, 7, 8, 4]
+Line sum: 74
+Line: tvpjnvtxeight1onefive3nvncq
+Numbers: [8, 1, 1, 5, 3]
+Line sum: 83
+Line: 38seven47
+Numbers: [3, 8, 7, 4, 7]
+Line sum: 37
+Line: five8threexqtglzmpmvbzfour
+Numbers: [5, 8, 3, 4]
+Line sum: 54
+Line: nmtsjjfvfzbhpltbbsrjphrnxhr1two3sixvp
+Numbers: [1, 2, 3, 6]
+Line sum: 16
+Line: 4gbvkbfqrfgrbr85sixone
+Numbers: [4, 8, 5, 6, 1]
+Line sum: 41
+Line: 6mxqltfsxqxnpdrjkxhrp
+Numbers: [6]
+Line sum: 66
+Line: lftdxbhhzvvhpone51six
+Numbers: [1, 5, 1, 6]
+Line sum: 16
+Line: 3grhbqf5one
+Numbers: [3, 5, 1]
+Line sum: 31
+Line: six9four94tthree
+Numbers: [6, 9, 4, 9, 4, 3]
+Line sum: 63
+Line: sevenh1bdcgdtmjqhnkzxlkxsevenonecbx
+Numbers: [7, 1, 7, 1]
+Line sum: 71
+Line: jvtwonecfksxckgq6
+Numbers: [2, 6]
+Line sum: 26
+Line: zvmjbthreecbpfdvd6
+Numbers: [3, 6]
+Line sum: 36
+Line: 6bsvrsevenbcbcgrrhpxtvbhhfp1
+Numbers: [6, 7, 1]
+Line sum: 61
+Line: sevenfivemtmpcgml9mljnhcrdbfvksvlbpmvhs
+Numbers: [7, 5, 9]
+Line sum: 79
+Line: 8nine9
+Numbers: [8, 9, 9]
+Line sum: 89
+Line: mszqdg7jsrcckxn
+Numbers: [7]
+Line sum: 77
+Line: eightseven9zzsixninexhscseventhree
+Numbers: [8, 7, 9, 6, 9, 7, 3]
+Line sum: 83
+Line: eight57
+Numbers: [8, 5, 7]
+Line sum: 87
+Line: 4zjpjz26dxnzfb
+Numbers: [4, 2, 6]
+Line sum: 46
+Line: rmcnbnlpd3nine4gngphqfmc24
+Numbers: [3, 9, 4, 2, 4]
+Line sum: 34
+Line: 1vvgfxdfourprlmsjmvvtxnn8seven
+Numbers: [1, 4, 8, 7]
+Line sum: 17
+Line: nineonethree6zznkfrcgzvfour
+Numbers: [9, 1, 3, 6, 4]
+Line sum: 94
+Line: gcnjsdlhptwofourtwoonemggshpdh3eight
+Numbers: [2, 4, 2, 1, 3, 8]
+Line sum: 28
+Line: 4eightfivenxftjch
+Numbers: [4, 8, 5]
+Line sum: 45
+Line: eightthreeseven94
+Numbers: [8, 3, 7, 9, 4]
+Line sum: 84
+Line: twokvtjgcq992
+Numbers: [2, 9, 9, 2]
+Line sum: 22
+Line: 69psqdmgbtljjzjmpsbs1fiveoneggjbbk
+Numbers: [6, 9, 1, 5, 1]
+Line sum: 61
+Line: 3k
+Numbers: [3]
+Line sum: 33
+Line: eightsix3seven4twosevenq7
+Numbers: [8, 6, 3, 7, 4, 2, 7, 7]
+Line sum: 87
+Line: jlthbzsc2
+Numbers: [2]
+Line sum: 22
+Line: 22nine8jhmktwo5
+Numbers: [2, 2, 9, 8, 2, 5]
+Line sum: 25
+Line: 8pzmtnlfptpjckftzrzqsrxkkcc3
+Numbers: [8, 3]
+Line sum: 83
+Line: four33jfxmhcdktzhqvmkxhklxjllx
+Numbers: [4, 3, 3]
+Line sum: 43
+Line: nine3lqcsbmmh4f
+Numbers: [9, 3, 4]
+Line sum: 94
+Line: three514twonellp
+Numbers: [3, 5, 1, 4, 2]
+Line sum: 32
+Line: 4qhn5
+Numbers: [4, 5]
+Line sum: 45
+Line: sixbmkxqdgtkbcghvpzonecfmgkpfrxv68six
+Numbers: [6, 1, 6, 8, 6]
+Line sum: 66
+Line: 6threeeightjhfsmp8mpvhrjcxzsevenone
+Numbers: [6, 3, 8, 8, 7, 1]
+Line sum: 61
+Line: sevens9two37fjdfrnk
+Numbers: [7, 9, 2, 3, 7]
+Line sum: 77
+Line: jhzpvfldrbmmmglvrkz2ninelbgpdlpdcteight
+Numbers: [2, 9, 8]
+Line sum: 28
+Line: qj9
+Numbers: [9]
+Line sum: 99
+Line: rxfhkkvheightfouronejh8238
+Numbers: [8, 4, 1, 8, 2, 3, 8]
+Line sum: 88
+Line: zfsixvbqngj1vhbvxpfk6
+Numbers: [6, 1, 6]
+Line sum: 66
+Line: vjbqvcm3
+Numbers: [3]
+Line sum: 33
+Line: 51six38ngvq42three
+Numbers: [5, 1, 6, 3, 8, 4, 2, 3]
+Line sum: 53
+Line: 7zjtcczjz79seven
+Numbers: [7, 7, 9, 7]
+Line sum: 77
+Line: five8fivexxmrn
+Numbers: [5, 8, 5]
+Line sum: 55
+Line: sixseventhree3sixcsk
+Numbers: [6, 7, 3, 3, 6]
+Line sum: 66
+Line: zninefour8tworxkfb48
+Numbers: [9, 4, 8, 2, 4, 8]
+Line sum: 98
+Line: 63nine3
+Numbers: [6, 3, 9, 3]
+Line sum: 63
+Line: 11eight
+Numbers: [1, 1, 8]
+Line sum: 18
+Line: bxlgdzqthree2ninegqn6kvktfts8
+Numbers: [3, 2, 9, 6, 8]
+Line sum: 38
+Line: tvmzzlpnineztxdbkxgthree1four1
+Numbers: [9, 3, 1, 4, 1]
+Line sum: 91
+Line: gxcnhxone9
+Numbers: [1, 9]
+Line sum: 19
+Line: 8eightfive5jkqx
+Numbers: [8, 8, 5, 5]
+Line sum: 85
+Line: qcfgbpgdveighteightone7seven
+Numbers: [8, 8, 1, 7, 7]
+Line sum: 87
+Line: 86eight2five
+Numbers: [8, 6, 8, 2, 5]
+Line sum: 85
+Line: tftbbfpsvhtwo8eight8seventwo2
+Numbers: [2, 8, 8, 8, 7, 2, 2]
+Line sum: 22
+Line: skfp8
+Numbers: [8]
+Line sum: 88
+Line: 8hdlhh4ninenxllmthreefivebhslxkvtcp
+Numbers: [8, 4, 9, 3, 5]
+Line sum: 85
+Line: sixbmljnmhseven4sevenmsfbsbqlzrrseven3
+Numbers: [6, 7, 4, 7, 7, 3]
+Line sum: 63
+Line: v1828
+Numbers: [1, 8, 2, 8]
+Line sum: 18
+Line: 6seven53hhtj
+Numbers: [6, 7, 5, 3]
+Line sum: 63
+Line: five51lkfsrm2
+Numbers: [5, 5, 1, 2]
+Line sum: 52
+Line: bvnrdvjnxjbfv9prx
+Numbers: [9]
+Line sum: 99
+Line: tqbnxeight6hztrsbvronethreethreeqvh
+Numbers: [8, 6, 1, 3, 3]
+Line sum: 83
+Line: pcbjr3cjhrqxbcvpzdmfive6oneightgt
+Numbers: [3, 5, 6, 1]
+Line sum: 31
+Line: qdeightl6four
+Numbers: [8, 6, 4]
+Line sum: 84
+Line: ncprx96ninegn3
+Numbers: [9, 6, 9, 3]
+Line sum: 93
+Line: sevenb4eightwonr
+Numbers: [7, 4, 8]
+Line sum: 78
+Line: qbslkmkqlf8ztzeightpcn
+Numbers: [8, 8]
+Line sum: 88
+Line: fiveeightcpn7hvxmtpcsbqfvpnmvgncfbpxzhfive
+Numbers: [5, 8, 7, 5]
+Line sum: 55
+Line: 3rxxcqhlp4five
+Numbers: [3, 4, 5]
+Line sum: 35
+Line: threefouronevdbdmktp17
+Numbers: [3, 4, 1, 1, 7]
+Line sum: 37
+Line: sixdtmnlhth9onefive
+Numbers: [6, 9, 1, 5]
+Line sum: 65
+Line: fouronelxgxpvtmseven2ninesix
+Numbers: [4, 1, 7, 2, 9, 6]
+Line sum: 46
+Line: eightrfxrkcfive21ftlcgdcrmbsnrr
+Numbers: [8, 5, 2, 1]
+Line sum: 81
+Line: nine1fourfourxkppvqrxfdhsdphjcgnhnfnzlld
+Numbers: [9, 1, 4, 4]
+Line sum: 94
+Line: 562
+Numbers: [5, 6, 2]
+Line sum: 52
+Line: 4sixhj4eightzkbfpdrtzcsp2
+Numbers: [4, 6, 4, 8, 2]
+Line sum: 42
+Line: ddfdbdqzfshfxnseven6onetwo2
+Numbers: [7, 6, 1, 2, 2]
+Line sum: 72
+Line: five915b3
+Numbers: [5, 9, 1, 5, 3]
+Line sum: 53
+Line: sghrbfzmmrrbnone9four5rkmqgh
+Numbers: [1, 9, 4, 5]
+Line sum: 15
+Line: threedmmsdvgs6twotwochp
+Numbers: [3, 6, 2, 2]
+Line sum: 32
+Line: seven1fivesixnine9four
+Numbers: [7, 1, 5, 6, 9, 9, 4]
+Line sum: 74
+Line: 6dvmgsjcfour3q
+Numbers: [6, 4, 3]
+Line sum: 63
+Line: cschsrvz3nkk
+Numbers: [3]
+Line sum: 33
+Line: 4fnqmnd4rnxbjvcbxpchfour
+Numbers: [4, 4, 4]
+Line sum: 44
+Line: 3eight9
+Numbers: [3, 8, 9]
+Line sum: 39
+Line: tboneninerzhsgqqcxd2gxhm2mhdpkjeight
+Numbers: [1, 9, 2, 2, 8]
+Line sum: 18
+Line: vpsbgmzbjk6nineeight
+Numbers: [6, 9, 8]
+Line sum: 68
+Line: sixsjbzldfive6
+Numbers: [6, 5, 6]
+Line sum: 66
+Line: qjprfk1eight7vbdshhnfive59
+Numbers: [1, 8, 7, 5, 5, 9]
+Line sum: 19
+Line: dbxdgt6
+Numbers: [6]
+Line sum: 66
+Line: pdgghktdjhsxnblgpzmtc24onecmctldqtsc
+Numbers: [2, 4, 1]
+Line sum: 21
+Line: bgfzght2szvttsdndfiveqgns3
+Numbers: [2, 5, 3]
+Line sum: 23
+Line: 6ninebdnbxzmeightfivevff8pdllfour
+Numbers: [6, 9, 8, 5, 8, 4]
+Line sum: 64
+Line: four2nineeightvfeighttwo
+Numbers: [4, 2, 9, 8, 8, 2]
+Line sum: 42
+Line: fiveone3sevenhfqnfbjg3five
+Numbers: [5, 1, 3, 7, 3, 5]
+Line sum: 55
+Line: eight19two
+Numbers: [8, 1, 9, 2]
+Line sum: 82
+Line: fqkeightwosvszgpjvbl2xtmgmc6128six
+Numbers: [8, 2, 6, 1, 2, 8, 6]
+Line sum: 86
+Line: 6five6one24fivemcgpx
+Numbers: [6, 5, 6, 1, 2, 4, 5]
+Line sum: 65
+Line: pmvrz6threemlhoneightdjf
+Numbers: [6, 3, 1]
+Line sum: 61
+Line: 7cxrgxx53gksgdsv9
+Numbers: [7, 5, 3, 9]
+Line sum: 79
+Line: six3two
+Numbers: [6, 3, 2]
+Line sum: 62
+Line: nfqffqrvkvhqfzthgxp3fivesix7gb
+Numbers: [3, 5, 6, 7]
+Line sum: 37
+Line: nlqdkgllxdvgj8xdhdfnnnfive
+Numbers: [8, 5]
+Line sum: 85
+Line: fournine1nineseven
+Numbers: [4, 9, 1, 9, 7]
+Line sum: 47
+Line: four35djzxvsvvdfxbnhsixfouroneseven
+Numbers: [4, 3, 5, 6, 4, 1, 7]
+Line sum: 47
+Line: 9fourhntsmprtddm
+Numbers: [9, 4]
+Line sum: 94
+Line: fourfsix81sixvxmz8eight
+Numbers: [4, 6, 8, 1, 6, 8, 8]
+Line sum: 48
+Line: 3pqngffjxqpntqtl8zz4
+Numbers: [3, 8, 4]
+Line sum: 34
+Line: five325ninemfqxnseven1
+Numbers: [5, 3, 2, 5, 9, 7, 1]
+Line sum: 51
+Line: 1one2gqx3
+Numbers: [1, 1, 2, 3]
+Line sum: 13
+Line: hqsfive67rr3q4
+Numbers: [5, 6, 7, 3, 4]
+Line sum: 54
+Line: onefblnbfvzlzthreenine1
+Numbers: [1, 3, 9, 1]
+Line sum: 11
+Line: 96zsvdl2
+Numbers: [9, 6, 2]
+Line sum: 92
+Line: 1fourjjhf1tn18
+Numbers: [1, 4, 1, 1, 8]
+Line sum: 18
+Line: sixfdpljnbpzxlvhncjs9threefckbgtcm
+Numbers: [6, 9, 3]
+Line sum: 63
+Line: seven6ffmvnnmxl8fxskzvpfs
+Numbers: [7, 6, 8]
+Line sum: 78
+Line: 5tgbqdkfive
+Numbers: [5, 5]
+Line sum: 55
+Line: 52czvkbqgztwo17ninesix
+Numbers: [5, 2, 2, 1, 7, 9, 6]
+Line sum: 56
+Line: bmshtrzdcmkfour5
+Numbers: [4, 5]
+Line sum: 45
+Line: nrfn25one
+Numbers: [2, 5, 1]
+Line sum: 21
+Line: 9two4plklcqzjftj7
+Numbers: [9, 2, 4, 7]
+Line sum: 97
+Line: onedks4five6hdllqssixbssl
+Numbers: [1, 4, 5, 6, 6]
+Line sum: 16
+Line: 2xftcfnd2twotwo
+Numbers: [2, 2, 2, 2]
+Line sum: 22
+Line: rzxzkcdtnmsbhnncltpj62
+Numbers: [6, 2]
+Line sum: 62
+Line: 6snszfour
+Numbers: [6, 4]
+Line sum: 64
+Line: 398seven58
+Numbers: [3, 9, 8, 7, 5, 8]
+Line sum: 38
+Line: vstfive8869
+Numbers: [5, 8, 8, 6, 9]
+Line sum: 59
+Line: 1fivesevenvgjrlqqlthjz1
+Numbers: [1, 5, 7, 1]
+Line sum: 11
+Line: tpg7eightseven
+Numbers: [7, 8, 7]
+Line sum: 77
+Line: gqvpptsix356
+Numbers: [6, 3, 5, 6]
+Line sum: 66
+Line: 7nineone9fournineeight
+Numbers: [7, 9, 1, 9, 4, 9, 8]
+Line sum: 78
+Line: tr1threenine
+Numbers: [1, 3, 9]
+Line sum: 19
+Line: tvz8xconeightfz
+Numbers: [8, 1]
+Line sum: 81
+Line: two11five1nine
+Numbers: [2, 1, 1, 5, 1, 9]
+Line sum: 29
+Line: jntkxfvt2threegseven3
+Numbers: [2, 3, 7, 3]
+Line sum: 23
+Line: b69ztbtgmqfntdnine4two4
+Numbers: [6, 9, 9, 4, 2, 4]
+Line sum: 64
+Line: threedsgrrfcpzpfivebrpjhzfhs96gxmfhkhfive3
+Numbers: [3, 5, 9, 6, 5, 3]
+Line sum: 33
+Line: eighteightthree5crdbzgqvtxx6two
+Numbers: [8, 8, 3, 5, 6, 2]
+Line sum: 82
+Line: nine4onepxjtmbhrpklmlhcfspxrjdnd
+Numbers: [9, 4, 1]
+Line sum: 91
+Line: 7fivetpttvnmgzd
+Numbers: [7, 5]
+Line sum: 75
+Line: 8lmddfzjeightxxvvcvp
+Numbers: [8, 8]
+Line sum: 88
+Line: loneight1three4dmzxqncjbninerbsrjxxlsb
+Numbers: [1, 1, 3, 4, 9]
+Line sum: 19
+Line: 657fourdjkhrlxjdp3ninepvlqhz
+Numbers: [6, 5, 7, 4, 3, 9]
+Line sum: 69
+Line: three4threekddjrfsdk3
+Numbers: [3, 4, 3, 3]
+Line sum: 33
+Line: 8xbjcnsjq89
+Numbers: [8, 8, 9]
+Line sum: 89
+Line: six8ninesixfourpcsfhnsxgrz
+Numbers: [6, 8, 9, 6, 4]
+Line sum: 64
+Line: 8twosixmvhmsps3
+Numbers: [8, 2, 6, 3]
+Line sum: 83
+Line: six9sixeight
+Numbers: [6, 9, 6, 8]
+Line sum: 68
+Line: 4seven175
+Numbers: [4, 7, 1, 7, 5]
+Line sum: 45
+Line: 4twomspqqn6929
+Numbers: [4, 2, 6, 9, 2, 9]
+Line sum: 49
+Line: 71seven9eight
+Numbers: [7, 1, 7, 9, 8]
+Line sum: 78
+Line: 4znc92eight
+Numbers: [4, 9, 2, 8]
+Line sum: 48
+Line: ninetwo2blcllflxonezljhhsfivelngxk
+Numbers: [9, 2, 2, 1, 5]
+Line sum: 95
+Line: nmbrjnsqhkxzxhmxsix1oneeight5fourseven
+Numbers: [6, 1, 1, 8, 5, 4, 7]
+Line sum: 67
+Line: 42kvzlcdjzxmgnpqmsmkxq3seven43eightwovms
+Numbers: [4, 2, 3, 7, 4, 3, 8]
+Line sum: 48
+Line: rj5hxkldqseven
+Numbers: [5, 7]
+Line sum: 57
+Line: f7
+Numbers: [7]
+Line sum: 77
+Line: 5sskjblmnbzjhctvmttwotwott
+Numbers: [5, 2, 2]
+Line sum: 52
+Line: 9ftmpxlbphsfxzsbktjttkxclknsbkftwo7
+Numbers: [9, 2, 7]
+Line sum: 97
+Line: 3ndmzlfbsfqhxrlj2fourfive
+Numbers: [3, 2, 4, 5]
+Line sum: 35
+Line: 8378vkthreemggtf2
+Numbers: [8, 3, 7, 8, 3, 2]
+Line sum: 82
+Line: 2hprlpkbsfzbnbpsmflxjh15one
+Numbers: [2, 1, 5, 1]
+Line sum: 21
+Line: dxvtfrhhxthree68four529eight
+Numbers: [3, 6, 8, 4, 5, 2, 9, 8]
+Line sum: 38
+Line: xgjvjddtnine1zxeightwosnx
+Numbers: [9, 1, 8]
+Line sum: 98
+Line: sixblpgkznvjseven2oneskvxgngzlpzvjcxkcjgblh
+Numbers: [6, 7, 2, 1]
+Line sum: 61
+Line: bhhkfive4jgngngjfhbp8kpnjtgrmblone
+Numbers: [5, 4, 8, 1]
+Line sum: 51
+Line: 8vmfivetwo9eightthreefxbvf
+Numbers: [8, 5, 2, 9, 8, 3]
+Line sum: 83
+Line: 8738
+Numbers: [8, 7, 3, 8]
+Line sum: 88
+Line: 8sixlgnpbpqpltbqqjjxpkcdfourhxzqpmm
+Numbers: [8, 6, 4]
+Line sum: 84
+Line: seventwo5three
+Numbers: [7, 2, 5, 3]
+Line sum: 73
+Line: h46ssnqlfrl8
+Numbers: [4, 6, 8]
+Line sum: 48
+Line: ninetwokrkfqhh2jbznndtchssjtbpqdhtnrhsix
+Numbers: [9, 2, 2, 6]
+Line sum: 96
+Line: 254
+Numbers: [2, 5, 4]
+Line sum: 24
+Line: 1nhbdtwosixonezxtnvhjnine
+Numbers: [1, 2, 6, 1, 9]
+Line sum: 19
+Line: qxx97d1dcnqzqhsixnzbrvrksnc
+Numbers: [9, 7, 1, 6]
+Line sum: 96
+Line: fivegnxzgvmzone8fourfivethree5
+Numbers: [5, 1, 8, 4, 5, 3, 5]
+Line sum: 55
+Line: fivexhx7six87
+Numbers: [5, 7, 6, 8, 7]
+Line sum: 57
+Line: zngqzxpmd63bgfzjpftsjgzghdppqfqbnblt7sixone
+Numbers: [6, 3, 7, 6, 1]
+Line sum: 61
+Line: ninemzlgnkglj1
+Numbers: [9, 1]
+Line sum: 91
+Line: fiveninesixeightthree4six1
+Numbers: [5, 9, 6, 8, 3, 4, 6, 1]
+Line sum: 51
+Line: fivesix5ninethreeqkxczhp3
+Numbers: [5, 6, 5, 9, 3, 3]
+Line sum: 53
+Line: eight19two16pqdstm
+Numbers: [8, 1, 9, 2, 1, 6]
+Line sum: 86
+Line: mplj637sjtgzltwo
+Numbers: [6, 3, 7, 2]
+Line sum: 62
+Line: 7lvs7xzmjmxjhlgdqhtqllhtzlkmbfm5
+Numbers: [7, 7, 5]
+Line sum: 75
+Line: six6kqvbjfoureight94
+Numbers: [6, 6, 4, 8, 9, 4]
+Line sum: 64
+Line: one9qdjpfszz6vxbrdnntfz8btft6
+Numbers: [1, 9, 6, 8, 6]
+Line sum: 16
+Line: 65onendmdgtr
+Numbers: [6, 5, 1]
+Line sum: 61
+Line: seven368
+Numbers: [7, 3, 6, 8]
+Line sum: 78
+Line: eight31ngsdmnm
+Numbers: [8, 3, 1]
+Line sum: 81
+Line: 2threetgpvcseven
+Numbers: [2, 3, 7]
+Line sum: 27
+Line: nine297zqgvglthreel
+Numbers: [9, 2, 9, 7, 3]
+Line sum: 93
+Line: 7eighttxvrbjsnbcseven
+Numbers: [7, 8, 7]
+Line sum: 77
+Line: rdpcnrscggv1cxv63
+Numbers: [1, 6, 3]
+Line sum: 13
+Line: 2cdfltscsnzg8eightwosg
+Numbers: [2, 8, 8]
+Line sum: 28
+Line: jrszpsjthree8n8bdjtlcbxtsixktkcc
+Numbers: [3, 8, 8, 6]
+Line sum: 36
+Line: dns3
+Numbers: [3]
+Line sum: 33
+Line: 2threebpkctf
+Numbers: [2, 3]
+Line sum: 23
+Line: 5pgzpfqntc
+Numbers: [5]
+Line sum: 55
+Line: 9pkone
+Numbers: [9, 1]
+Line sum: 91
+Line: oneseven2fm545two3
+Numbers: [1, 7, 2, 5, 4, 5, 2, 3]
+Line sum: 13
+Line: 9threegtctbldnnclqpdmjnps7seven
+Numbers: [9, 3, 7, 7]
+Line sum: 97
+Line: 1dknxbdcvpssix413
+Numbers: [1, 6, 4, 1, 3]
+Line sum: 13
+Line: rzrvm77one2
+Numbers: [7, 7, 1, 2]
+Line sum: 72
+Line: sixnttfive97jdcjvcmg
+Numbers: [6, 5, 9, 7]
+Line sum: 67
+Line: spdmkhnthreebqsmtqgnm5threedxjcvsrxbq
+Numbers: [3, 5, 3]
+Line sum: 33
+Line: btzkx8ckninevffmmfm3four
+Numbers: [8, 9, 3, 4]
+Line sum: 84
+Line: hgx8fivenine2oneightc
+Numbers: [8, 5, 9, 2, 1]
+Line sum: 81
+Line: thdfczcpnxctgfiveseven65threeeight4
+Numbers: [5, 7, 6, 5, 3, 8, 4]
+Line sum: 54
+Line: five6nine
+Numbers: [5, 6, 9]
+Line sum: 59
+Line: qgtds7
+Numbers: [7]
+Line sum: 77
+Line: hqnzcfleight8two2
+Numbers: [8, 8, 2, 2]
+Line sum: 82
+Line: 8q8zbkjrqxzhlzgmqmzrbfqceight
+Numbers: [8, 8, 8]
+Line sum: 88
+Line: nbbrrmksdm2ninefive3x
+Numbers: [2, 9, 5, 3]
+Line sum: 23
+Line: fivec2sixsixmngbsjzk71
+Numbers: [5, 2, 6, 6, 7, 1]
+Line sum: 51
+Line: 821one4
+Numbers: [8, 2, 1, 1, 4]
+Line sum: 84
+Line: 5eightvpxfpnzvsfhcdtn7kdkjdpsqcl
+Numbers: [5, 8, 7]
+Line sum: 57
+Line: 6seventwotwogxvgvxzjbvcqcl38
+Numbers: [6, 7, 2, 2, 3, 8]
+Line sum: 68
+Line: onetwo23863
+Numbers: [1, 2, 2, 3, 8, 6, 3]
+Line sum: 13
+Line: 24qtzzxfhq
+Numbers: [2, 4]
+Line sum: 24
+Line: one7six814
+Numbers: [1, 7, 6, 8, 1, 4]
+Line sum: 14
+Line: czdhrn2twoninetwo8
+Numbers: [2, 2, 9, 2, 8]
+Line sum: 28
+Line: one54
+Numbers: [1, 5, 4]
+Line sum: 14
+Line: foursslpnrqcv7sixtwoned
+Numbers: [4, 7, 6, 2]
+Line sum: 42
+Line: 9xsptsgfplpbrtpc1sevenjrggpr52
+Numbers: [9, 1, 7, 5, 2]
+Line sum: 92
+Line: zoneightg6sixgfdtwo7
+Numbers: [1, 6, 6, 2, 7]
+Line sum: 17
+Line: 34twodhthree2tqsevenvqqrxq
+Numbers: [3, 4, 2, 3, 2, 7]
+Line sum: 37
+Line: monektltrghq97seven
+Numbers: [1, 9, 7, 7]
+Line sum: 17
+Line: ggeightwothree5cpfvrnp48
+Numbers: [8, 3, 5, 4, 8]
+Line sum: 88
+Line: nine7zpcbx33bbmd
+Numbers: [9, 7, 3, 3]
+Line sum: 93
+Line: six831
+Numbers: [6, 8, 3, 1]
+Line sum: 61
+Line: 63vjlqdc5one
+Numbers: [6, 3, 5, 1]
+Line sum: 61
+Line: nine9cgxgrq8
+Numbers: [9, 9, 8]
+Line sum: 98
+Line: 5sixxpeightsix
+Numbers: [5, 6, 8, 6]
+Line sum: 56
+Line: onecgpxlhhgtthreetwo3
+Numbers: [1, 3, 2, 3]
+Line sum: 13
+Line: 336
+Numbers: [3, 3, 6]
+Line sum: 36
+Line: xcdjlblthreefourqrcxbxlhsdlseven5five
+Numbers: [3, 4, 7, 5, 5]
+Line sum: 35
+Line: 9znnlhrrmb1999drzkckthreehghffcgfr
+Numbers: [9, 1, 9, 9, 9, 3]
+Line sum: 93
+Line: two8one
+Numbers: [2, 8, 1]
+Line sum: 21
+Line: ztwogggh48
+Numbers: [2, 4, 8]
+Line sum: 28
+Line: six4pcmqkpqb
+Numbers: [6, 4]
+Line sum: 64
+Line: 14two47vmhbsgrgdone3
+Numbers: [1, 4, 2, 4, 7, 1, 3]
+Line sum: 13
+Line: 84eight2
+Numbers: [8, 4, 8, 2]
+Line sum: 82
+Line: 5cnoneskjzppm
+Numbers: [5, 1]
+Line sum: 51
+Line: nine8threecstfxqp7
+Numbers: [9, 8, 3, 7]
+Line sum: 97
+Line: threecsbhnn22three9three4xphcvgnz
+Numbers: [3, 2, 2, 3, 9, 3, 4]
+Line sum: 34
+Line: vjq8ninenhr7
+Numbers: [8, 9, 7]
+Line sum: 87
+Line: qcffmrfthreexgjjrdbdthree3
+Numbers: [3, 3, 3]
+Line sum: 33
+Line: eightsix5
+Numbers: [8, 6, 5]
+Line sum: 85
+Line: threeeightfcsmrvdqzp6
+Numbers: [3, 8, 6]
+Line sum: 36
+Line: sevendcpm3five4eightbthreefive
+Numbers: [7, 3, 5, 4, 8, 3, 5]
+Line sum: 75
+Line: kq9one46dqnr
+Numbers: [9, 1, 4, 6]
+Line sum: 96
+Line: jbmtdqbzn5sixlnthree
+Numbers: [5, 6, 3]
+Line sum: 53
+Line: ninebdz4fourbvq
+Numbers: [9, 4, 4]
+Line sum: 94
+Line: phbzxtvtthreerm89
+Numbers: [3, 8, 9]
+Line sum: 39
+Line: dqlgfoursix5k3mcrkmxcp
+Numbers: [4, 6, 5, 3]
+Line sum: 43
+Line: 3fivesixqrrvtsjdxtdqp14pznxpnrgkrvg
+Numbers: [3, 5, 6, 1, 4]
+Line sum: 34
+Line: 5cnkfz4lxbvbpmcfninetgn9
+Numbers: [5, 4, 9, 9]
+Line sum: 59
+Line: mtjq8threeninefourhnzgctvtrfive
+Numbers: [8, 3, 9, 4, 5]
+Line sum: 85
+Line: 47l6784
+Numbers: [4, 7, 6, 7, 8, 4]
+Line sum: 44
+Line: twopdmponenzpjfbqgt2nine1qccqx
+Numbers: [2, 1, 2, 9, 1]
+Line sum: 21
+Line: 77hspkdhqfztwomkdshrkn3nt
+Numbers: [7, 7, 2, 3]
+Line sum: 73
+Line: five7pjrslqhkzcjzhn6
+Numbers: [5, 7, 6]
+Line sum: 56
+Line: twoqvgphqs8zzmgclhsseven5eightfive
+Numbers: [2, 8, 7, 5, 8, 5]
+Line sum: 25
+Line: threehmkjmrqqblnrfvbpzhrsix4zvlmcqeight
+Numbers: [3, 6, 4, 8]
+Line sum: 38
+Line: 6lcfjthree8ninefive54
+Numbers: [6, 3, 8, 9, 5, 5, 4]
+Line sum: 64
+Line: sevenfive558four
+Numbers: [7, 5, 5, 5, 8, 4]
+Line sum: 74
+Line: htbdrfh8bthreeninedrjdbjbzlknine
+Numbers: [8, 3, 9, 9]
+Line sum: 89
+Line: hkhknzrbfsevenhcvbdfs2sixcbjqzltfour4
+Numbers: [7, 2, 6, 4, 4]
+Line sum: 74
+Line: qrvfpxdseven2
+Numbers: [7, 2]
+Line sum: 72
+Line: 139msnzkfgpzdz5nine1
+Numbers: [1, 3, 9, 5, 9, 1]
+Line sum: 11
+Line: rbdone3ftvrdkssvmnzjgpcbdjzdkcgbcs69
+Numbers: [1, 3, 6, 9]
+Line sum: 19
+Line: nine58
+Numbers: [9, 5, 8]
+Line sum: 98
+Line: 2ckxdtcqc5seveneight4two
+Numbers: [2, 5, 7, 8, 4, 2]
+Line sum: 22
+Line: qtgndtm4mrqvtgbgjf7nzhvtvjqqrdmfiverzzgn
+Numbers: [4, 7, 5]
+Line sum: 45
+Line: 3rchqn37tlvgtftdjqxgbvhlpclpneightfive
+Numbers: [3, 3, 7, 8, 5]
+Line sum: 35
+Line: 11sfhcntjzpnkvpzjfhhpmbtjptngpnbqthreethree6
+Numbers: [1, 1, 3, 3, 6]
+Line sum: 16
+Line: fivenine4cthreeeightzqlckkvs
+Numbers: [5, 9, 4, 3, 8]
+Line sum: 58
+Line: 5threekjqxkddgvzph92
+Numbers: [5, 3, 9, 2]
+Line sum: 52
+Line: five372seven8eightthreefour
+Numbers: [5, 3, 7, 2, 7, 8, 8, 3, 4]
+Line sum: 54
+Line: fivegjjxh15zdnbxzlhleight5fourqrpxj
+Numbers: [5, 1, 5, 8, 5, 4]
+Line sum: 54
+Line: 84sevenvckrdpxlgzkcbpr76fjzbpn
+Numbers: [8, 4, 7, 7, 6]
+Line sum: 86
+Line: mvvxgjfqj9five1psvtflxhkpfourdxzxhvxmthreekp
+Numbers: [9, 5, 1, 4, 3]
+Line sum: 93
+Line: seven7pnltbp1twotwo9lfdgzpj
+Numbers: [7, 7, 1, 2, 2, 9]
+Line sum: 79
+Line: sevenfkrtsgrnhgfive54three8csmsg
+Numbers: [7, 5, 5, 4, 3, 8]
+Line sum: 78
+Line: sevendczlbgjbg6srsbtseven
+Numbers: [7, 6, 7]
+Line sum: 77
+Line: onejscsevensix2oneightd
+Numbers: [1, 7, 6, 2, 1]
+Line sum: 11
+Line: mchrcflvfj3znrzhrvbhm
+Numbers: [3]
+Line sum: 33
+Line: brfninexxntnine83kfzbn
+Numbers: [9, 9, 8, 3]
+Line sum: 93
+Line: 97tfgthreefxpv
+Numbers: [9, 7, 3]
+Line sum: 93
+Line: kspdrcnvvntts8bb4sixvghhjcpt
+Numbers: [8, 4, 6]
+Line sum: 86
+Line: 8onedxcbnlvpntljztxs
+Numbers: [8, 1]
+Line sum: 81
+Line: c91drttnrsevenxj9
+Numbers: [9, 1, 7, 9]
+Line sum: 99
+Line: 9onethree9fivexrszjfxcrjdbskdmn
+Numbers: [9, 1, 3, 9, 5]
+Line sum: 95
+Line: cjtnzpfourxspsjvmrbqclkzkdftc8pdfbfxjnvflgfkqctvcsc
+Numbers: [4, 8]
+Line sum: 48
+Line: 5seventkqrdpmrrchxfournczqzlqqm7p
+Numbers: [5, 7, 4, 7]
+Line sum: 57
+Line: nhpbdxgzzjltdftqc5fivelgvjshonervrxmgscvhnnfl
+Numbers: [5, 5, 1]
+Line sum: 51
+Line: 2gcqpdcgjv
+Numbers: [2]
+Line sum: 22
+Line: bqhzdzxb54
+Numbers: [5, 4]
+Line sum: 54
+Line: nsmxljkjcmnmxvcrj7threegcrjs7
+Numbers: [7, 3, 7]
+Line sum: 77
+Line: 2cninev1eightdjcztnrk
+Numbers: [2, 9, 1, 8]
+Line sum: 28
+Line: cmjskeightmjfrlfhm22fivetzmfive
+Numbers: [8, 2, 2, 5, 5]
+Line sum: 85
+Line: 8ndsix
+Numbers: [8, 6]
+Line sum: 86
+Line: nzrgmlcrg5r4eighthfxm4
+Numbers: [5, 4, 8, 4]
+Line sum: 54
+Line: threeptlf3x4
+Numbers: [3, 3, 4]
+Line sum: 34
+Line: 3bhd
+Numbers: [3]
+Line sum: 33
+Line: cbmzrtglngmghmonezdqnhxxd1ctpghbfzqfivefour8
+Numbers: [1, 1, 5, 4, 8]
+Line sum: 18
+Line: eightpdzftbdlcrtwonine29bcgxflmf
+Numbers: [8, 2, 9, 2, 9]
+Line sum: 89
+Line: 69crzsmjfivecxcqtffoursix4two
+Numbers: [6, 9, 5, 4, 6, 4, 2]
+Line sum: 62
+Line: 92zghnv
+Numbers: [9, 2]
+Line sum: 92
+Line: fivejmdxvnf1
+Numbers: [5, 1]
+Line sum: 51
+Line: 1ntvtnrjmeight1onegckvcnsjnthree
+Numbers: [1, 8, 1, 1, 3]
+Line sum: 13
+Line: ncxgppbsnhsfnhlonelfbxqzsgfjj8
+Numbers: [1, 8]
+Line sum: 18
+Line: eightfhjbrlzxcgtls42sixtjk7two
+Numbers: [8, 4, 2, 6, 7, 2]
+Line sum: 82
+Line: czrtnfzjnjhxdxtbgtmntkcpninejtzrprsstm4eight2
+Numbers: [9, 4, 8, 2]
+Line sum: 92
+Line: 483nine
+Numbers: [4, 8, 3, 9]
+Line sum: 49
+Line: onecnxpmhjjcvdtzc71seven
+Numbers: [1, 7, 1, 7]
+Line sum: 17
+Line: 5l15
+Numbers: [5, 1, 5]
+Line sum: 55
+Line: 19jmkmrxbdbtz4shpdgmmhzrxtbftpgrj3plvlqdvnr
+Numbers: [1, 9, 4, 3]
+Line sum: 13
+Line: two4two
+Numbers: [2, 4, 2]
+Line sum: 22
+Line: kqgtjstcpnhf8
+Numbers: [8]
+Line sum: 88
+Line: sn6
+Numbers: [6]
+Line sum: 66
+Line: grtgjxgqhv2fourbjmfnb
+Numbers: [2, 4]
+Line sum: 24
+Line: bfmtkqfcp5hks74fivesevenbgvgzr
+Numbers: [5, 7, 4, 5, 7]
+Line sum: 57
+Line: peightwoninef2ninejmlhndvjd92
+Numbers: [8, 9, 2, 9, 9, 2]
+Line sum: 82
+Line: 1qxm
+Numbers: [1]
+Line sum: 11
+Line: 2drkgnvghqrjtfxrvnthreesevenpzzldp
+Numbers: [2, 3, 7]
+Line sum: 27
+Line: four4zcmmzgbzc
+Numbers: [4, 4]
+Line sum: 44
+Line: 4nfbpctgmx
+Numbers: [4]
+Line sum: 44
+Line: 3threemfbgthree19sixone8
+Numbers: [3, 3, 3, 1, 9, 6, 1, 8]
+Line sum: 38
+Line: ggc1gldjhxsgvq
+Numbers: [1]
+Line sum: 11
+Line: 1four4seven824nineeight
+Numbers: [1, 4, 4, 7, 8, 2, 4, 9, 8]
+Line sum: 18
+Line: ninefour6one5ninetwo
+Numbers: [9, 4, 6, 1, 5, 9, 2]
+Line sum: 92
+Line: bpjs8rjdxpm
+Numbers: [8]
+Line sum: 88
+Line: zggcvkzeight7onejgkhpsrdkfvfx5three
+Numbers: [8, 7, 1, 5, 3]
+Line sum: 83
+Line: 7h7lpjzsdv4six1
+Numbers: [7, 7, 4, 6, 1]
+Line sum: 71
+Line: 6seven9one4
+Numbers: [6, 7, 9, 1, 4]
+Line sum: 64
+Line: sixfour6
+Numbers: [6, 4, 6]
+Line sum: 66
+Line: 4hkddrmgfp
+Numbers: [4]
+Line sum: 44
+Line: 43ninecrtoneseven2qbhkkbzdltfour
+Numbers: [4, 3, 9, 1, 7, 2, 4]
+Line sum: 44
+Line: 85
+Numbers: [8, 5]
+Line sum: 85
+Line: hlfive3dqzdvjkdd
+Numbers: [5, 3]
+Line sum: 53
+Line: 5chpcxbjkrdzbjtwofivethreem
+Numbers: [5, 2, 5, 3]
+Line sum: 53
+Line: 6ninenineonefour
+Numbers: [6, 9, 9, 1, 4]
+Line sum: 64
+Line: 5five8twoonesf2
+Numbers: [5, 5, 8, 2, 1, 2]
+Line sum: 52
+Line: four1seven5pbbjgmxgxmvfzjtvr6vttbnd
+Numbers: [4, 1, 7, 5, 6]
+Line sum: 46
+Line: zzkcpcckmsixeightnine4
+Numbers: [6, 8, 9, 4]
+Line sum: 64
+Line: 9xxzzvcsg45one
+Numbers: [9, 4, 5, 1]
+Line sum: 91
+Line: xmd3ninerxllskrl
+Numbers: [3, 9]
+Line sum: 39
+Line: xxj2onesixfive3six
+Numbers: [2, 1, 6, 5, 3, 6]
+Line sum: 26
+Line: threeseven8
+Numbers: [3, 7, 8]
+Line sum: 38
+Line: one43
+Numbers: [1, 4, 3]
+Line sum: 13
+Line: 1sixthreelcbcfgbone3bzgrl5
+Numbers: [1, 6, 3, 1, 3, 5]
+Line sum: 15
+Line: four12535three5
+Numbers: [4, 1, 2, 5, 3, 5, 3, 5]
+Line sum: 45
+Line: jztxrtwo8495
+Numbers: [2, 8, 4, 9, 5]
+Line sum: 25
+Line: threeqhsvcvzfnsevenfourtwothreeffrz9
+Numbers: [3, 7, 4, 2, 3, 9]
+Line sum: 39
+Line: onevqlxcz461five4fthree
+Numbers: [1, 4, 6, 1, 5, 4, 3]
+Line sum: 13
+Line: znine5
+Numbers: [9, 5]
+Line sum: 95
+Line: cch5ptlbcbh2ngnlqnrdsjv6mfhndf2
+Numbers: [5, 2, 6, 2]
+Line sum: 52
+Line: threehblbzlddttzkrsl51eightzrj
+Numbers: [3, 5, 1, 8]
+Line sum: 38
+Line: 68pgmnbz7seven
+Numbers: [6, 8, 7, 7]
+Line sum: 67
+Line: twotfhcgltpp1ntpcvrmkgd998
+Numbers: [2, 1, 9, 9, 8]
+Line sum: 28
+Line: seven3fourfive7eightsevendlqqseven
+Numbers: [7, 3, 4, 5, 7, 8, 7, 7]
+Line sum: 77
+Line: jqtcrf43zkktbqhsevendljgb5two
+Numbers: [4, 3, 7, 5, 2]
+Line sum: 42
+Line: 3one5threethree
+Numbers: [3, 1, 5, 3, 3]
+Line sum: 33
+Line: vvpjcnine9seventhreeninebtzmr
+Numbers: [9, 9, 7, 3, 9]
+Line sum: 99
+Line: jfourp7twoseven32
+Numbers: [4, 7, 2, 7, 3, 2]
+Line sum: 42
+Line: 2prjqnineninevjlmqkrkdxv
+Numbers: [2, 9, 9]
+Line sum: 29
+Line: 67six1oneddp9
+Numbers: [6, 7, 6, 1, 1, 9]
+Line sum: 69
+Line: tcbcttxninenine21hrmphqrjkvtnfgchjnb3
+Numbers: [9, 9, 2, 1, 3]
+Line sum: 93
+Line: sg1six5sevennineone
+Numbers: [1, 6, 5, 7, 9, 1]
+Line sum: 11
+Line: ninet7jkrzxtmmz
+Numbers: [9, 7]
+Line sum: 97
+Line: ninesixtslvqck9
+Numbers: [9, 6, 9]
+Line sum: 99
+Line: dnhsp9sevenrrsjdn
+Numbers: [9, 7]
+Line sum: 97
+Line: onekqkvb7
+Numbers: [1, 7]
+Line sum: 17
+Line: 2sfflskftk
+Numbers: [2]
+Line sum: 22
+Line: 79four
+Numbers: [7, 9, 4]
+Line sum: 74
+Line: jnngdkghtwo1two
+Numbers: [2, 1, 2]
+Line sum: 22
+Line: fptfourseven4hjvkz3onesix
+Numbers: [4, 7, 4, 3, 1, 6]
+Line sum: 46
+Line: tzhtsgkcp8
+Numbers: [8]
+Line sum: 88
+Line: 9n
+Numbers: [9]
+Line sum: 99
+Line: six4294seven8
+Numbers: [6, 4, 2, 9, 4, 7, 8]
+Line sum: 68
+Line: seveneight74five1
+Numbers: [7, 8, 7, 4, 5, 1]
+Line sum: 71
+Line: kfghjdssttgrfour2two5three1nine
+Numbers: [4, 2, 2, 5, 3, 1, 9]
+Line sum: 49
+Line: 5gkhgsixvlpcdmpgbjkqtjlthreetwo3one
+Numbers: [5, 6, 3, 2, 3, 1]
+Line sum: 51
+Line: sevenfour1tfxzgsnldk1fiveqg
+Numbers: [7, 4, 1, 1, 5]
+Line sum: 75
+Line: 187qhhqlrjx
+Numbers: [1, 8, 7]
+Line sum: 17
+Line: 2lthreethreexthjqcsix
+Numbers: [2, 3, 3, 6]
+Line sum: 26
+Line: cgpxkxgkmcpdzhtpc363
+Numbers: [3, 6, 3]
+Line sum: 33
+Line: sixbtkvqt3
+Numbers: [6, 3]
+Line sum: 63
+Line: 4twotwoqqmtb7dczgqrtsixseven
+Numbers: [4, 2, 2, 7, 6, 7]
+Line sum: 47
+Line: seventwo7z9fzgjkl5fjndrznc
+Numbers: [7, 2, 7, 9, 5]
+Line sum: 75
+Line: qsgfnjqsghtwoninethree8lppsthree
+Numbers: [2, 9, 3, 8, 3]
+Line sum: 23
+Line: threesevenkdzzvzbl2foursxrlq4sevensix
+Numbers: [3, 7, 2, 4, 4, 7, 6]
+Line sum: 36
+Line: seven8bjbmcnhrcp3one
+Numbers: [7, 8, 3, 1]
+Line sum: 71
+Line: gg531
+Numbers: [5, 3, 1]
+Line sum: 51
+Line: one8sfvzplxlknine54
+Numbers: [1, 8, 9, 5, 4]
+Line sum: 14
+Line: dlxeightwo48fourthreeninethreeeight
+Numbers: [8, 4, 8, 4, 3, 9, 3, 8]
+Line sum: 88
+Line: sixxlglqsjtmqmgcnfvpljsevenqlgllg6
+Numbers: [6, 7, 6]
+Line sum: 66
+Line: tszncfour7one
+Numbers: [4, 7, 1]
+Line sum: 41
+Line: three54three4
+Numbers: [3, 5, 4, 3, 4]
+Line sum: 34
+Line: qkjxzcdmxqvjngmrkpmleight83
+Numbers: [8, 8, 3]
+Line sum: 83
+Line: 5twoksv49
+Numbers: [5, 2, 4, 9]
+Line sum: 59
+Line: 7six58sseven87two
+Numbers: [7, 6, 5, 8, 7, 8, 7, 2]
+Line sum: 72
+Line: fourseven6ndsgfjv8
+Numbers: [4, 7, 6, 8]
+Line sum: 48
+Line: ppmclkxhpjpqrjoneeight8two
+Numbers: [1, 8, 8, 2]
+Line sum: 12
+Line: 538
+Numbers: [5, 3, 8]
+Line sum: 58
+Line: sixlhsixfive5
+Numbers: [6, 6, 5, 5]
+Line sum: 65
+Line: twosevenb3f2twonebpb
+Numbers: [2, 7, 3, 2, 2]
+Line sum: 22
+Line: lxqbgl55fgzfmvtpgjbxxgffsixlkxlbvmjkkslqpkq5
+Numbers: [5, 5, 6, 5]
+Line sum: 55
+Line: 7ptnpseven6one
+Numbers: [7, 7, 6, 1]
+Line sum: 71
+Line: 3mtlbfc6tx46five
+Numbers: [3, 6, 4, 6, 5]
+Line sum: 35
+Line: 99pgdmnrbjv
+Numbers: [9, 9]
+Line sum: 99
+Line: 7twokvzlvptxcrfbfzqsxsqvxtfkcpkczkr9fjxsr
+Numbers: [7, 2, 9]
+Line sum: 79
+Line: eight82lfivenine
+Numbers: [8, 8, 2, 5, 9]
+Line sum: 89
+Line: onetwo2jvqdhkktbeight
+Numbers: [1, 2, 2, 8]
+Line sum: 18
+Line: 8zhxksgcc79one
+Numbers: [8, 7, 9, 1]
+Line sum: 81
+Line: knqqz4
+Numbers: [4]
+Line sum: 44
+Line: 36twofour
+Numbers: [3, 6, 2, 4]
+Line sum: 34
+Line: 2gdssixtnineeight2
+Numbers: [2, 6, 9, 8, 2]
+Line sum: 22
+Line: foursix4
+Numbers: [4, 6, 4]
+Line sum: 44
+Line: 49hjbscbjvbckhjmjrdbh3one
+Numbers: [4, 9, 3, 1]
+Line sum: 41
+Line: fivesixdqpnv2
+Numbers: [5, 6, 2]
+Line sum: 52
+Line: 7ftwo
+Numbers: [7, 2]
+Line sum: 72
+Line: fourffhffkphssbxzsgeight68dvhgrb
+Numbers: [4, 8, 6, 8]
+Line sum: 48
+Line: two8sevenfive1
+Numbers: [2, 8, 7, 5, 1]
+Line sum: 21
+Line: dggljb5nvhpspbscfhd21
+Numbers: [5, 2, 1]
+Line sum: 51
+Line: twokeightthreeone6lqglrseven
+Numbers: [2, 8, 3, 1, 6, 7]
+Line sum: 27
+Line: cklfcsqgtwohptslmlgdpjktvvbbx3
+Numbers: [2, 3]
+Line sum: 23
+Line: two3sixthreesevennine
+Numbers: [2, 3, 6, 3, 7, 9]
+Line sum: 29
+Line: 7ninepnclmdnv7ninevmqoneightpct
+Numbers: [7, 9, 7, 9, 1]
+Line sum: 71
+Line: czzbhfhhrfonetwo1ttvpgxkgsonektpnfrptjltklj4
+Numbers: [1, 2, 1, 1, 4]
+Line sum: 14
+Line: 7sixthree1five45
+Numbers: [7, 6, 3, 1, 5, 4, 5]
+Line sum: 75
+Line: btwone3fivelfzmfxsr81oneqhkzjvt
+Numbers: [2, 3, 5, 8, 1, 1]
+Line sum: 21
+Line: 5kmrlbvpcdrfivefourfive3
+Numbers: [5, 5, 4, 5, 3]
+Line sum: 53
+Line: 9fsl3nine12
+Numbers: [9, 3, 9, 1, 2]
+Line sum: 92
+Line: 1seven1seventwofivetwosix
+Numbers: [1, 7, 1, 7, 2, 5, 2, 6]
+Line sum: 16
+Line: sixzdeight9fcpzvsbtz85
+Numbers: [6, 8, 9, 8, 5]
+Line sum: 65
+Line: n1jmxjvgfiveone
+Numbers: [1, 5, 1]
+Line sum: 11
+Line: 1qsptpfbqtrl19three
+Numbers: [1, 1, 9, 3]
+Line sum: 13
+Line: 5twoeight3grrksgjdkgn
+Numbers: [5, 2, 8, 3]
+Line sum: 53
+Line: 1dq4sjknrp755
+Numbers: [1, 4, 7, 5, 5]
+Line sum: 15
+Line: 2three2five
+Numbers: [2, 3, 2, 5]
+Line sum: 25
+Line: txktfive2ngqfl57
+Numbers: [5, 2, 5, 7]
+Line sum: 57
+Line: vnrjvh1qpbbzqlgjpgrsgrqgggthreeone
+Numbers: [1, 3, 1]
+Line sum: 11
+Line: sevenone8srlxqqlvv
+Numbers: [7, 1, 8]
+Line sum: 78
+Line: eightsbfivefourfourseven6
+Numbers: [8, 5, 4, 4, 7, 6]
+Line sum: 86
+Line: 853
+Numbers: [8, 5, 3]
+Line sum: 83
+Line: eight53b3sxfvnz7
+Numbers: [8, 5, 3, 3, 7]
+Line sum: 87
+Line: qbhrhkhcbnsfivenszghnbhsix2ggvv
+Numbers: [5, 6, 2]
+Line sum: 52
+Line: two28three9
+Numbers: [2, 2, 8, 3, 9]
+Line sum: 29
+Line: rltzcpbqxfive1nineone
+Numbers: [5, 1, 9, 1]
+Line sum: 51
+Line: 5threedcfspjkm62seven8
+Numbers: [5, 3, 6, 2, 7, 8]
+Line sum: 58
+Line: tlndznhtthree268
+Numbers: [3, 2, 6, 8]
+Line sum: 38
+Line: ndfgfkphmn2sixjxxtlbqlnine
+Numbers: [2, 6, 9]
+Line sum: 29
+Line: 51eight682fivepnine
+Numbers: [5, 1, 8, 6, 8, 2, 5, 9]
+Line sum: 59
+Line: dqvrvthreesixsix2fivenrjeight
+Numbers: [3, 6, 6, 2, 5, 8]
+Line sum: 38
+Line: seven69
+Numbers: [7, 6, 9]
+Line sum: 79
+Line: 4qlkktltwo8tqgxcninefour21
+Numbers: [4, 2, 8, 9, 4, 2, 1]
+Line sum: 41
+Line: threefour32j
+Numbers: [3, 4, 3, 2]
+Line sum: 32
+Line: 4nine27ngxp8
+Numbers: [4, 9, 2, 7, 8]
+Line sum: 48
+Line: seven5ghxkb8
+Numbers: [7, 5, 8]
+Line sum: 78
+Line: nineone56
+Numbers: [9, 1, 5, 6]
+Line sum: 96
+Line: two8onezonesctsttzt5
+Numbers: [2, 8, 1, 1, 5]
+Line sum: 25
+Line: 64km6ttncd
+Numbers: [6, 4, 6]
+Line sum: 66
+Line: three6six6
+Numbers: [3, 6, 6, 6]
+Line sum: 36
+Line: threetwoeight7six7jgmhreightwocl
+Numbers: [3, 2, 8, 7, 6, 7, 8]
+Line sum: 38
+Line: 3sixfivehjgvqjlrsfivesix6
+Numbers: [3, 6, 5, 5, 6, 6]
+Line sum: 36
+Line: fiveeight3sppjtccnineeighteightnffgtlsdj
+Numbers: [5, 8, 3, 9, 8, 8]
+Line sum: 58
+Line: 12seven9fbqxhs9jgh4five
+Numbers: [1, 2, 7, 9, 9, 4, 5]
+Line sum: 15
+Line: 7dmbqrqsnckxtpt
+Numbers: [7]
+Line sum: 77
+Line: ktvlgfzt95lfdvf4lbppfccjcprdpkdj
+Numbers: [9, 5, 4]
+Line sum: 94
+Line: seven65lrjmmqdfjfourtslnhdh5
+Numbers: [7, 6, 5, 4, 5]
+Line sum: 75
+Line: sblgrkqccmpqhfksmg5532
+Numbers: [5, 5, 3, 2]
+Line sum: 52
+Line: rgqzkmmv4ctgzcgvqdghmvfour3
+Numbers: [4, 4, 3]
+Line sum: 43
+Line: 24rtxdxqnbvdnkgtgcbfkfbtwo
+Numbers: [2, 4, 2]
+Line sum: 22
+Line: 63seven78hrdnnsh
+Numbers: [6, 3, 7, 7, 8]
+Line sum: 68
+Line: eighttpj79
+Numbers: [8, 7, 9]
+Line sum: 89
+Line: foursix6
+Numbers: [4, 6, 6]
+Line sum: 46
+Line: 6czcdgdmrmzcdcfmsixfkdnbdsplcscqh27
+Numbers: [6, 6, 2, 7]
+Line sum: 67
+Line: 3333dgrd
+Numbers: [3, 3, 3, 3]
+Line sum: 33
+Line: 8threeltfpfz3
+Numbers: [8, 3, 3]
+Line sum: 83
+Line: xgxddj3qkcnbbbhtvbzkmvh8
+Numbers: [3, 8]
+Line sum: 38
+Line: s2pzqkldrcx43xzmxqvspm
+Numbers: [2, 4, 3]
+Line sum: 23
+Line: eight1gkvlt24twothree19
+Numbers: [8, 1, 2, 4, 2, 3, 1, 9]
+Line sum: 89
+Line: lkrzltxknd5fmjgbds2klkfgcgp3xcbxxpnl9hzfbfclrx
+Numbers: [5, 2, 3, 9]
+Line sum: 59
+Line: 2zhn73
+Numbers: [2, 7, 3]
+Line sum: 23
+Line: sixone4eightninelthreeeight
+Numbers: [6, 1, 4, 8, 9, 3, 8]
+Line sum: 68
+Line: seven8vlqqfjfmltwosevenfivetwo
+Numbers: [7, 8, 2, 7, 5, 2]
+Line sum: 72
+Line: spfkzfmssfjrsevennine8ltlrnrjbcfive8
+Numbers: [7, 9, 8, 5, 8]
+Line sum: 78
+Line: 1spbthreeshsgmrbcp
+Numbers: [1, 3]
+Line sum: 13
+Line: ninefive7cnxznfmcp6nine
+Numbers: [9, 5, 7, 6, 9]
+Line sum: 99
+Line: eight4one9x3nine
+Numbers: [8, 4, 1, 9, 3, 9]
+Line sum: 89
+Line: eightnine4kgxhxx1ckrqlrn
+Numbers: [8, 9, 4, 1]
+Line sum: 81
+Line: 6sevenkjmfxrbhck
+Numbers: [6, 7]
+Line sum: 67
+Line: jsgtwonefvmcdsnqfp4fivefivesevenhkbkqcb1vgkshfnxfc
+Numbers: [2, 4, 5, 5, 7, 1]
+Line sum: 21
+Line: eightcvzmtlvsm49
+Numbers: [8, 4, 9]
+Line sum: 89
+Line: 78four
+Numbers: [7, 8, 4]
+Line sum: 74
+Line: threeoneninecjzs75
+Numbers: [3, 1, 9, 7, 5]
+Line sum: 35
+Line: xrxrsrh58
+Numbers: [5, 8]
+Line sum: 58
+Line: 1zqkhcvoneseventwohbrfbqgvp
+Numbers: [1, 1, 7, 2]
+Line sum: 12
+Line: 9zfznrfvtgjfhsk
+Numbers: [9]
+Line sum: 99
+Line: v5jcblbstnvxk
+Numbers: [5]
+Line sum: 55
+Line: 6s1
+Numbers: [6, 1]
+Line sum: 61
+Line: 6three1seven
+Numbers: [6, 3, 1, 7]
+Line sum: 67
+Line: 75xpmzmhqqphgtrblhkcdxczcvbmg
+Numbers: [7, 5]
+Line sum: 75
+Line: 2rqv989fourthreefourone
+Numbers: [2, 9, 8, 9, 4, 3, 4, 1]
+Line sum: 21
+Line: zmghjgrfqlzpdcqq9fjnkbl7btgf
+Numbers: [9, 7]
+Line sum: 97
+Line: 2three3qvbfbn
+Numbers: [2, 3, 3]
+Line sum: 23
+Line: fivehnklrqktnqqlqfslfjpfpfx9six
+Numbers: [5, 9, 6]
+Line sum: 56
+Line: 3xvskqbjzrlonetwo
+Numbers: [3, 1, 2]
+Line sum: 32
+Line: 95fx6sevenseven3grfncsdttt
+Numbers: [9, 5, 6, 7, 7, 3]
+Line sum: 93
+Line: two8twoklgnrm
+Numbers: [2, 8, 2]
+Line sum: 22
+Line: two9seven6eight
+Numbers: [2, 9, 7, 6, 8]
+Line sum: 28
+Line: 7lh2sevenshfvljtphhnbhvkzxxgjjrvlq7
+Numbers: [7, 2, 7, 7]
+Line sum: 77
+Line: ninemdgkndsevensevensix4seven
+Numbers: [9, 7, 7, 6, 4, 7]
+Line sum: 97
+Line: 4three6eight1lkdmtbh
+Numbers: [4, 3, 6, 8, 1]
+Line sum: 41
+Line: 7rdpvbqljvnine82pmqclfive
+Numbers: [7, 9, 8, 2, 5]
+Line sum: 75
+Line: nine6nine7seven6
+Numbers: [9, 6, 9, 7, 7, 6]
+Line sum: 96
+Line: 54rvpqphbpxmcfjmcspsnhrjp
+Numbers: [5, 4]
+Line sum: 54
+Line: eightn2skzmpmtgqhvvfxgqonevtbfsmfklzspxdrgj
+Numbers: [8, 2, 1]
+Line sum: 81
+Line: nine276rzshsrvncjrdzfxbmzzlvkhdlcc
+Numbers: [9, 2, 7, 6]
+Line sum: 96
+Line: sevenfivexgznfftgthree44
+Numbers: [7, 5, 3, 4, 4]
+Line sum: 74
+Line: fivekltdkmm3rdmdnm32nineddsfdzpks
+Numbers: [5, 3, 3, 2, 9]
+Line sum: 59
+Sum: 55607
