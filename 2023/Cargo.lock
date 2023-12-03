@@ -16,6 +16,7 @@ name = "aoc_2023"
 version = "0.0.1"
 dependencies = [
  "day1",
+ "day2",
 ]
 
 [[package]]
@@ -24,6 +25,13 @@ version = "0.1.0"
 dependencies = [
  "either",
  "regex",
+]
+
+[[package]]
+name = "day2"
+version = "0.1.0"
+dependencies = [
+ "either",
 ]
 
 [[package]]
