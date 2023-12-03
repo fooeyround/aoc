@@ -1,145 +1,128 @@
+use regex::Regex;
+use std::{
+    collections::HashMap,
+    io::{self, BufRead}, ops::Index, vec, path::Iter,
+};
+use either::{self, Either};
 
-use std::{io::{self, BufRead}, ops::Index, collections::{hash_map, HashMap}};
-use regex::Regex; // I wish I used regex instead. would be very clean.
+
+
+fn reverse_itr<'a, Container: DoubleEndedIterator<Item=T> + , T>(into_itr: Container, reverse: bool) -> Either<std::iter::Rev<<Container as IntoIterator>::IntoIter>, <Container as IntoIterator>::IntoIter>  {
+    let mut itr = into_itr.into_iter();
+    if reverse { 
+        Either::Left(itr.rev()) 
+    }
+    else { 
+        Either::Right(itr) 
+    }
+}
+
 
 pub fn run() {
     let stdin = io::stdin();
-    let lines_in: Vec<String> = stdin.lock().lines().map( |v| { 
-        match v {
-            Ok(val) => {
-                val
-            },
+    let lines_in: Vec<String> = stdin
+        .lock()
+        .lines()
+        .map(|v| match v {
+            Ok(val) => val,
             Err(e) => {
                 println!("Error reading line from standard in! {}", e);
                 String::from("")
-            },
-        }
-    }).collect();
-    part_one_and_two(lines_in, true);
-    //Entry point to the day's code
-    
+            }
+        })
+        .collect();
 
+
+
+    part_one(lines_in.clone());
+    part_two(lines_in);
+    //Entry point to the day's code
+}
+
+
+
+fn part_one(lines_in: Vec<String>) {
+    let sum_part_one: u32 = lines_in.iter().map( | line | {
+
+        (match line.chars().find(|x| {x.is_digit(10)}) {
+            Some(value) => {
+                value.to_digit(10).unwrap()
+            }
+            None => { 0 },
+        }) + (match line.chars().rev().find(|x: &char| { x.is_digit(10)} ) {
+            Some(value) => {
+                value.to_digit(10).unwrap()
+            },
+            None => { 0 },
+        })
+    }).sum();
+
+}
+
+
+
+
+
+
+fn find_first_occurences(line: &String, reverse: bool) -> u32 {
+    const NUMBERS: [&str; 9] = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+   
+
+
+   
+
+    for (i, c) in reverse_itr(line.chars(), reverse).enumerate() {
+        if let Some(num) = c.to_digit(10) {
+            println!("Found number {} at index {}", num, i);
+            return num;
+        } else if let Some(str_value) = NUMBERS.iter().enumerate()
+        .find(|x| { reverse_itr(line.chars(), reverse)
+            .skip(i).take(x.1.len()).eq(reverse_itr(x.1.chars(), reverse)) }) {
+            println!("Found string: {} & {}", str_value.0, str_value.1);
+            return str_value.0 as u32 + 1;
+        }
+    }
+
+
+    return 0;
 
 }
 
 
 //Mostly 2 now
-fn part_one_and_two(lines_in: Vec<String>, replace_text: bool) {
-    //Part 1 of the day's challenge
-
-    let mut sum: u32 = 0;
+fn part_two(lines_in: Vec<String>) {
 
 
-    //for part 2
-    let num_types: HashMap<String, String> = [
-        ("one", "1"),
-        ("two", "2"),
-        ("three", "3"),
-        ("four", "4"),
-        ("five", "5"),
-        ("six", "6"),
-        ("seven", "7"),
-        ("eight", "8"),
-        ("nine", "9"),
-    ].iter().cloned().map( | (k, v) | { (k.to_string(), v.to_string()) }).collect();
 
-
-    for line in lines_in {
-
+    println!("Part two: {}", lines_in.iter().map(|line| {
         println!("Line: {}", line);
-        
-        //each line
 
-        //if it is part 2, replace the text with the numbers
+        println!("First occurence: {}", find_first_occurences(line, false));
+        println!("Second occurence: {}", find_first_occurences(line, true));
 
-
-        let replaced_text: String = match replace_text {
-            true => {
-
-
-
-                let mut line_vec: Vec<char> = line.clone().chars().collect();
-
-            
-                'outer: for i in 0..line_vec.len() {
-                    if i >= line_vec.len() || line_vec[i].is_digit(10) {
-                        continue;
-                    }
-
-                    'inner: for num_type in num_types.iter() {
-   
-                        let str_as_char: Vec<char> = num_type.0.chars().collect();
-            
-                        if line_vec[i..].starts_with(str_as_char.as_slice()) {
-                            for itr in i..(num_type.0.len() + i) {
-                                if itr < line_vec.len() {
-                                    line_vec[itr] = ' ';
-                                    
-                                }
-                            }
-                           
-        
-                            //Was the ' ' char.
-                            line_vec.remove(i);
-                            line_vec.insert(i, num_type.1.chars().last().unwrap());
-                            continue 'outer;
-                        }
-                    }
-
-                }
-
-              
-                line_vec.iter().collect::<String>()
-                
-
-            },
-            false => line.clone(),
-        };
-       
+        find_first_occurences(line, false) * 10 
+        +
+        find_first_occurences(line, true)
+    }).sum::<u32>());
 
 
-
-
-
-        let mut nums: Vec<u8> = Vec::new();
-        for chr in replaced_text.chars() {
-            if chr.is_digit(10) {
-                nums.push(chr.to_digit(10).unwrap() as u8);
-            }
-        }
-
-        println!("Numbers: {:?}", nums);
-
-        if nums.len() == 0 {
-            println!("No numbers found in line!");
-            continue;
-        }
-        let line_sum = (nums[0] as u32) * 10 + (nums[nums.len() - 1] as u32);
-        sum += line_sum;
-
-        println!("Line sum: {}", line_sum);
-
-
-    }
-    println!("Sum: {}", sum);
-    
 }
-
 
 #[test]
 fn test_part_one_and_two() {
     let vec_of = vec![
-        "one23nineight".to_string(),
-        "twothree46f".to_string(),
-        "threetwo4forme".to_string(),
-        "four".to_string(),
-        "five".to_string(),
-        "six".to_string(),
-        "sevenine".to_string(),
-        "eight".to_string(),
-        "eightnine".to_string(),
-        "nineight".to_string(),
+        "two1nine".to_string(),
+        "eightwothree".to_string(),
+        "abcone2threexyz".to_string(),
+        "xtwone3four".to_string(),
+        "4nineeightseven2".to_string(),
+        "zoneight234".to_string(),
+        "7pqrstsixteen".to_string(),
+        // "oneightwoneight".to_string()
+
     ];
-    part_one_and_two(vec_of, true);
+    // part_one_and_two(vec_of, true);
     //assert_eq!(part_one_and_two(&stdin, false), 0);
+
+    part_two(vec_of);
 }
