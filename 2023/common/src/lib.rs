@@ -1,11 +1,5 @@
 use either::{self, Either};
-use std::{
-    collections::HashMap,
-    io::{self, BufRead},
-    ops::Index,
-    path::Iter,
-    vec,
-};
+use std::io::{self, BufRead};
 
 pub fn reverse_itr<'a, Container: DoubleEndedIterator<Item = T>, T>(
     into_itr: Container,
@@ -14,7 +8,7 @@ pub fn reverse_itr<'a, Container: DoubleEndedIterator<Item = T>, T>(
     std::iter::Rev<<Container as IntoIterator>::IntoIter>,
     <Container as IntoIterator>::IntoIter,
 > {
-    let mut itr = into_itr.into_iter();
+    let itr = into_itr.into_iter();
     if reverse {
         Either::Left(itr.rev())
     } else {
