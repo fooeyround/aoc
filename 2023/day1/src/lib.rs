@@ -1,128 +1,128 @@
+use either::{self, Either};
 use regex::Regex;
 use std::{
     collections::HashMap,
-    io::{self, BufRead}, ops::Index, vec, path::Iter,
+    io::{self, BufRead},
+    ops::Index,
+    path::Iter,
+    vec,
 };
-use either::{self, Either};
 
+const NUMBERS: [&str; 9] = [
+    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+];
 
-
-fn reverse_itr<'a, Container: DoubleEndedIterator<Item=T> + , T>(into_itr: Container, reverse: bool) -> Either<std::iter::Rev<<Container as IntoIterator>::IntoIter>, <Container as IntoIterator>::IntoIter>  {
+fn reverse_itr<'a, Container: DoubleEndedIterator<Item = T>, T>(
+    into_itr: Container,
+    reverse: bool,
+) -> Either<
+    std::iter::Rev<<Container as IntoIterator>::IntoIter>,
+    <Container as IntoIterator>::IntoIter,
+> {
     let mut itr = into_itr.into_iter();
-    if reverse { 
-        Either::Left(itr.rev()) 
-    }
-    else { 
-        Either::Right(itr) 
+    if reverse {
+        Either::Left(itr.rev())
+    } else {
+        Either::Right(itr)
     }
 }
 
+fn get_input() -> Vec<String> {
+    let mut lines_in = Vec::new();
+    let stdin = io::stdin();
+    for line in stdin.lock().lines() {
+        lines_in.push(match line {
+            Ok(ln) => ln,
+            Err(err) => {
+                println!("Error: {}", err);
+                "".to_string()
+            }
+        });
+    }
+    lines_in
+}
 
 pub fn run() {
-    let stdin = io::stdin();
-    let lines_in: Vec<String> = stdin
-        .lock()
-        .lines()
-        .map(|v| match v {
-            Ok(val) => val,
-            Err(e) => {
-                println!("Error reading line from standard in! {}", e);
-                String::from("")
-            }
-        })
-        .collect();
-
-
-
-    part_one(lines_in.clone());
-    part_two(lines_in);
+    part_one(get_input());
+    part_two(get_input());
     //Entry point to the day's code
 }
 
-
-
 fn part_one(lines_in: Vec<String>) {
-    let sum_part_one: u32 = lines_in.iter().map( | line | {
-
-        (match line.chars().find(|x| {x.is_digit(10)}) {
-            Some(value) => {
-                value.to_digit(10).unwrap()
-            }
-            None => { 0 },
-        }) + (match line.chars().rev().find(|x: &char| { x.is_digit(10)} ) {
-            Some(value) => {
-                value.to_digit(10).unwrap()
-            },
-            None => { 0 },
+    let sum_part_one: u32 = lines_in
+        .iter()
+        .map(|line| {
+            (match line.chars().find(|x| x.is_digit(10)) {
+                Some(value) => value.to_digit(10).unwrap(),
+                None => 0,
+            }) + (match line.chars().rev().find(|x: &char| x.is_digit(10)) {
+                Some(value) => value.to_digit(10).unwrap(),
+                None => 0,
+            })
         })
-    }).sum();
-
+        .sum();
 }
 
-
-
-
-
-
-fn find_first_occurences(line: &String, reverse: bool) -> u32 {
-    const NUMBERS: [&str; 9] = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-   
-
-
-   
-
+fn find_first_occurence<const COUNT: usize>(
+    line: &String,
+    list: [&str; COUNT],
+    reverse: bool,
+) -> u32 {
     for (i, c) in reverse_itr(line.chars(), reverse).enumerate() {
         if let Some(num) = c.to_digit(10) {
-            println!("Found number {} at index {}", num, i);
             return num;
-        } else if let Some(str_value) = NUMBERS.iter().enumerate()
-        .find(|x| { reverse_itr(line.chars(), reverse)
-            .skip(i).take(x.1.len()).eq(reverse_itr(x.1.chars(), reverse)) }) {
-            println!("Found string: {} & {}", str_value.0, str_value.1);
+        } else if let Some(str_value) = list.iter().enumerate().find(|x| {
+            reverse_itr(line.chars(), reverse)
+                .skip(i)
+                .take(x.1.len())
+                .eq(reverse_itr(x.1.chars(), reverse))
+        }) {
             return str_value.0 as u32 + 1;
         }
     }
 
-
     return 0;
-
 }
-
 
 //Mostly 2 now
-fn part_two(lines_in: Vec<String>) {
-
-
-
-    println!("Part two: {}", lines_in.iter().map(|line| {
-        println!("Line: {}", line);
-
-        println!("First occurence: {}", find_first_occurences(line, false));
-        println!("Second occurence: {}", find_first_occurences(line, true));
-
-        find_first_occurences(line, false) * 10 
-        +
-        find_first_occurences(line, true)
-    }).sum::<u32>());
-
-
+fn part_two(lines_in: Vec<String>) -> u32 {
+    let value = lines_in
+        .iter()
+        .map(|line| {
+            find_first_occurence(line, NUMBERS, false) * 10
+                + find_first_occurence(line, NUMBERS, true)
+        })
+        .sum::<u32>();
+    #[cfg(debug_assertions)]
+    println!("Part two: {value}");
+    value
 }
 
-#[test]
-fn test_part_one_and_two() {
-    let vec_of = vec![
-        "two1nine".to_string(),
-        "eightwothree".to_string(),
-        "abcone2threexyz".to_string(),
-        "xtwone3four".to_string(),
-        "4nineeightseven2".to_string(),
-        "zoneight234".to_string(),
-        "7pqrstsixteen".to_string(),
-        // "oneightwoneight".to_string()
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    ];
-    // part_one_and_two(vec_of, true);
-    //assert_eq!(part_one_and_two(&stdin, false), 0);
+    #[test]
+    fn test_part_one_and_two() {
+        let test_vec_small = vec![
+            "two1nine".to_string(),
+            "eightwothree".to_string(),
+            "abcone2threexyz".to_string(),
+            "xtwone3four".to_string(),
+            "4nineeightseven2".to_string(),
+            "zoneight234".to_string(),
+            "7pqrstsixteen".to_string(),
+            // "oneightwoneight".to_string()
+        ];
 
-    part_two(vec_of);
+        let time = std::time::Instant::now();
+
+        for _ in 0..1000000 {
+            part_two(test_vec_small.clone());
+        }
+
+        let output = part_two(test_vec_small);
+        println!("{:?}", time.elapsed());
+        assert_eq!(output, 281);
+    }
 }
