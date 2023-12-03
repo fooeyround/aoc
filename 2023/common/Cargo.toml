@@ -1,5 +1,5 @@
 [package]
-name = "day1"
+name = "common"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +7,9 @@ edition = "2021"
 
 [dependencies]
 
-common = { path = "../common" }
+
+
+
+regex = "1.5.4"
+either = "1.9.0"
+

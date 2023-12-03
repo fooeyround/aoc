@@ -1,46 +1,8 @@
-use either::{self, Either};
-use regex::Regex;
-use std::{
-    collections::HashMap,
-    io::{self, BufRead},
-    ops::Index,
-    path::Iter,
-    vec,
-};
+use common::{get_input, reverse_itr};
 
 const NUMBERS: [&str; 9] = [
     "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
 ];
-
-fn reverse_itr<'a, Container: DoubleEndedIterator<Item = T>, T>(
-    into_itr: Container,
-    reverse: bool,
-) -> Either<
-    std::iter::Rev<<Container as IntoIterator>::IntoIter>,
-    <Container as IntoIterator>::IntoIter,
-> {
-    let mut itr = into_itr.into_iter();
-    if reverse {
-        Either::Left(itr.rev())
-    } else {
-        Either::Right(itr)
-    }
-}
-
-fn get_input() -> Vec<String> {
-    let mut lines_in = Vec::new();
-    let stdin = io::stdin();
-    for line in stdin.lock().lines() {
-        lines_in.push(match line {
-            Ok(ln) => ln,
-            Err(err) => {
-                println!("Error: {}", err);
-                "".to_string()
-            }
-        });
-    }
-    lines_in
-}
 
 pub fn run() {
     part_one(get_input());
@@ -94,7 +56,7 @@ fn part_two(lines_in: Vec<String>) -> u32 {
                 + find_first_occurence(line, NUMBERS, true)
         })
         .sum::<u32>();
-    
+
     println!("Part two: {value}");
     value
 }
@@ -131,6 +93,5 @@ mod tests {
         assert_eq!(output, 55614);
 
         //Ten seconds to do 1000 iterations of part two on my machine (with my given input) without printing, seems okay.
-
     }
 }

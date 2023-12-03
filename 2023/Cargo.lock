@@ -17,10 +17,11 @@ version = "0.0.1"
 dependencies = [
  "day1",
  "day2",
+ "day3",
 ]
 
 [[package]]
-name = "day1"
+name = "common"
 version = "0.1.0"
 dependencies = [
  "either",
@@ -28,10 +29,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "day1"
+version = "0.1.0"
+dependencies = [
+ "common",
+]
+
+[[package]]
 name = "day2"
 version = "0.1.0"
 dependencies = [
- "either",
+ "common",
+]
+
+[[package]]
+name = "day3"
+version = "0.1.0"
+dependencies = [
+ "common",
 ]
 
 [[package]]
