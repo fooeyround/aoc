@@ -44,6 +44,7 @@ fn get_input() -> Vec<String> {
 
 pub fn run() {
     part_one(get_input());
+
     part_two(get_input());
     //Entry point to the day's code
 }
@@ -93,7 +94,7 @@ fn part_two(lines_in: Vec<String>) -> u32 {
                 + find_first_occurence(line, NUMBERS, true)
         })
         .sum::<u32>();
-    #[cfg(debug_assertions)]
+    
     println!("Part two: {value}");
     value
 }
@@ -115,14 +116,21 @@ mod tests {
             // "oneightwoneight".to_string()
         ];
 
+        let new_other_test = include_str!("./part_two_input.txt")
+            .split("\n")
+            .map(|x| x.to_string())
+            .collect::<Vec<String>>();
+
         let time = std::time::Instant::now();
 
-        for _ in 0..1000000 {
-            part_two(test_vec_small.clone());
+        for _ in 0..1000 {
+            part_two(new_other_test.clone());
         }
-
-        let output = part_two(test_vec_small);
+        let output = part_two(new_other_test);
         println!("{:?}", time.elapsed());
-        assert_eq!(output, 281);
+        assert_eq!(output, 55614);
+
+        //Ten seconds to do 1000 iterations of part two on my machine (with my given input) without printing, seems okay.
+
     }
 }
