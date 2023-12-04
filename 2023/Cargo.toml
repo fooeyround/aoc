@@ -12,7 +12,7 @@ edition = "2021"
 day1 = { path = "day1" }
 day2 = { path = "day2" }
 day3 = { path = "day3" }
-
+day4 = { path = "day4" }
 
 
 
@@ -22,4 +22,5 @@ members = [
     "day1",
     "day2",
     "day3",
+    "day4",
 ]
