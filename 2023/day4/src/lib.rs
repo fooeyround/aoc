@@ -7,8 +7,97 @@ pub fn run() {
     part_one(input);
 }
 
+
+#[derive(Debug)]
+struct Card {
+    id: u32,
+    wining_numbers: Vec<u32>,
+    given_numbers: Vec<u32>,
+}
+
+#[derive(Clone)]
+struct ProcessedCard {
+    id: u32,
+    winning_count : u32,
+}
+impl ProcessedCard {
+    fn from_card(card: &Card) -> ProcessedCard {
+        let winning_count = card.given_numbers.iter().filter(| num | card.wining_numbers.contains(num)).count() as u32;
+        ProcessedCard {
+            id: card.id,
+            winning_count: winning_count,
+        }
+    }
+}
+
+fn parse_input(input: Vec<String>) -> Vec<Card> {
+
+    let parsed = input.iter().map(| line | {
+        let game_split = line.split(":").collect::<Vec<&str>>();
+
+        let game_id = game_split[0].split_whitespace().collect::<Vec<&str>>()[1].parse::<u32>().unwrap();
+
+        let both_numbers_vec = game_split[1].split("|").collect::<Vec<&str>>();
+
+        
+
+        let wining_numbers = both_numbers_vec[0].split_whitespace().collect::<Vec<&str>>().iter().map(| num | num.parse::<u32>().unwrap()).collect::<Vec<u32>>();
+
+        let given_numbers_raw = both_numbers_vec[1].split_whitespace().collect::<Vec<&str>>().iter().map(| num | num.parse::<u32>().unwrap()).collect::<Vec<u32>>();
+
+        Card {
+            id: game_id,
+            wining_numbers: wining_numbers,
+            given_numbers: given_numbers_raw,
+        }
+        
+    }).collect::<Vec<Card>>();
+
+   parsed
+}
+
 fn part_one(input: Vec<String>) {
     //not yet!
+
+
+    let cards = parse_input(input);
+
+
+    let result: u32 = cards.iter().map( | card | {
+        card.given_numbers.iter().filter(| num | card.wining_numbers.contains(num)).fold(0, | acc, _ | if acc == 0 { 1} else { acc * 2 })
+    }).sum();
+
+
+
+    println!("Part 1: {}", result);
+
+}
+
+fn part_two(input: Vec<String>) {
+   
+   let proccessed_cards = parse_input(input).iter().map(| card | ProcessedCard::from_card(card)).collect::<Vec<ProcessedCard>>();
+
+
+   let mut with_cloned_cards = proccessed_cards.clone();
+   //Calculate clones based on original cards.
+    for card in proccessed_cards.iter() {
+        let mut clones: u32 = 0;
+        for count in proccessed_cards.iter().enumerate().map(| card | (card.1.winning_count)).collect::<Vec<u32>>() {
+            if count == card.winning_count {
+                clones += 1;
+            }
+        }
+
+
+        for _ in 0..clones {
+            with_cloned_cards.push(card.clone());
+        }
+        println!("Card {} has {} clones", card.id, clones);
+    }
+
+
+
+
 }
 
 #[cfg(test)]
@@ -16,7 +105,12 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
+    fn test_part_one() {
+
+        let input = include_str!("test_input.txt").split("\n").map(| line | line.to_string()).collect::<Vec<String>>();
+
+        
+        part_two(input);
 
         //Not yet!
     }
