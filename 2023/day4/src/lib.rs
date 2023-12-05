@@ -23,19 +23,6 @@ struct ProcessedCard {
     winning_count: u32,
 }
 
-struct CardCounter {
-    /// <id, count>
-    map: HashMap<u32, u32>,
-}
-
-impl CardCounter {
-    fn new() -> CardCounter {
-        CardCounter {
-            map: HashMap::new(),
-        }
-    }
-}
-
 impl ProcessedCard {
     fn from_card(card: &Card) -> ProcessedCard {
         let winning_count = card
@@ -45,7 +32,7 @@ impl ProcessedCard {
             .count() as u32;
         ProcessedCard {
             id: card.id,
-            winning_count: winning_count,
+            winning_count,
         }
     }
 }
@@ -88,8 +75,6 @@ fn parse_input(input: &Vec<String>) -> Vec<Card> {
 }
 
 fn part_one(input: &Vec<String>) {
-    //not yet!
-
     let cards = parse_input(input);
 
     let result: u32 = cards
@@ -159,8 +144,6 @@ mod tests {
             .collect::<Vec<String>>();
 
         part_one(&input);
-
-        //Not yet!
     }
 
     #[test]
@@ -171,7 +154,5 @@ mod tests {
             .collect::<Vec<String>>();
 
         part_two(&input);
-
-        //Not yet!
     }
 }
