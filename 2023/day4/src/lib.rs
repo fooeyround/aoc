@@ -26,7 +26,7 @@ struct ProcessedCard {
 
 
 struct CardCounter {
-    /// First is the id, second is the ammount of said id. Use a list of `ProccessedCard`s as a LUT
+    /// <id, count>
     map: HashMap<u32,u32>
 }
 
@@ -92,71 +92,56 @@ fn part_one(input: &Vec<String>) {
 
 }
 
+
+
 fn part_two(input: &Vec<String>) {
    
    let proccessed_cards = parse_input(input).iter().map(| card | ProcessedCard::from_card(card)).collect::<Vec<ProcessedCard>>();
 
 
-   let mut with_cloned_cards = proccessed_cards.clone();
-   //Calculate clones based on original cards.
-    for card in proccessed_cards.iter() {
-        let mut clones: u32 = 0;
-        for count in proccessed_cards.iter().enumerate().map(| card | (card.1.winning_count)).collect::<Vec<u32>>() {
-            if count == card.winning_count {
-                clones += 1;
-            }
-        }
-
-
-        for _ in 0..clones {
-            with_cloned_cards.push(card.clone());
-        }
-    }
 
 
 
-    let original_cards = proccessed_cards.clone();
-    let mut card_counter= CardCounter {
-        map: original_cards.iter().fold(HashMap::new(), |acc, u| {
-            //I know cloning it ever time is horrible... Too lazy though.
-            let mut new_cloned = acc.clone();
-            new_cloned.insert(u.id, u.winning_count);
-            new_cloned
-        })
-    };
-
-
-    let mut current_card_id = 1;
-    loop {
-
-        if card_counter.map.len()-1 < current_card_id {
-            break;
-        }
-
-        let current_card_win_count = card_counter.map.get(&(current_card_id as u32)).unwrap_or(&0);
-
-        for i in current_card_id..(current_card_win_count.clone() as usize + current_card_id) {
-            let before_value = card_counter.map.get(&(i as u32)).unwrap_or(&0);
-            card_counter.map.insert(i as u32, before_value + 1);
-
-        }
+    let mut winning_map: HashMap<u32, u32> = HashMap::new();
+    proccessed_cards.iter().for_each(| card | {
+        winning_map.insert(card.id, card.winning_count);
+    });
 
 
 
+    
+    //id to count
+    let mut card_counter: HashMap<u32, u32> = HashMap::new();
 
+
+    //init the card counter with starting cards. You only start with one of each, even if you win multiple times. there would be multiple card instances.
+    proccessed_cards.iter().for_each(| card | {
+        //deref here does not take form the map right? it passes by value.
+        card_counter.insert(card.id, 1);
+    });
+
+
+    let mut current_card_id = 0;
+    while card_counter.len() > current_card_id {
         current_card_id += 1;
-
-        println!("card_id: {}, car_counter_map_len: {}", current_card_id, card_counter.map.len());
-
-        //do for current card id
+    
 
 
+
+        let card_win_count = winning_map.get(&(current_card_id as u32)).unwrap_or(&0);
+
+        let card_count = card_counter.get(&(current_card_id as u32)).unwrap_or(&0).clone();
+
+
+        for i in (current_card_id+1)..(card_win_count.clone() as usize + current_card_id+1) {
+            let before_value = card_counter.get(&(i as u32)).unwrap_or(&0);
+            card_counter.insert(i as u32, before_value + card_count);
+            
+
+        }
     }
 
- 
-    println!("{:?}", card_counter.map);
-
-    let sum = card_counter.map.iter().fold(0, |acc, num| { acc + num.1});
+    let sum = card_counter.iter().fold(0, |acc, num| { acc + num.1});
 
 
 
@@ -164,6 +149,8 @@ fn part_two(input: &Vec<String>) {
 
 
 }
+
+
 
 #[cfg(test)]
 mod tests {
