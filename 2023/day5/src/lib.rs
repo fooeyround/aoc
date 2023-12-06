@@ -1,5 +1,5 @@
 use itertools::Itertools;
-use std::collections::HashMap;
+use std::{collections::HashMap, ops::SubAssign};
 
 use common::get_input;
 
@@ -26,6 +26,32 @@ fn part_two(input: &Vec<String>) {
     println!("Part 2: {:?}", closest_location);
 }
 
+
+#[derive(Debug, Clone)]
+struct SimpleRange {
+    start: u64,
+    length: u64,
+}
+impl SimpleRange {
+    fn new(start: u64, length: u64) -> SimpleRange {
+        SimpleRange { start, length }
+    }
+
+    fn contains(&self, value: u64) -> bool {
+        self.start <= value && value < self.start + self.length
+    }
+    fn intersection(&self, other_range: &SimpleRange) -> Option<SimpleRange> {
+
+        //If the ranges do not overlap, return None
+        if self.start + self.length < other_range.start || other_range.start + other_range.length < self.start {
+            return None;
+        }
+        let new_start = self.start.max( other_range.start);
+        return Some(SimpleRange::new(new_start, (self.length + self.start).min(other_range.length + other_range.start) - new_start));
+
+    }
+}
+
 #[derive(Debug, Clone)]
 struct RawRangeMap {
     destination_range_start: u64,
@@ -45,24 +71,53 @@ impl RawRangeMap {
             range_length,
         }
     }
-    //(Source, Destination)
-    //If it is not in the map when retrieving it, return that value as the destination.
-    fn to_hashmaps(&self) -> HashMap<u64, u64> {
-        let mut map = HashMap::new();
 
-        // println!("source range start: {}, destination range start: {}, range length: {}", self.source_range_start, self.destination_range_start, self.range_length);
-        // print!("----\n");
-        for i in 0..(self.range_length) {
-            // println!("i: {}; {:?}", i, 0..(self.range_length));
-            map.insert(
-                self.source_range_start + i,
-                self.destination_range_start + i,
-            );
+
+    fn contains(&self, value: u64, reverse: bool) -> bool {
+        if reverse {
+            self.destination_range_start <= value
+                && value < self.destination_range_start + self.range_length
+        } else {
+            self.source_range_start <= value
+                && value < self.source_range_start + self.range_length
         }
-
-        map
     }
+
+    fn intersection(&self) -> Option<SimpleRange> {
+        //If the ranges do not overlap, return None
+        if self.source_range_start + self.range_length < self.destination_range_start
+            || self.destination_range_start + self.range_length < self.source_range_start
+        {
+            return None;
+        }
+        let new_start = self
+            .source_range_start
+            .max(self.destination_range_start);
+        return Some(SimpleRange::new(
+            new_start,
+            (self.source_range_start + self.range_length)
+                .min(self.destination_range_start + self.range_length)
+                - new_start,
+        ));
+    }
+
+    
 }
+
+impl std::ops::Sub for RawRangeMap {
+    type Output = Self;
+     fn sub(self, other: Self) -> Self::Output {
+            RawRangeMap::new(self.destination_range_start - other.destination_range_start, self.source_range_start - other.source_range_start, self.range_length - other.range_length)
+     }
+}
+impl std::ops::Add for RawRangeMap {
+    type Output = Self;
+     fn add(self, other: Self) -> Self::Output {
+            RawRangeMap::new(self.destination_range_start.min(other.destination_range_start), self.source_range_start.min( other.source_range_start), self.range_length.max(other.range_length))
+     }
+}
+
+
 
 ///Returns a new hashmap with the keys and values of the one passed swapped.
 
@@ -164,20 +219,7 @@ fn parse_map_part_one(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
     *closest_seed
 }
 
-#[derive(Debug, Clone)]
-struct SeedRange {
-    start: u64,
-    length: u64,
-}
-impl SeedRange {
-    fn new(start: u64, length: u64) -> SeedRange {
-        SeedRange { start, length }
-    }
 
-    fn contains(&self, value: u64) -> bool {
-        self.start <= value && value < self.start + self.length
-    }
-}
 
 //WRONG!!!
 //Do it right now...
@@ -189,9 +231,9 @@ fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
     let maps = map.1;
     //SeedRange::new(range_input[0], range_input[1])
 
-    let parsed_seed_list: Vec<SeedRange> = seed_list
+    let parsed_seed_list: Vec<SimpleRange> = seed_list
         .chunks(2)
-        .map(|x| SeedRange::new(x[0], x[1]))
+        .map(|x| SimpleRange::new(x[0], x[1]))
         .collect();
 
     let parsed_maps = parse_raw_range_maps((&seed_list, &maps));
