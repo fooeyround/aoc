@@ -1,5 +1,8 @@
 use either::{self, Either};
-use std::{io::{self, BufRead}, collections::HashMap};
+use std::{
+    collections::HashMap,
+    io::{self, BufRead},
+};
 
 pub fn reverse_itr<'a, Container: DoubleEndedIterator<Item = T>, T>(
     into_itr: Container,
@@ -30,8 +33,6 @@ pub fn get_input() -> Vec<String> {
     }
     lines_in
 }
-
-
 
 pub fn reverse_hashmap(map: &HashMap<u32, u32>) -> HashMap<u32, u32> {
     let mut new_map = HashMap::new();

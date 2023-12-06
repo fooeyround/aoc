@@ -12,4 +12,4 @@ edition = "2021"
 
 regex = "1.5.4"
 either = "1.9.0"
-
+itertools = "0.12.0"
