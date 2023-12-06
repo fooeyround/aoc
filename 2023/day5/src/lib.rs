@@ -242,18 +242,15 @@ fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
         for (seed, location) in locations_with_seeds.iter() {
             for parsed_seed in parsed_seed_list.iter() {
                 if parsed_seed.contains(seed.clone()) {
-                    break 'lp  location.clone();
+                    break 'lp location.clone();
                 }
             }
         }
 
-        
         current_seed_group += 10_000_000;
         print!("Hitting {} iterations\n", current_seed_group);
     };
 
-    
-    
     result
 }
 
