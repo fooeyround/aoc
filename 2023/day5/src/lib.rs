@@ -1,5 +1,4 @@
-use itertools::Itertools;
-use std::{collections::HashMap, ops::SubAssign};
+use std::{collections::HashMap, iter};
 
 use common::get_input;
 
@@ -50,22 +49,155 @@ impl SimpleRange {
         return Some(SimpleRange::new(new_start, (self.length + self.start).min(other_range.length + other_range.start) - new_start));
 
     }
+
+    fn try_take(&mut self, range_to_take: &SimpleRange) -> Option<SimpleRange> {
+
+        let inter =  self.intersection(range_to_take);
+        if inter.is_some() {
+            self = &mut self.subtract(range_to_take);
+        }
+
+        return inter;
+        
+
+
+    }
+
+
+    
+    fn move_over_range_map(&self, other_range: &RangeMap, reverse: bool) -> Vec<SimpleRange> {
+
+
+        let mut outs = Vec::new();
+
+        let relative_s_start = if reverse {  other_range.destination_range_start } else { other_range.source_range_start };
+        let relative_d_start = if !reverse {  other_range.destination_range_start } else { other_range.source_range_start };
+
+
+        // if self.start + self.length < relative_s_start || relative_d_start + other_range. < self.start {
+        //     return None;
+        // }
+
+        //check of the range fits the simple range, it has to fit it. This may be bad for "missaligned ranges."
+        if self.start < other_range.source_range_start || self.start + self.length > other_range.source_range_start {
+            return None;
+        }
+
+
+        let difference = relative_d_start as i64 - relative_d_start as i64;
+
+        let new_start = (difference - self.start as i64) as u64;
+        
+        outs.push(SimpleRange::new(new_start, self.length));
+        
+        outs
+    }
+
+    #[inline]
+    fn get_upper(&self) {
+        return self.start + self.length;
+    }
+
+
+    fn subtract(&self, other: Self) -> SimpleRange {
+        //cut the range from the front half
+        let optional_intersection = self.intersection(&other);
+        if let Some(intersection) = optional_intersection {
+
+
+            if self.start == intersection.start && self.length == intersection.length {
+                //-----
+                //         -----
+                []
+            }
+
+            if self.start == intersection.start {
+                // -----
+                // -----
+                [SimpleRange::new(intersection.get_upper(), self.get_upper())]
+            }
+            if intersection.get_upper() == self.get_upper() {
+                //      ----
+                // ---------
+                [SimpleRange::new(self.start, intersection.start), SimpleRange::new(intersection.get_upper(), self.get_upper())]
+            }
+
+
+
+            let new_start_left = self.start - other.start;
+            [SimpleRange::new(0, 0)]
+
+        } else {
+            return SimpleRange::new(self.start, self.length);
+        }
+
+ }
+}
+
+
+
+impl std::ops::Sub for SimpleRange {
+    type Output = [SimpleRange; 2];
+     fn sub(&self, other: Self) -> Self::Output {
+            //cut the range from the front half
+            let optional_intersection = self.intersection(&other);
+            if let Some(intersection) = optional_intersection {
+
+
+                if self.start == intersection.start && self.length == intersection.length {
+                    //-----
+                    //         -----
+                    []
+                }
+
+                if self.start == intersection.start {
+                    // -----
+                    // -----
+                    [SimpleRange::new(intersection.get_upper(), self.get_upper())]
+                }
+                if intersection.get_upper() == self.get_upper() {
+                    //      ----
+                    // ---------
+                    [SimpleRange::new(self.start, intersection.start), SimpleRange::new(intersection.get_upper(), self.get_upper())]
+                }
+
+
+
+                let new_start_left = self.start - other.start;
+                [SimpleRange::new(0, 0)]
+
+            } else {
+                return SimpleRange::new(self.start, self.length);
+            }
+
+     }
+}
+
+
+
+impl std::ops::Add for SimpleRange {
+
+    type Output = Self;
+
+    fn add(self, rhs: u32) -> Self::Output {
+        SimpleRange::new(self.start+rhs, self.length+rhs)
+    }
 }
 
 #[derive(Debug, Clone)]
-struct RawRangeMap {
+struct RangeMap {
     destination_range_start: u64,
     source_range_start: u64,
     range_length: u64,
 }
 
-impl RawRangeMap {
+impl RangeMap {
     fn new(
         destination_range_start: u64,
         source_range_start: u64,
         range_length: u64,
-    ) -> RawRangeMap {
-        RawRangeMap {
+    ) -> RangeMap {
+        RangeMap {
             destination_range_start,
             source_range_start,
             range_length,
@@ -104,16 +236,25 @@ impl RawRangeMap {
     
 }
 
-impl std::ops::Sub for RawRangeMap {
+impl std::ops::Sub for RangeMap {
     type Output = Self;
      fn sub(self, other: Self) -> Self::Output {
-            RawRangeMap::new(self.destination_range_start - other.destination_range_start, self.source_range_start - other.source_range_start, self.range_length - other.range_length)
+            RangeMap::new(self.destination_range_start - other.destination_range_start, self.source_range_start - other.source_range_start, self.range_length - other.range_length)
      }
 }
-impl std::ops::Add for RawRangeMap {
+
+
+impl std::ops::Sub for RangeMap {
+    type Output = (Self, Self);
+     fn sub(self, other: Self) -> Self::Output {
+            RangeMap::new(self.destination_range_start - other.destination_range_start, self.source_range_start - other.source_range_start, self.range_length - other.range_length)
+     }
+}
+
+impl std::ops::Add for RangeMap {
     type Output = Self;
      fn add(self, other: Self) -> Self::Output {
-            RawRangeMap::new(self.destination_range_start.min(other.destination_range_start), self.source_range_start.min( other.source_range_start), self.range_length.max(other.range_length))
+            RangeMap::new(self.destination_range_start.min(other.destination_range_start), self.source_range_start.min( other.source_range_start), self.range_length.max(other.range_length))
      }
 }
 
@@ -121,7 +262,7 @@ impl std::ops::Add for RawRangeMap {
 
 ///Returns a new hashmap with the keys and values of the one passed swapped.
 
-fn get_map_out_from_input(maps: &Vec<RawRangeMap>, input: u64, reverse: bool) -> u64 {
+fn get_map_out_from_input(maps: &Vec<RangeMap>, input: u64, reverse: bool) -> u64 {
     //if reverse call the helper or switch case?
 
     for raw_range_map in maps {
@@ -152,13 +293,13 @@ fn get_map_out_from_input(maps: &Vec<RawRangeMap>, input: u64, reverse: bool) ->
 
 fn parse_raw_range_maps(
     map: (&Vec<u64>, &HashMap<String, Vec<(u64, u64, u64)>>),
-) -> HashMap<String, Vec<RawRangeMap>> {
+) -> HashMap<String, Vec<RangeMap>> {
     map.1
         .iter()
         .map(|map| {
-            let mut map_values: Vec<RawRangeMap> = Vec::new();
+            let mut map_values: Vec<RangeMap> = Vec::new();
             for map_value in map.1 {
-                map_values.push(RawRangeMap::new(map_value.0, map_value.1, map_value.2));
+                map_values.push(RangeMap::new(map_value.0, map_value.1, map_value.2));
             }
             (map.0.clone(), map_values)
         })
