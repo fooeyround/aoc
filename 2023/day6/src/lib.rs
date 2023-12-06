@@ -7,7 +7,6 @@ pub fn run() {
 
     println!("Day 6");
     part_one(&input);
-
     part_two(&input);
 }
 
@@ -89,11 +88,8 @@ fn part_one(input: &Vec<String>) {
             },
         );
 
-    // }
-
     println!("Part One: {}", answer);
 }
-
 fn part_two(input: &Vec<String>) {
     let parsed: (u64, u64) = parse_part_two(input);
     println!("Part 2: {:?}", get_possible_charge_times(parsed).len());

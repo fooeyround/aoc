@@ -179,6 +179,10 @@ impl SeedRange {
     }
 }
 
+//WRONG!!!
+//Do it right now...
+
+
 //The map seems to be missing values
 fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) -> u64 {
     let seed_list = map.0;
@@ -194,11 +198,11 @@ fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
 
     println!("Part 2 starting reverse search stage");
 
-    let mut current_seed_group = 300_000_000;
+    let mut current_seed_group = 0;
 
     let result = 'lp: loop {
         let locations_with_seeds: Vec<(u64, u64)> = (current_seed_group
-            ..current_seed_group + 10_000_000)
+            ..current_seed_group + 100_000)
             .into_iter()
             .map(|location| {
                 //make a reverse of the above
@@ -247,7 +251,7 @@ fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
             }
         }
 
-        current_seed_group += 10_000_000;
+        current_seed_group += 100_000;
         print!("Hitting {} iterations\n", current_seed_group);
     };
 
