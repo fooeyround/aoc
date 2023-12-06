@@ -3,6 +3,7 @@ use day2;
 use day3;
 use day4;
 use day5;
+use day6;
 
 fn main() {
     println!("Advent of Code 2023!");
@@ -32,7 +33,7 @@ fn main() {
         3 => day3::run(),
         4 => day4::run(),
         5 => day5::run(),
-
+        6 => day6::run(),
         _ => println!("No code for that day yet!"),
     }
 }
