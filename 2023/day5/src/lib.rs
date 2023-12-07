@@ -51,7 +51,8 @@ impl SimpleRange {
     }
 
     /// (value to take, (ranges left))
-    fn try_take(&mut self, range_to_take: &SimpleRange) -> (Option<SimpleRange>, (Option<SimpleRange>, Option<SimpleRange>)) {
+    /// This should really not be a thing. But rather a part of the calculations using it.
+    fn try_take(&self, range_to_take: &SimpleRange) -> (Option<SimpleRange>, (Option<SimpleRange>, Option<SimpleRange>)) {
 
         return (self.intersection(range_to_take), self.subtract(range_to_take));
     }
@@ -86,8 +87,47 @@ impl SimpleRange {
         outs
     }
 
+
+
+        
+    fn move_over_range_map(&self, other_ranges: &Vec<RangeMap>, reverse: bool) -> Vec<SimpleRange> {
+
+        let mut outs = Vec::new();
+
+        for range_map in other_ranges {
+
+
+        let relative_s_start = if reverse {  range_map.destination_range_start } else { range_map.source_range_start };
+        let relative_d_start = if !reverse {  range_map.destination_range_start } else { range_map.source_range_start };
+
+
+        // if self.start + self.length < relative_s_start || relative_d_start + other_range. < self.start {
+        //     return None;
+        // }
+
+        //check of the range fits the simple range, it has to fit it. This may be bad for "missaligned ranges."
+        if self.start < range_map.source_range_start || self.start + self.length > range_map.source_range_start {
+            continue;
+        }
+
+
+        let difference = relative_d_start as i64 - relative_d_start as i64;
+
+        let new_start = (difference - self.start as i64) as u64;
+
+        // let take = self.try_take(&self);
+        
+        outs.push(SimpleRange::new(new_start, self.length));
+
+    }
+        
+        outs
+    }
+
+
+
     #[inline]
-    fn get_upper(&self) -> u64 {
+    fn get_end(&self) -> u64 {
         return self.start + self.length;
     }
 
@@ -107,14 +147,21 @@ impl SimpleRange {
             if self.start == intersection.start {
                 // ------------
                 // ------
-                return (Some(SimpleRange::new(intersection.get_upper(), self.get_upper())), None);
+                return (None, Some(SimpleRange::new(intersection.get_end(), self.length - intersection.length)));
             }
 
-            if intersection.get_upper() == self.get_upper() {
+            if intersection.get_end() == self.get_end() {
+                //----------
                 //      ----
-                // ---------
-                return (Some(SimpleRange::new(self.start, intersection.start)), Some(SimpleRange::new(intersection.get_upper(), self.get_upper())));
+                return (Some(SimpleRange::new(self.start, intersection.start)), None);
             }
+
+            if intersection.start > self.start && intersection.get_end() < self.get_end() {
+                //----------------
+                //      ----
+                return (Some(SimpleRange::new(self.start, intersection.start)), Some(SimpleRange::new(intersection.get_end(), self.get_end()-intersection.get_end())));
+            }
+
 
             let new_start_left = self.start - other.start;
             return (Some(SimpleRange::new(0, 0)), None);
@@ -128,52 +175,15 @@ impl SimpleRange {
 
 
 
-impl std::ops::Sub for SimpleRange {
-    type Output = [Option<SimpleRange>; 2];
-     fn sub(self, other: Self) -> Self::Output {
-            //cut the range from the front half
-            let optional_intersection = self.intersection(&other);
-            if let Some(intersection) = optional_intersection {
-
-
-                if self.start == intersection.start && self.length == intersection.length {
-                    //-----
-                    //         ----
-                    
-                    
-                    return [None, None];
-                }
-
-                if self.start == intersection.start {
-                    // -----
-                    // -----
-                    return [Some(SimpleRange::new(intersection.get_upper(), self.get_upper())), None];
-                }
-                if intersection.get_upper() == self.get_upper() {
-                    //      ----
-                    // ---------
-                    [SimpleRange::new(self.start, intersection.start), SimpleRange::new(intersection.get_upper(), self.get_upper())]
-                }
 
 
 
-                let new_start_left = self.start - other.start;
-                [SimpleRange::new(0, 0)]
 
-            } else {
-                return SimpleRange::new(self.start, self.length);
-            }
-
-     }
-}
-
-
-
-impl std::ops::Add for SimpleRange {
+impl std::ops::Add<u64> for SimpleRange {
 
     type Output = Self;
 
-    fn add(self, rhs: u32) -> Self::Output {
+    fn add(self, rhs: u64) -> Self::Output {
         SimpleRange::new(self.start+rhs, self.length+rhs)
     }
 }
