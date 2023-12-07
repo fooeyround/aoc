@@ -1,6 +1,11 @@
-use std::{collections::HashMap, iter};
+use std::{
+    collections::{btree_set::Intersection, HashMap},
+    iter,
+    ops::Add,
+};
 
 use common::get_input;
+use itertools::Itertools;
 
 pub fn run() {
     println!("Day 5");
@@ -25,7 +30,6 @@ fn part_two(input: &Vec<String>) {
     println!("Part 2: {:?}", closest_location);
 }
 
-
 #[derive(Debug, Clone)]
 struct SimpleRange {
     start: u64,
@@ -40,104 +44,108 @@ impl SimpleRange {
         self.start <= value && value < self.start + self.length
     }
     fn intersection(&self, other_range: &SimpleRange) -> Option<SimpleRange> {
-
         //If the ranges do not overlap, return None
-        if self.start + self.length < other_range.start || other_range.start + other_range.length < self.start {
+
+
+
+        if self.start + self.length < other_range.start
+            || other_range.start + other_range.length < self.start
+        {
             return None;
         }
-        let new_start = self.start.max( other_range.start);
-        return Some(SimpleRange::new(new_start, (self.length + self.start).min(other_range.length + other_range.start) - new_start));
-
-    }
-
-    /// (value to take, (ranges left))
-    /// This should really not be a thing. But rather a part of the calculations using it.
-    fn try_take(&self, range_to_take: &SimpleRange) -> (Option<SimpleRange>, (Option<SimpleRange>, Option<SimpleRange>)) {
-
-        return (self.intersection(range_to_take), self.subtract(range_to_take));
-    }
-
-
-    
-    fn move_over_range_map_single(&self, other_range: &RangeMap, reverse: bool) -> Vec<SimpleRange> {
-
-
-        let mut outs = Vec::new();
-
-        let relative_s_start = if reverse {  other_range.destination_range_start } else { other_range.source_range_start };
-        let relative_d_start = if !reverse {  other_range.destination_range_start } else { other_range.source_range_start };
-
-
-        // if self.start + self.length < relative_s_start || relative_d_start + other_range. < self.start {
-        //     return None;
-        // }
-
-        //check of the range fits the simple range, it has to fit it. This may be bad for "missaligned ranges."
-        if self.start < other_range.source_range_start || self.start + self.length > other_range.source_range_start {
-            return outs;
-        }
-
-
-        let difference = relative_d_start as i64 - relative_d_start as i64;
-
-        let new_start = (difference - self.start as i64) as u64;
-        
-        outs.push(SimpleRange::new(new_start, self.length));
-        
-        outs
+        let new_start = self.start.max(other_range.start);
+        return Some(SimpleRange::new(
+            new_start,
+            (self.length + self.start).min(other_range.length + other_range.start) - new_start,
+        ));
     }
 
 
 
-        
     fn move_over_range_map(&self, other_ranges: &Vec<RangeMap>, reverse: bool) -> Vec<SimpleRange> {
+        let mut out: Vec<SimpleRange> = Vec::new();
+        let mut to_convert: Vec<SimpleRange> = Vec::new();
 
-        let mut outs = Vec::new();
+        to_convert.push(self.clone());
 
         for range_map in other_ranges {
 
+            let relative_s_start = if reverse {
+                range_map.destination_range_start
+            } else {
+                range_map.source_range_start
+            };
+            let relative_d_start = if !reverse {
+                range_map.destination_range_start
+            } else {
+                range_map.source_range_start
+            };
 
-        let relative_s_start = if reverse {  range_map.destination_range_start } else { range_map.source_range_start };
-        let relative_d_start = if !reverse {  range_map.destination_range_start } else { range_map.source_range_start };
+
+            
 
 
-        // if self.start + self.length < relative_s_start || relative_d_start + other_range. < self.start {
-        //     return None;
-        // }
 
-        //check of the range fits the simple range, it has to fit it. This may be bad for "missaligned ranges."
-        if self.start < range_map.source_range_start || self.start + self.length > range_map.source_range_start {
-            continue;
+
+
+            let range_shift = relative_d_start as i64 - relative_s_start as i64;
+
+
+            //how do I stop range_shift from underflowing?
+
+            let output_source_range = SimpleRange::new(relative_s_start, range_map.length);
+
+            to_convert = to_convert.iter().map(|x| {
+                //do map over range_map then apply this to out!
+
+                let mut new_to_convert: Vec<SimpleRange> = Vec::new();
+
+                if let Some(intersection) = x.intersection(&output_source_range) {
+                    let subtracted = x.subtract(&intersection);
+
+
+                    
+                    if (range_shift + (intersection.start as i64)) < 0.0 as i64 {
+                        return new_to_convert;
+                    }
+
+
+
+                    println!("range_shift: {} intersection: {:?}", range_shift, intersection);
+                    // let shifted_range = intersection + range_shift;
+    
+                    if let Some(left) = subtracted.0 {
+                        new_to_convert.push(left);
+                    }
+                    if let Some(right) = subtracted.1 {
+                        new_to_convert.push(right);
+                    }
+    
+                    // out.push(shifted_range);
+
+            
+                }
+
+                return new_to_convert;
+
+            }).flatten().collect();
         }
 
+        // If the value is not found, it is an identity.
+        out.extend(to_convert);
 
-        let difference = relative_d_start as i64 - relative_d_start as i64;
-
-        let new_start = (difference - self.start as i64) as u64;
-
-        // let take = self.try_take(&self);
-        
-        outs.push(SimpleRange::new(new_start, self.length));
-
+        out
     }
-        
-        outs
-    }
-
-
 
     #[inline]
     fn get_end(&self) -> u64 {
         return self.start + self.length;
     }
 
-
     fn subtract(&self, other: &Self) -> (Option<SimpleRange>, Option<SimpleRange>) {
         //cut the range from the front half
         let optional_intersection = self.intersection(&other);
         if let Some(intersection) = optional_intersection {
-
-
             if self.start == intersection.start && self.length == intersection.length {
                 //-----
                 //-----
@@ -147,7 +155,13 @@ impl SimpleRange {
             if self.start == intersection.start {
                 // ------------
                 // ------
-                return (None, Some(SimpleRange::new(intersection.get_end(), self.length - intersection.length)));
+                return (
+                    None,
+                    Some(SimpleRange::new(
+                        intersection.get_end(),
+                        self.length - intersection.length,
+                    )),
+                );
             }
 
             if intersection.get_end() == self.get_end() {
@@ -159,32 +173,40 @@ impl SimpleRange {
             if intersection.start > self.start && intersection.get_end() < self.get_end() {
                 //----------------
                 //      ----
-                return (Some(SimpleRange::new(self.start, intersection.start)), Some(SimpleRange::new(intersection.get_end(), self.get_end()-intersection.get_end())));
+                return (
+                    Some(SimpleRange::new(self.start, intersection.start)),
+                    Some(SimpleRange::new(
+                        intersection.get_end(),
+                        self.get_end() - intersection.get_end(),
+                    )),
+                );
             }
-
-
-            let new_start_left = self.start - other.start;
-            return (Some(SimpleRange::new(0, 0)), None);
-
-        } else {
-            return (Some(SimpleRange::new(self.start, self.length)), None);
         }
 
- }
+        //If there is no intersection, return the original range, it could not have been modified.
+        return (Some(self.clone()), None);
+    }
 }
 
-
-
-
-
-
-
 impl std::ops::Add<u64> for SimpleRange {
-
     type Output = Self;
 
     fn add(self, rhs: u64) -> Self::Output {
-        SimpleRange::new(self.start+rhs, self.length+rhs)
+        SimpleRange::new(self.start + rhs, self.length)
+    }
+}
+
+impl std::ops::Add<i64> for SimpleRange {
+    type Output = Self;
+
+    fn add(self, rhs: i64) -> Self::Output {
+        //This is mildly unsafe, but I think it is fine.
+        SimpleRange::new(
+            //The MAX call will limit the number, but it already does that..
+            //The answer should be within u32, so it should be fine.
+            (self.start as i64 + rhs).clamp(0, i64::MAX) as u64,
+            self.length,
+        )
     }
 }
 
@@ -192,82 +214,54 @@ impl std::ops::Add<u64> for SimpleRange {
 struct RangeMap {
     destination_range_start: u64,
     source_range_start: u64,
-    range_length: u64,
+    length: u64,
 }
 
 impl RangeMap {
-    fn new(
-        destination_range_start: u64,
-        source_range_start: u64,
-        range_length: u64,
-    ) -> RangeMap {
+    fn new(destination_range_start: u64, source_range_start: u64, range_length: u64) -> RangeMap {
         RangeMap {
             destination_range_start,
             source_range_start,
-            range_length,
+            length: range_length,
         }
     }
 
 
-    fn contains(&self, value: u64, reverse: bool) -> bool {
-        if reverse {
-            self.destination_range_start <= value
-                && value < self.destination_range_start + self.range_length
-        } else {
-            self.source_range_start <= value
-                && value < self.source_range_start + self.range_length
-        }
-    }
-
-    fn intersection(&self) -> Option<SimpleRange> {
-        //If the ranges do not overlap, return None
-        if self.source_range_start + self.range_length < self.destination_range_start
-            || self.destination_range_start + self.range_length < self.source_range_start
-        {
-            return None;
-        }
-        let new_start = self
-            .source_range_start
-            .max(self.destination_range_start);
-        return Some(SimpleRange::new(
-            new_start,
-            (self.source_range_start + self.range_length)
-                .min(self.destination_range_start + self.range_length)
-                - new_start,
-        ));
-    }
-
-    
 }
 
 impl std::ops::Sub for RangeMap {
     type Output = Self;
-     fn sub(self, other: Self) -> Self::Output {
-            RangeMap::new(self.destination_range_start - other.destination_range_start, self.source_range_start - other.source_range_start, self.range_length - other.range_length)
-     }
+    fn sub(self, other: Self) -> Self::Output {
+        RangeMap::new(
+            self.destination_range_start - other.destination_range_start,
+            self.source_range_start - other.source_range_start,
+            self.length - other.length,
+        )
+    }
 }
-
-
 
 impl std::ops::Add for RangeMap {
     type Output = Self;
-     fn add(self, other: Self) -> Self::Output {
-            RangeMap::new(self.destination_range_start.min(other.destination_range_start), self.source_range_start.min( other.source_range_start), self.range_length.max(other.range_length))
-     }
+    fn add(self, other: Self) -> Self::Output {
+        RangeMap::new(
+            self.destination_range_start
+                .min(other.destination_range_start),
+            self.source_range_start.min(other.source_range_start),
+            self.length.max(other.length),
+        )
+    }
 }
-
-
 
 ///Returns a new hashmap with the keys and values of the one passed swapped.
 
-fn get_map_out_from_input(maps: &Vec<RangeMap>, input: u64, reverse: bool) -> u64 {
+fn get_map_out_from_input_part_one(maps: &Vec<RangeMap>, input: u64, reverse: bool) -> u64 {
     //if reverse call the helper or switch case?
 
     for raw_range_map in maps {
-        let matched_value = match reverse {
+        match reverse {
             false => {
                 if raw_range_map.source_range_start <= input
-                    && input < raw_range_map.source_range_start + raw_range_map.range_length
+                    && input < raw_range_map.source_range_start + raw_range_map.length
                 {
                     return input - raw_range_map.source_range_start
                         + raw_range_map.destination_range_start;
@@ -277,7 +271,7 @@ fn get_map_out_from_input(maps: &Vec<RangeMap>, input: u64, reverse: bool) -> u6
             //Handle reversed case
             true => {
                 if raw_range_map.destination_range_start <= input
-                    && input < raw_range_map.destination_range_start + raw_range_map.range_length
+                    && input < raw_range_map.destination_range_start + raw_range_map.length
                 {
                     return input - raw_range_map.destination_range_start
                         + raw_range_map.source_range_start;
@@ -316,27 +310,27 @@ fn parse_map_part_one(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
         .map(|seed| {
             //I know it should exist... this still is a pain of unwrap and rigid code.
             let soil =
-                get_map_out_from_input(&parsed_maps.get("seed-to-soil").unwrap(), *seed, false);
+                get_map_out_from_input_part_one(&parsed_maps.get("seed-to-soil").unwrap(), *seed, false);
             let fertilizer =
-                get_map_out_from_input(parsed_maps.get("soil-to-fertilizer").unwrap(), soil, false);
-            let water = get_map_out_from_input(
+                get_map_out_from_input_part_one(parsed_maps.get("soil-to-fertilizer").unwrap(), soil, false);
+            let water = get_map_out_from_input_part_one(
                 parsed_maps.get("fertilizer-to-water").unwrap(),
                 fertilizer,
                 false,
             );
             let light =
-                get_map_out_from_input(parsed_maps.get("water-to-light").unwrap(), water, false);
-            let temperature = get_map_out_from_input(
+                get_map_out_from_input_part_one(parsed_maps.get("water-to-light").unwrap(), water, false);
+            let temperature = get_map_out_from_input_part_one(
                 parsed_maps.get("light-to-temperature").unwrap(),
                 light,
                 false,
             );
-            let humidity = get_map_out_from_input(
+            let humidity = get_map_out_from_input_part_one(
                 parsed_maps.get("temperature-to-humidity").unwrap(),
                 temperature,
                 false,
             );
-            let location = get_map_out_from_input(
+            let location = get_map_out_from_input_part_one(
                 parsed_maps.get("humidity-to-location").unwrap(),
                 humidity,
                 false,
@@ -358,11 +352,8 @@ fn parse_map_part_one(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
     *closest_seed
 }
 
-
-
 //WRONG!!!
 //Do it right now...
-
 
 //The map seems to be missing values
 fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) -> u64 {
@@ -377,66 +368,78 @@ fn parse_map_part_two(map: (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>)) ->
 
     let parsed_maps = parse_raw_range_maps((&seed_list, &maps));
 
-    println!("Part 2 starting reverse search stage");
 
-    let mut current_seed_group = 0;
 
-    let result = 'lp: loop {
-        let locations_with_seeds: Vec<(u64, u64)> = (current_seed_group
-            ..current_seed_group + 100_000)
-            .into_iter()
-            .map(|location| {
-                //make a reverse of the above
-                let humidity = get_map_out_from_input(
-                    parsed_maps.get("humidity-to-location").unwrap(),
-                    location,
-                    true,
-                );
-                let temperature = get_map_out_from_input(
-                    parsed_maps.get("temperature-to-humidity").unwrap(),
-                    humidity,
-                    true,
-                );
-                let light = get_map_out_from_input(
-                    parsed_maps.get("light-to-temperature").unwrap(),
-                    temperature,
-                    true,
-                );
-                let water =
-                    get_map_out_from_input(parsed_maps.get("water-to-light").unwrap(), light, true);
-                let fertilizer = get_map_out_from_input(
-                    parsed_maps.get("fertilizer-to-water").unwrap(),
-                    water,
-                    true,
-                );
-                let soil = get_map_out_from_input(
-                    parsed_maps.get("soil-to-fertilizer").unwrap(),
-                    fertilizer,
-                    true,
-                );
-                let seed =
-                    get_map_out_from_input(parsed_maps.get("seed-to-soil").unwrap(), soil, true);
+  
 
-                (seed, location)
-            })
-            .collect();
 
-        let mut sorted_seed_locations = locations_with_seeds.clone();
-        sorted_seed_locations.sort_by(|a, b| a.1.cmp(&b.1));
+    let valid_location_ranges = parsed_seed_list
+        .iter()
+        .map(|seed_range| {
 
-        for (seed, location) in locations_with_seeds.iter() {
-            for parsed_seed in parsed_seed_list.iter() {
-                if parsed_seed.contains(seed.clone()) {
-                    break 'lp location.clone();
-                }
-            }
-        }
 
-        current_seed_group += 100_000;
-        print!("Hitting {} iterations\n", current_seed_group);
-    };
+            seed_range.move_over_range_map(
+                &parsed_maps.get("seed-to-soil").unwrap(),
+                false,
+            )
+                .iter()
+                .map(|x| {
+                    x.move_over_range_map(&parsed_maps.get("soil-to-fertilizer").unwrap(), false)
+                })
+                .flatten()
 
-    result
+
+                .map(|x| {
+                    x.move_over_range_map(&parsed_maps.get("fertilizer-to-water").unwrap(), false)
+                })
+                .flatten()
+
+
+                .map(|x| {
+                    x.move_over_range_map(&parsed_maps.get("water-to-light").unwrap(), false)
+                })
+                .flatten()
+
+
+                .map(|x| {
+                    x.move_over_range_map(&parsed_maps.get("light-to-temperature").unwrap(), false)
+                })
+                .flatten()
+
+
+                .map(|x| {
+                    x.move_over_range_map(&parsed_maps.get("temperature-to-humidity").unwrap(), false)
+                })
+                .flatten()
+
+
+                .map(|x| {
+                    x.move_over_range_map(&parsed_maps.get("humidity-to-location").unwrap(), false)
+                })
+                .flatten()
+                .collect::<Vec<SimpleRange>>()
+        })
+        .flatten()
+        .collect::<Vec<SimpleRange>>();
+
+
+
+
+    let sorted_valid_locations = valid_location_ranges
+        .iter()
+        .sorted_by(|a, b| a.start.cmp(&b.start))
+        .collect::<Vec<&SimpleRange>>();
+
+
+
+
+
+
+        sorted_valid_locations.iter().for_each(|x| {
+            println!("{:?}", x);
+        });
+    
+    sorted_valid_locations.get(0).unwrap_or(&&SimpleRange::new(0, 0)).start
 }
 
 fn parse_input(input: &Vec<String>) -> (Vec<u64>, HashMap<String, Vec<(u64, u64, u64)>>) {

@@ -43,3 +43,13 @@ pub fn reverse_hashmap(map: &HashMap<u32, u32>) -> HashMap<u32, u32> {
 
     new_map
 }
+
+#[no_mangle]
+#[inline(never)]
+pub fn flatten_vec_of_tuple(data: &[(i32, i32)]) -> Vec<i32> {
+    data.iter()
+        .fold(Vec::with_capacity(data.len() * 2), |mut acc, p| {
+            acc.extend(&[p.0, p.1]);
+            acc
+        })
+}
