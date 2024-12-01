@@ -1,4 +1,9 @@
 # Advent of Code!
 
-Each year is in a folder, such as `2023/`.
-My answers are not going to be good. 
+Each year is in a folder.
+Some years take different approaches to structure.
+
+Languages used:
+    Rust:
+        - `2023`
+        - `2024`

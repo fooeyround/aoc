@@ -1,4 +1,4 @@
-use common::{get_input, reverse_itr};
+use common::{get_input, reverse_iter};
 
 const NUMBERS: [&str; 9] = [
     "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
@@ -31,14 +31,14 @@ fn find_first_occurence<const COUNT: usize>(
     list: [&str; COUNT],
     reverse: bool,
 ) -> u32 {
-    for (i, c) in reverse_itr(line.chars(), reverse).enumerate() {
+    for (i, c) in reverse_iter(line.chars(), reverse).enumerate() {
         if let Some(num) = c.to_digit(10) {
             return num;
         } else if let Some(str_value) = list.iter().enumerate().find(|x| {
-            reverse_itr(line.chars(), reverse)
+            reverse_iter(line.chars(), reverse)
                 .skip(i)
                 .take(x.1.len())
-                .eq(reverse_itr(x.1.chars(), reverse))
+                .eq(reverse_iter(x.1.chars(), reverse))
         }) {
             return str_value.0 as u32 + 1;
         }
