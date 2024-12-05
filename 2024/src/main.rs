@@ -3,7 +3,9 @@ use clap::{Parser, Subcommand};
 use seq_macro::seq;
 use std::{fs::File, io::Read};
 
-mod d1;
+seq!(N in 1..=3 {
+    mod d~N;
+});
 
 #[derive(Parser)]
 #[command(version, about, long_about = None)]
@@ -18,7 +20,11 @@ pub fn get_input(day: u8) -> Vec<String> {
     let mut strin = String::new();
     fine.read_to_string(&mut strin)
         .expect("Failed to read puzzle input for day {day}");
-    return strin.split("\n").map(|f| f.to_owned()).collect();
+    return strin
+        .split("\n")
+        .filter(|f| !f.is_empty())
+        .map(|f| f.to_owned())
+        .collect();
 }
 
 fn main() {
@@ -35,12 +41,12 @@ fn main() {
         }
     });
 
-    let (p1, p2) = seq!(N in 1..=1 {
+    let (p1, p2) = seq!(N in 1..=3 {
         match day {
             // Expands to Variant64, Variant65, ...
             #(
                 N => {
-                    let input = get_input(1);
+                    let input = get_input(N);
                     (d~N::solve1(&input), d~N::solve2(&input))
                 }
             )*

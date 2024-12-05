@@ -6,4 +6,5 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.38"
 clap = { version = "4.5.21", features = ["derive"] }
+itertools = "0.13.0"
 seq-macro = "0.3.5"
