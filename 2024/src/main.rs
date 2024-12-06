@@ -3,7 +3,7 @@ use clap::{Parser, Subcommand};
 use seq_macro::seq;
 use std::{fs::File, io::Read};
 
-seq!(N in 1..=3 {
+seq!(N in 1..=5 {
     mod d~N;
 });
 
@@ -14,17 +14,13 @@ struct Cli {
     day: Option<u8>,
 }
 
-pub fn get_input(day: u8) -> Vec<String> {
+pub fn get_input(day: u8) -> String {
     let mut fine =
         File::open(format!("puzzle_input/day{}.in", day)).expect("Day {day} input missing");
     let mut strin = String::new();
     fine.read_to_string(&mut strin)
         .expect("Failed to read puzzle input for day {day}");
-    return strin
-        .split("\n")
-        .filter(|f| !f.is_empty())
-        .map(|f| f.to_owned())
-        .collect();
+    return strin;
 }
 
 fn main() {
@@ -41,7 +37,7 @@ fn main() {
         }
     });
 
-    let (p1, p2) = seq!(N in 1..=3 {
+    let (p1, p2) = seq!(N in 1..=5 {
         match day {
             // Expands to Variant64, Variant65, ...
             #(

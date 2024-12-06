@@ -1,6 +1,14 @@
 use itertools::Itertools;
 
-pub fn solve1(input: &Vec<String>) -> String {
+pub fn solve1(raw_input: &str) -> String {
+    let input: Vec<String> = {
+        raw_input
+            .split("\n")
+            .filter(|f| !f.is_empty())
+            .map(|f| f.to_owned())
+            .collect()
+    };
+
     let count = input
         .iter()
         .filter(|line| {
@@ -37,7 +45,15 @@ pub fn solve1(input: &Vec<String>) -> String {
 
     return count.to_string();
 }
-pub fn solve2(input: &Vec<String>) -> String {
+pub fn solve2(raw_input: &str) -> String {
+    let input: Vec<String> = {
+        raw_input
+            .split("\n")
+            .filter(|f| !f.is_empty())
+            .map(|f| f.to_owned())
+            .collect()
+    };
+
     return input
         .iter()
         .filter(|line| {
@@ -59,9 +75,6 @@ pub fn solve2(input: &Vec<String>) -> String {
                         .tuple_windows()
                         .filter(|((idxa,a), (idxb,b))| if *incr { a < b } else { a > b } && a.abs_diff(**b) <=3).count();
 
-                    if correct_count > 0 {
-                        println!("idx {iiddxx} , correct_count: {correct_count}");
-                    }
                     if correct_count >= nums.len()-2 {
                         return true;
                     }

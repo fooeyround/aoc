@@ -26,7 +26,15 @@ enum Token {
     Space,
 }
 
-pub fn solve1(input: &Vec<String>) -> String {
+pub fn solve1(raw_input: &str) -> String {
+    let input: Vec<String> = {
+        raw_input
+            .split("\n")
+            .filter(|f| !f.is_empty())
+            .map(|f| f.to_owned())
+            .collect()
+    };
+
     let sum: u32 = input
         .iter()
         .map(|f| {
@@ -51,8 +59,7 @@ pub fn solve1(input: &Vec<String>) -> String {
 
     return sum.to_string();
 }
-pub fn solve2(input: &Vec<String>) -> String {
-    let f: String = input.iter().fold(String::new(), |acc, part| acc + part);
+pub fn solve2(f: &str) -> String {
     let rtokens = Token::lexer(&f);
 
     let tokens: Vec<Token> = rtokens.map(|f| f.unwrap_or(Token::Mess)).collect();
@@ -69,10 +76,7 @@ pub fn solve2(input: &Vec<String>) -> String {
         buffer[buffer.len() - 1] = *val;
 
         match buffer {
-            [Token::FuncMul, Token::ParenOpen, Token::Number(a), Token::Comma, Token::Number(b), Token::ParenClose] =>
-            {
-                println!("buf: {:?} {}", buffer, active);
-
+            [Token::FuncMul, Token::ParenOpen, Token::Number(a), Token::Comma, Token::Number(b), Token::ParenClose] => {
                 if active {
                     count += a * b
                 }
