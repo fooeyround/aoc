@@ -3,7 +3,7 @@ use clap::{Parser, Subcommand};
 use seq_macro::seq;
 use std::{fs::File, io::Read};
 
-seq!(N in 1..=5 {
+seq!(N in 1..=6 {
     mod d~N;
 });
 
@@ -37,7 +37,7 @@ fn main() {
         }
     });
 
-    let (p1, p2) = seq!(N in 1..=5 {
+    let (p1, p2) = seq!(N in 1..=6 {
         match day {
             // Expands to Variant64, Variant65, ...
             #(

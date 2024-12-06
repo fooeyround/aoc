@@ -1,28 +1,18 @@
-fn comes_after(insertee: u32, inserted: u32, rules: Vec<(u32, u32)>) -> bool {
-    let mut curr = insertee;
+use std::cmp::Ordering;
 
-    for _ in 0..100000 {
-        if let Some(val) = rules.iter().find(|(a, b)| *b == curr) {
-            curr = val.0;
-        }
-        if (curr == inserted) {
-            return true;
-        }
-    }
-
-    return false;
+fn comes_before(a: u32, b: u32, rules: &Vec<(u32, u32)>) -> bool {
+    return rules.iter().find(|(aa, bb)| *aa == a && *bb == b).is_some();
 }
 
-pub fn solve1(raw_input: &str) -> String {
+fn get_rule_manuals(raw_input: &str) -> (Vec<(u32, u32)>, Vec<Vec<u32>>) {
     let (raw_rules, raw_manuals) = raw_input.split_once("\n\n").expect("Double newline");
-
     let rules: Vec<(u32, u32)> = raw_rules
         .split("\n")
         .map(|f| f.split_once("|").expect("A Pipe"))
         .map(|(a, b)| (a.parse().unwrap(), b.parse().unwrap()))
         .collect();
 
-    let mut manuals: Vec<Vec<u32>> = raw_manuals
+    let manuals: Vec<Vec<u32>> = raw_manuals
         .split("\n")
         .map(|f| {
             f.split(",")
@@ -32,22 +22,57 @@ pub fn solve1(raw_input: &str) -> String {
         })
         .filter(|f| !f.is_empty())
         .collect();
+    return (rules, manuals);
+}
 
-    for manual in &mut manuals {
-        for idx in 1..manual.len() {
-            manual.swap(idx - 1, idx);
-        }
-    }
+pub fn solve1(raw_input: &str) -> String {
+    let (rules, manuals) = get_rule_manuals(raw_input);
 
-    return String::new();
+    let correctly_ordered_manuals: Vec<&Vec<u32>> = manuals
+        .iter()
+        .filter(|manual| {
+            manual
+                .windows(2)
+                .all(|ab| comes_before(ab[0], ab[1], &rules))
+        })
+        .collect();
+
+    let sum: u32 = correctly_ordered_manuals
+        .iter()
+        .map(|f| f[(f.len() - 1) / 2])
+        .sum();
+
+    return sum.to_string();
 }
 pub fn solve2(raw_input: &str) -> String {
-    let input: Vec<String> = {
-        raw_input
-            .split("\n")
-            .filter(|f| !f.is_empty())
-            .map(|f| f.to_owned())
-            .collect()
-    };
-    return String::new();
+    let (rules, mut manuals) = get_rule_manuals(raw_input);
+
+    let mut incorrect_manuals: Vec<&Vec<u32>> = manuals
+        .iter()
+        .filter(|manual| {
+            !manual
+                .windows(2)
+                .all(|ab| comes_before(ab[0], ab[1], &rules))
+        })
+        .collect();
+
+    let mut new_inccorect_sorted = vec![];
+
+    for manual in &mut incorrect_manuals {
+        let mut new_manual = manual.clone();
+        new_manual.sort_by(|a, b| {
+            if comes_before(*a, *b, &rules) {
+                Ordering::Less
+            } else {
+                Ordering::Greater
+            }
+        });
+        new_inccorect_sorted.push(new_manual);
+    }
+
+    return new_inccorect_sorted
+        .iter()
+        .map(|f| f[(f.len() - 1) / 2])
+        .sum::<u32>()
+        .to_string();
 }

@@ -1,4 +1,4 @@
-pub fn solve1(input: &str) -> String {
+pub fn solve1(raw_input: &str) -> String {
     let input: Vec<String> = {
         raw_input
             .split("\n")
@@ -9,7 +9,7 @@ pub fn solve1(input: &str) -> String {
 
     return String::new();
 }
-pub fn solve2(input: &str) -> String {
+pub fn solve2(raw_input: &str) -> String {
     let input: Vec<String> = {
         raw_input
             .split("\n")
