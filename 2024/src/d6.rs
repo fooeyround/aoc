@@ -1,5 +1,3 @@
-use std::primitive;
-
 #[derive(Clone, Copy, Debug)]
 enum Direction {
     Up,
@@ -16,12 +14,7 @@ impl Direction {
             Self::Left => Self::Up,
         }
     }
-    fn opposite(&self) -> Self {
-        return self.turn_right().turn_right();
-    }
-    fn turn_left(&self) -> Direction {
-        return self.turn_right().turn_right().turn_right();
-    }
+
     fn from_char(ch: char) -> Self {
         match ch {
             '^' => Direction::Up,
@@ -47,7 +40,7 @@ impl Pos2d {
         }
     }
 }
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 struct Map {
     map: Vec<Vec<bool>>,
 }
@@ -115,24 +108,6 @@ pub fn solve1(raw_input: &str) -> String {
         }
     }
 
-    // {
-    //     let mut pos = posi.clone();
-    //     let mut dir = diri.clone();
-
-    //     loop {
-    //         block_map[pos.1][pos.0] = true;
-    //         if map.pos_is_blocked(pos.offset_dir(dir.turn_left())) {
-    //             dir = dir.turn_left();
-    //         }
-
-    //         pos = pos.offset_dir(dir.opposite());
-
-    //         if !map.is_on_map(&pos) {
-    //             break;
-    //         }
-    //     }
-    // }
-
     return block_map
         .iter()
         .map(|col| col.iter().filter(|visited| **visited).count())
@@ -140,5 +115,67 @@ pub fn solve1(raw_input: &str) -> String {
         .to_string();
 }
 pub fn solve2(raw_input: &str) -> String {
-    return String::new();
+    let (map, posi, diri) = Map::parse(raw_input);
+
+    let mut possible_blockages = vec![vec![false; map.map[0].len()]; map.map.len()];
+
+    {
+        let mut pos = posi.clone();
+        let mut dir = diri.clone();
+
+        loop {
+            possible_blockages[pos.1][pos.0] = true;
+            if map.pos_is_blocked(pos.offset_dir(dir)) {
+                dir = dir.turn_right();
+            }
+            if !map.pos_is_blocked(pos.offset_dir(dir)) {
+                pos = pos.offset_dir(dir);
+            }
+            if !map.is_on_map(&pos) {
+                break;
+            }
+        }
+    }
+    //You can't place it on the origin of the guard.
+    possible_blockages[posi.1][posi.0] = false;
+
+    let mut sum = 0;
+
+    for (y, inr) in possible_blockages.iter().enumerate() {
+        for (x, value) in inr.iter().enumerate() {
+            if !value {
+                continue;
+            }
+
+            let mut new_map = map.clone();
+            new_map.map[y][x] = true;
+
+            {
+                let mut pos = posi.clone();
+                let mut dir = diri.clone();
+
+                let mut iterations = 0;
+                loop {
+                    iterations += 1;
+
+                    if iterations >= 10000 {
+                        sum += 1;
+                        break;
+                    }
+
+                    if new_map.pos_is_blocked(pos.offset_dir(dir)) {
+                        dir = dir.turn_right();
+                    }
+                    if !new_map.pos_is_blocked(pos.offset_dir(dir)) {
+                        pos = pos.offset_dir(dir);
+                    }
+                    if !new_map.is_on_map(&pos) {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    return sum.to_string();
 }
