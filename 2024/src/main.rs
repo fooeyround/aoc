@@ -4,7 +4,7 @@ use seq_macro::seq;
 use std::time::Instant;
 use std::{fs::File, io::Read};
 
-seq!(N in 1..=7 {
+seq!(N in 1..=8 {
     mod d~N;
 });
 
@@ -18,8 +18,7 @@ struct Cli {
 }
 
 pub fn get_input(day: u8) -> String {
-    let mut fine =
-        File::open(format!("puzzle_input/day{}.in", day)).expect("Day {day} input missing");
+    let mut fine = File::open(format!("puzzle_input/day{}.in", day)).expect("Day input missing");
     let mut strin = String::new();
     fine.read_to_string(&mut strin)
         .expect("Failed to read puzzle input for day {day}");
@@ -44,7 +43,7 @@ fn main() {
         println!("Running Only Part Two!");
     }
 
-    seq!(N in 1..=7 {
+    seq!(N in 1..=8 {
         match day {
             // Expands to Variant64, Variant65, ...
             #(
