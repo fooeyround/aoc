@@ -6,11 +6,12 @@ fn comes_before(a: u32, b: u32, rules: &Vec<(u32, u32)>) -> bool {
 
 fn get_rule_manuals(raw_input: &str) -> (Vec<(u32, u32)>, Vec<Vec<u32>>) {
     let (raw_rules, raw_manuals) = raw_input.split_once("\n\n").expect("Double newline");
-    let rules: Vec<(u32, u32)> = raw_rules
+    let mut rules: Vec<(u32, u32)> = raw_rules
         .split("\n")
         .map(|f| f.split_once("|").expect("A Pipe"))
         .map(|(a, b)| (a.parse().unwrap(), b.parse().unwrap()))
         .collect();
+    rules.sort_by(|a, b| (a.0).cmp(&b.0));
 
     let manuals: Vec<Vec<u32>> = raw_manuals
         .split("\n")
@@ -47,8 +48,8 @@ pub fn solve1(raw_input: &str) -> String {
 pub fn solve2(raw_input: &str) -> String {
     let (rules, mut manuals) = get_rule_manuals(raw_input);
 
-    let mut incorrect_manuals: Vec<&Vec<u32>> = manuals
-        .iter()
+    let mut incorrect_manuals: Vec<&mut Vec<u32>> = manuals
+        .iter_mut()
         .filter(|manual| {
             !manual
                 .windows(2)
@@ -56,21 +57,17 @@ pub fn solve2(raw_input: &str) -> String {
         })
         .collect();
 
-    let mut new_inccorect_sorted = vec![];
-
     for manual in &mut incorrect_manuals {
-        let mut new_manual = manual.clone();
-        new_manual.sort_by(|a, b| {
+        manual.sort_by(|a, b| {
             if comes_before(*a, *b, &rules) {
                 Ordering::Less
             } else {
                 Ordering::Greater
             }
         });
-        new_inccorect_sorted.push(new_manual);
     }
 
-    return new_inccorect_sorted
+    return incorrect_manuals
         .iter()
         .map(|f| f[(f.len() - 1) / 2])
         .sum::<u32>()

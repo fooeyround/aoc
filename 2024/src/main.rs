@@ -1,10 +1,13 @@
+#[global_allocator]
+static GLOBAL: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;
+
 use chrono::Datelike;
 use clap::Parser;
 use seq_macro::seq;
-use std::time::Instant;
+use std::time::{Duration, Instant};
 use std::{fs::File, io::Read};
 
-seq!(N in 1..=8 {
+seq!(N in 1..=9 {
     mod d~N;
 });
 
@@ -25,6 +28,19 @@ pub fn get_input(day: u8) -> String {
     return strin;
 }
 
+pub fn get_display_time(duration: Duration) -> String {
+    if duration.as_secs() > 0 {
+        return format!("{}secs", duration.as_secs());
+    }
+    if duration.as_millis() > 0 {
+        return format!("{}ms", duration.as_millis());
+    }
+    if duration.as_micros() > 0 {
+        return format!("{}μs", duration.as_micros());
+    }
+    return format!("{}ns", duration.as_nanos());
+}
+
 fn main() {
     println!("🎄Advent of Code 2024!🎄");
 
@@ -43,7 +59,7 @@ fn main() {
         println!("Running Only Part Two!");
     }
 
-    seq!(N in 1..=8 {
+    seq!(N in 1..=9 {
         match day {
             // Expands to Variant64, Variant65, ...
             #(
@@ -52,11 +68,11 @@ fn main() {
                     if !cli.part_two_only {
                         let initial_time = Instant::now();
                         let output = d~N::solve1(&input);
-                        println!("🎄Part 1 ({}ms): {}", initial_time.elapsed().as_millis(), output);
+                        println!("🎄Part 1 ({}): {}", get_display_time(initial_time.elapsed()), output);
                     }
                     let initial_time = Instant::now();
                     let output = d~N::solve2(&input);
-                    println!("🎄Part 2 ({}ms): {}", initial_time.elapsed().as_millis(), output);
+                    println!("🎄Part 2 ({}): {}", get_display_time(initial_time.elapsed()), output);
 
                 }
             )*
