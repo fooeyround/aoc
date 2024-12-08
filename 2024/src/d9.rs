@@ -7,7 +7,7 @@ pub fn solve1(raw_input: &str) -> String {
             .collect()
     };
 
-    return (input.len() / 2).to_string();
+    return String::new();
 }
 pub fn solve2(raw_input: &str) -> String {
     let input: Vec<String> = {
@@ -18,5 +18,5 @@ pub fn solve2(raw_input: &str) -> String {
             .collect()
     };
 
-    return (input.len() + 1).to_string();
+    return String::new();
 }
