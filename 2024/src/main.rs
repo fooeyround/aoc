@@ -1,9 +1,10 @@
 use chrono::Datelike;
-use clap::{Parser, Subcommand};
+use clap::Parser;
 use seq_macro::seq;
+use std::time::Instant;
 use std::{fs::File, io::Read};
 
-seq!(N in 1..=6 {
+seq!(N in 1..=7 {
     mod d~N;
 });
 
@@ -12,6 +13,8 @@ seq!(N in 1..=6 {
 struct Cli {
     #[arg(short, long)]
     day: Option<u8>,
+    #[arg(short, long, action)]
+    part_two_only: bool,
 }
 
 pub fn get_input(day: u8) -> String {
@@ -24,7 +27,7 @@ pub fn get_input(day: u8) -> String {
 }
 
 fn main() {
-    println!("Advent of Code 2024!");
+    println!("🎄Advent of Code 2024!🎄");
 
     let cli = Cli::parse();
     //take input of what day to use
@@ -37,19 +40,28 @@ fn main() {
         }
     });
 
-    let (p1, p2) = seq!(N in 1..=6 {
+    if cli.part_two_only {
+        println!("Running Only Part Two!");
+    }
+
+    seq!(N in 1..=7 {
         match day {
             // Expands to Variant64, Variant65, ...
             #(
                 N => {
                     let input = get_input(N);
-                    (d~N::solve1(&input), d~N::solve2(&input))
+                    if !cli.part_two_only {
+                        let initial_time = Instant::now();
+                        let output = d~N::solve1(&input);
+                        println!("🎄Part 1 ({}ms): {}", initial_time.elapsed().as_millis(), output);
+                    }
+                    let initial_time = Instant::now();
+                    let output = d~N::solve2(&input);
+                    println!("🎄Part 2 ({}ms): {}", initial_time.elapsed().as_millis(), output);
+
                 }
             )*
             _ => panic!("No code for that day yet!"),
         }
     });
-
-    println!("🎄Part 1: {}", p1);
-    println!("🎄Part 2: {}", p2);
 }
