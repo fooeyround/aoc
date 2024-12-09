@@ -1,5 +1,3 @@
-use itertools::Itertools;
-
 pub fn solve1(raw_input: &str) -> String {
     let input: Vec<String> = {
         raw_input

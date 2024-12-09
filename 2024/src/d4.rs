@@ -18,8 +18,8 @@ pub fn solve1(raw_input: &str) -> String {
             .collect()
     };
 
-    let WORD = "XMAS";
-    let mut arr: Vec<Vec<char>> = input.iter().map(|f| f.chars().collect()).collect();
+    const WORD: &str = "XMAS";
+    let arr: Vec<Vec<char>> = input.iter().map(|f| f.chars().collect()).collect();
 
     let mut sum = 0;
 
@@ -59,9 +59,9 @@ pub fn solve2(raw_input: &str) -> String {
             .collect()
     };
 
-    let WORD = "MAS";
-    let WORD_REV = "SAM";
-    let mut arr: Vec<Vec<char>> = input.iter().map(|f| f.chars().collect()).collect();
+    const WORD: &str = "MAS";
+    const WORD_REV: &str = "SAM";
+    let arr: Vec<Vec<char>> = input.iter().map(|f| f.chars().collect()).collect();
 
     let mut sum = 0;
 

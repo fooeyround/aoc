@@ -61,7 +61,6 @@ fn main() {
 
     seq!(N in 1..=9 {
         match day {
-            // Expands to Variant64, Variant65, ...
             #(
                 N => {
                     let input = get_input(N);
@@ -73,7 +72,6 @@ fn main() {
                     let initial_time = Instant::now();
                     let output = d~N::solve2(&input);
                     println!("🎄Part 2 ({}): {}", get_display_time(initial_time.elapsed()), output);
-
                 }
             )*
             _ => panic!("No code for that day yet!"),

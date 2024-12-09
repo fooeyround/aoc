@@ -2,10 +2,10 @@
 name = "aoc_2024"
 version = "0.1.0"
 edition = "2021"
-panic = "abort"
 
 [profile.release]
-codegen-unit = 1
+panic = "abort"
+codegen-units = 1
 
 
 [dependencies]
