@@ -75,5 +75,5 @@ pub fn solve2(raw_input: &str) -> String {
             }
         }
     }
-    return sum.to_string();
+    return "unsolved".to_string();
 }
