@@ -13,6 +13,7 @@ chrono = "0.4.38"
 clap = { version = "4.5.21", features = ["derive"] }
 itertools = "0.13.0"
 logos = "0.14.3"
+pathfinding = "4.11.0"
 rayon = "1.10.0"
 seq-macro = "0.3.5"
 tikv-jemallocator = "0.6.0"

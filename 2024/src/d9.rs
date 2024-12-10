@@ -56,22 +56,24 @@ pub fn solve2(raw_input: &str) -> String {
                 final_pos += 1;
             }
         } else {
-            if let Some((id, val)) = input
-                .iter()
-                .enumerate()
-                .rev()
-                .find(|(iid, val)| iid % 2 == 0 && **val <= input[id] && *iid > id)
-            {
-                for _ in 0..*val {
-                    sum += final_pos * (id / 2);
-                    final_pos += 1;
+            let mut used_count = 0;
+            loop {
+                if let Some((id, val)) = input.iter().enumerate().rev().find(|(iid, val)| {
+                    iid % 2 == 0 && **val != 0 && **val <= (input[id] - used_count) && *iid > id
+                }) {
+                    for _ in 0..*val {
+                        sum += final_pos * (id / 2);
+                        final_pos += 1;
+                        used_count += 1;
+                    }
+                    final_pos += (input[id] - val) as usize;
+                    input[id] = 0;
+                } else {
+                    final_pos += (input[id] - used_count) as usize;
+                    break;
                 }
-                final_pos += (input[id] - val) as usize;
-                input[id] = 0;
-            } else {
-                final_pos += input[id] as usize;
             }
         }
     }
-    return 0.to_string();
+    return sum.to_string();
 }
