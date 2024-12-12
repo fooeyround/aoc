@@ -1,4 +1,4 @@
-use pathfinding::prelude::{bfs, count_paths};
+use pathfinding::prelude::{bfs, count_paths, dfs_reach};
 
 #[derive(Copy, Clone, Debug, Eq, Hash, Ord, PartialEq, PartialOrd)]
 struct Pos(usize, usize);
@@ -40,17 +40,12 @@ pub fn solve1(raw_input: &str) -> String {
             if height != 0 {
                 continue;
             }
-
-            let mut visited = vec![];
-
-            while let Some(final_pos) = bfs(
-                &Pos(x, y),
-                |pos| pos.successors(&input),
-                |pos| !visited.contains(pos) && input[pos.1][pos.0] == 9,
-            ) {
-                sum += 1;
-                visited.push(*final_pos.last().expect("Value in path"));
-            }
+            let paths = dfs_reach(Pos(x, y), |pos| pos.successors(&input));
+            let count = paths
+                .into_iter()
+                .filter(|pos| input[pos.1][pos.0] == 9)
+                .count();
+            sum += count;
         }
     }
 
