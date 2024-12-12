@@ -1,4 +1,4 @@
-use pathfinding::prelude::{bfs, count_paths, dfs_reach};
+use pathfinding::prelude::{count_paths, dfs_reach};
 
 #[derive(Copy, Clone, Debug, Eq, Hash, Ord, PartialEq, PartialOrd)]
 struct Pos(usize, usize);
