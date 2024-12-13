@@ -62,17 +62,20 @@ fn count_peri_area2(
     last_pos: (usize, usize),
 ) -> (usize, usize) {
     if pos.1 >= map.len() || pos.0 >= map[0].len() || plant != map[pos.1][pos.0] {
-        let search_pos = if last_pos.0 != pos.0 {
-            (last_pos.0, last_pos.1 + 1)
+        let (pos_control_side, fallback_ending) = if last_pos.0 != pos.0 {
+            ((last_pos.0, last_pos.1 + 1), (pos.0, last_pos.1 + 1))
         } else if last_pos.1 != pos.1 {
-            (last_pos.0 + 1, last_pos.1)
+            ((last_pos.0 + 1, last_pos.1), (last_pos.0 + 1, pos.1))
         } else {
-            last_pos
+            return (0, 0);
         };
 
-        if search_pos.1 >= map.len()
-            || search_pos.0 >= map[0].len()
-            || plant != map[search_pos.1][search_pos.0]
+        if pos_control_side.1 >= map.len()
+            || pos_control_side.0 >= map[0].len()
+            || plant != map[pos_control_side.1][pos_control_side.0]
+            || (fallback_ending.1 < map.len()
+                && fallback_ending.0 < map[0].len()
+                && plant == map[fallback_ending.1][fallback_ending.0])
         {
             return (1, 0);
         }
@@ -110,12 +113,8 @@ pub fn solve2(raw_input: &str) -> String {
         for (x, plant) in itr.iter().enumerate() {
             let (peri, area) = count_peri_area2(&input, &mut visited, (x, y), *plant, (0, 0));
             sum += peri * area;
-            if area != 0 && peri != 0 {
-                println!("{} * {}", area, peri);
-            }
         }
     }
 
-    println!("WIP: {}", sum);
-    return 0.to_string();
+    return sum.to_string();
 }
