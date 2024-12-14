@@ -1,5 +1,3 @@
-use clap::parser;
-
 pub fn parse_input(raw_input: &str) -> Vec<Vec<char>> {
     raw_input
         .split("\n")

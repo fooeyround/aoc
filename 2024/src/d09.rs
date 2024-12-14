@@ -1,3 +1,5 @@
+use core::str;
+
 fn strip_trailing_newline(input: &str) -> &str {
     input
         .strip_suffix("\r\n")
@@ -20,17 +22,15 @@ pub fn solve1(raw_input: &str) -> String {
 
     'outer: for id in 0..input.len() {
         if id % 2 == 0 {
-            for _ in 0..input[id] {
-                sum += final_pos * (id / 2);
-                final_pos += 1;
-            }
+            let summed: usize = (final_pos..(final_pos + input[id] as usize)).sum();
+            sum += summed * (id / 2);
+            final_pos += input[id] as usize;
         } else {
             for _ in 0..input[id] {
                 let Some((id, _)) = input
                     .iter()
                     .enumerate()
-                    .rev()
-                    .find(|(iid, val)| iid % 2 == 0 && **val != 0 && *iid > id)
+                    .rfind(|(iid, val)| iid % 2 == 0 && **val != 0 && *iid > id)
                 else {
                     break 'outer;
                 };
@@ -42,34 +42,80 @@ pub fn solve1(raw_input: &str) -> String {
     }
     return sum.to_string();
 }
+
+enum File {
+    FreeSpace(u8),
+    File(usize, u8),
+}
+
+fn input_to_file(input: Vec<u8>) -> Vec<File> {
+    input
+        .iter()
+        .enumerate()
+        .map(|(id, val)| {
+            if id % 2 == 0 {
+                File::File(id / 2, *val)
+            } else {
+                File::FreeSpace(*val)
+            }
+        })
+        .collect()
+}
+
 pub fn solve2(raw_input: &str) -> String {
-    let mut input = parse_input(raw_input);
+    let mut input = input_to_file(parse_input(raw_input));
+
+    let mut rev_idx = 0;
+    while rev_idx < input.len() {
+        let id = input.len() - rev_idx - 1;
+
+        let file = match input[id] {
+            File::File(id, val) => (id, val),
+            _ => {
+                rev_idx += 1;
+                continue;
+            }
+        };
+
+        let Some(fitting_free_space) = (0..id).find(|&iid| match input[iid] {
+            File::File(_, _) => false,
+            File::FreeSpace(size) => iid % 2 != 0 && size >= file.1,
+        }) else {
+            rev_idx += 1;
+            continue;
+        };
+
+        input.remove(id);
+
+        let freefile = &input[fitting_free_space];
+
+        if let File::FreeSpace(size) = freefile {
+            if *size == file.1 {
+                input.remove(fitting_free_space);
+            } else {
+                input[fitting_free_space] = File::FreeSpace(size - file.1)
+            }
+            input.insert(fitting_free_space, File::File(file.0, file.1));
+        }
+
+        rev_idx += 1;
+    }
 
     let mut sum = 0;
-    let mut final_pos = 0;
+    let mut final_index = 0;
 
-    for id in 0..input.len() {
-        if id % 2 == 0 {
-            let summed: usize = (final_pos..(final_pos + input[id] as usize)).sum();
-            sum += summed * (id / 2);
-            final_pos += input[id] as usize;
-        } else {
-            while input[id] != 0 {
-                if let Some((id, &val)) =
-                    input.iter().enumerate().rev().find(|(iid, &val)| {
-                        iid % 2 != 0 && val != 0 && val <= (input[id]) && *iid > id
-                    })
-                {
-                    let summed: usize = (final_pos..(final_pos + val as usize)).sum();
-                    sum += summed * (id / 2);
-                    final_pos += val as usize;
-                    input[id] -= val;
-                } else {
-                    final_pos += (input[id]) as usize;
-                    break;
-                }
+    for file in input.iter() {
+        match file {
+            File::File(fid, size) => {
+                let summed: usize = (final_index..(final_index + *size as usize)).sum();
+                sum += summed * (fid / 2);
+                final_index += *size as usize;
             }
-        }
+            File::FreeSpace(size) => {
+                final_index += *size as usize;
+            }
+        };
     }
-    return sum.to_string();
+    println!("SUM?: {}", sum);
+    return "unsolved".to_string();
 }
