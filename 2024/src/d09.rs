@@ -46,34 +46,30 @@ pub fn solve2(raw_input: &str) -> String {
     let mut input = parse_input(raw_input);
 
     let mut sum = 0;
-
     let mut final_pos = 0;
 
     for id in 0..input.len() {
         if id % 2 == 0 {
-            for _ in 0..input[id] {
-                sum += final_pos * (id / 2);
-                final_pos += 1;
-            }
+            let summed: usize = (final_pos..(final_pos + input[id] as usize)).sum();
+            sum += summed * (id / 2);
+            final_pos += input[id] as usize;
         } else {
-            let mut used_count = 0;
-            loop {
-                if let Some((id, val)) = input.iter().enumerate().rev().find(|(iid, val)| {
-                    iid % 2 == 0 && **val != 0 && **val <= (input[id] - used_count) && *iid > id
-                }) {
-                    for _ in 0..*val {
-                        sum += final_pos * (id / 2);
-                        final_pos += 1;
-                        used_count += 1;
-                    }
-                    final_pos += (input[id] - val) as usize;
-                    input[id] = 0;
+            while input[id] != 0 {
+                if let Some((id, &val)) =
+                    input.iter().enumerate().rev().find(|(iid, &val)| {
+                        iid % 2 != 0 && val != 0 && val <= (input[id]) && *iid > id
+                    })
+                {
+                    let summed: usize = (final_pos..(final_pos + val as usize)).sum();
+                    sum += summed * (id / 2);
+                    final_pos += val as usize;
+                    input[id] -= val;
                 } else {
-                    final_pos += (input[id] - used_count) as usize;
+                    final_pos += (input[id]) as usize;
                     break;
                 }
             }
         }
     }
-    return "unsolved".to_string();
+    return sum.to_string();
 }

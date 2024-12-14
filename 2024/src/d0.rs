@@ -1,4 +1,4 @@
-pub fn parse_input(raw_input: &str) -> Vec<String> {
+fn parse_input(raw_input: &str) -> Vec<String> {
     raw_input
         .split("\n")
         .filter(|f| !f.is_empty())
