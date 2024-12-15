@@ -43,6 +43,7 @@ pub fn solve1(raw_input: &str) -> String {
     return sum.to_string();
 }
 
+#[derive(Debug)]
 enum File {
     FreeSpace(u8),
     File(usize, u8),
@@ -58,6 +59,10 @@ fn input_to_file(input: Vec<u8>) -> Vec<File> {
             } else {
                 File::FreeSpace(*val)
             }
+        })
+        .filter(|file| match file {
+            File::File(_, _) => true,
+            File::FreeSpace(size) => *size > 0,
         })
         .collect()
 }
@@ -79,13 +84,13 @@ pub fn solve2(raw_input: &str) -> String {
 
         let Some(fitting_free_space) = (0..id).find(|&iid| match input[iid] {
             File::File(_, _) => false,
-            File::FreeSpace(size) => iid % 2 != 0 && size >= file.1,
+            File::FreeSpace(size) => size >= file.1,
         }) else {
             rev_idx += 1;
             continue;
         };
 
-        input.remove(id);
+        input[id] = File::FreeSpace(file.1);
 
         let freefile = &input[fitting_free_space];
 
@@ -108,7 +113,7 @@ pub fn solve2(raw_input: &str) -> String {
         match file {
             File::File(fid, size) => {
                 let summed: usize = (final_index..(final_index + *size as usize)).sum();
-                sum += summed * (fid / 2);
+                sum += summed * (fid);
                 final_index += *size as usize;
             }
             File::FreeSpace(size) => {
@@ -116,6 +121,5 @@ pub fn solve2(raw_input: &str) -> String {
             }
         };
     }
-    println!("SUM?: {}", sum);
-    return "unsolved".to_string();
+    return sum.to_string();
 }
