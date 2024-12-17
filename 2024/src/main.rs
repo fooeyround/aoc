@@ -7,7 +7,7 @@ use seq_macro::seq;
 use std::time::{Duration, Instant};
 use std::{fs::File, io::Read};
 
-seq!(N in 01..=16 {
+seq!(N in 01..=17 {
     mod d~N;
 });
 
@@ -59,7 +59,7 @@ fn main() {
         println!("Running Only Part Two!");
     }
 
-    seq!(N in 01..=16 {
+    seq!(N in 01..=17 {
         match day {
             #(
                 N => {

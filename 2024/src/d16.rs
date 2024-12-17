@@ -1,4 +1,4 @@
-use pathfinding::prelude::{astar_bag, dijkstra, dijkstra_all, yen};
+use pathfinding::prelude::{astar_bag, dijkstra};
 
 #[derive(Clone, Copy, Hash, Debug, PartialEq, Eq, PartialOrd)]
 struct DirectedPosition((usize, usize), Direction);
