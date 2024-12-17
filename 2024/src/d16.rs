@@ -1,7 +1,9 @@
-#[derive(Clone, Copy, Hash, Debug, PartialEq, PartialOrd)]
+use pathfinding::prelude::{astar_bag, dijkstra, dijkstra_all, yen};
+
+#[derive(Clone, Copy, Hash, Debug, PartialEq, Eq, PartialOrd)]
 struct DirectedPosition((usize, usize), Direction);
 
-#[derive(Clone, Copy, Hash, Debug, PartialEq, PartialOrd)]
+#[derive(Clone, Copy, Hash, Debug, PartialEq, Eq, PartialOrd)]
 enum Direction {
     Up,
     Down,
@@ -47,17 +49,8 @@ impl DirectedPosition {
     fn successors(&self, map: &Vec<Vec<bool>>) -> Vec<(DirectedPosition, usize)> {
         vec![
             (DirectedPosition(self.1.offset_of(self.0), self.1), 1),
-            (
-                DirectedPosition(self.1.rotate_left().offset_of(self.0), self.1.rotate_left()),
-                1001,
-            ),
-            (
-                DirectedPosition(
-                    self.1.rotate_right().offset_of(self.0),
-                    self.1.rotate_right(),
-                ),
-                1001,
-            ),
+            (DirectedPosition(self.0, self.1.rotate_left()), 1000),
+            (DirectedPosition(self.0, self.1.rotate_right()), 1000),
         ]
         .iter()
         .filter(|d| !map[d.0 .0 .1][d.0 .0 .0])
@@ -99,12 +92,37 @@ fn parse_input(raw_input: &str) -> (Vec<Vec<bool>>, DirectedPosition, DirectedPo
 }
 
 pub fn solve1(raw_input: &str) -> String {
-    let input = parse_input(raw_input);
+    let (map, start_pos, end_pos) = parse_input(raw_input);
 
-    return 0.to_string();
+    let (path, cost) = dijkstra(
+        &start_pos,
+        |pos| pos.successors(&map),
+        |pos| pos.0 == end_pos.0,
+    )
+    .expect("Possible Path");
+
+    return cost.to_string();
 }
 pub fn solve2(raw_input: &str) -> String {
-    let input = parse_input(raw_input);
+    let (map, start_pos, end_pos) = parse_input(raw_input);
 
-    return 0.to_string();
+    let (paths, cost) = astar_bag(
+        &start_pos,
+        |pos| pos.successors(&map),
+        |pos| 1,
+        |pos| pos.0 == end_pos.0,
+    )
+    .expect("Possible Path");
+
+    let mut possible_paths = paths
+        .flat_map(|map| {
+            map.iter()
+                .map(|item| item.0)
+                .collect::<Vec<(usize, usize)>>()
+        })
+        .collect::<Vec<(usize, usize)>>();
+    possible_paths.sort();
+    possible_paths.dedup();
+
+    return possible_paths.len().to_string();
 }
