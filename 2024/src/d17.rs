@@ -1,5 +1,4 @@
 use itertools::Itertools;
-use rayon::iter::{IntoParallelIterator, ParallelIterator};
 
 #[repr(usize)]
 #[derive(Debug, Clone, Copy)]
@@ -155,14 +154,15 @@ pub fn solve2(raw_input: &str) -> String {
 
     let mut starting_a = 0;
 
-    for index in (0..instr_layed_out.len()).rev() {
+    for index in (2..instr_layed_out.len()).rev() {
         starting_a <<= 3;
+        println!("{:?}", starting_a);
         for step in 0..8 {
             let mut registers = init_registers.clone();
             registers.a = starting_a | step;
             let mut pc = 0;
             let mut output = vec![];
-            while pc < instructions.len() {
+            while pc < instructions.len() && output.is_empty() {
                 instructions[pc].opcode.perform(
                     instructions[pc].operand,
                     &mut registers,
@@ -173,6 +173,8 @@ pub fn solve2(raw_input: &str) -> String {
             if output[0] == instr_layed_out[index] {
                 starting_a |= step;
                 break;
+            } else {
+                dbg!(&output, &instr_layed_out);
             }
         }
     }
