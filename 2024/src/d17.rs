@@ -1,6 +1,8 @@
 use itertools::Itertools;
+use rayon::iter::{IntoParallelIterator, ParallelIterator};
 
-#[derive(Debug)]
+#[repr(usize)]
+#[derive(Debug, Clone, Copy)]
 enum Operation {
     //division A / (2^Combo) trunc -> A
     Adv,
@@ -51,42 +53,36 @@ impl Operation {
         registers: &mut RegisterState,
         pc: &mut usize,
         output: &mut Vec<usize>,
-    ) -> bool {
+    ) {
+        let mut jumped = false;
         match self {
-            Self::Adv => {
-                registers.a = (registers.a as f64 / (2 ^ self.combo(operand, &registers)) as f64)
-                    .trunc() as usize
-            }
-            Self::Bxl => registers.b = registers.b ^ operand,
+            Self::Adv => registers.a >>= self.combo(operand, &registers),
+            Self::Bxl => registers.b ^= operand,
             Self::Bst => registers.b = self.combo(operand, &registers) % 8,
             Self::Jnz => {
                 if registers.a != 0 {
-                    *pc = operand / 2;
-                    return false;
+                    *pc = operand;
+                    jumped = true;
                 }
             }
-            Self::Bxc => registers.b = registers.b ^ registers.c,
+            Self::Bxc => registers.b ^= registers.c,
             Self::Out => output.push(self.combo(operand, &registers) % 8),
-            Self::Bdv => {
-                registers.b = (registers.a as f64 / (2 ^ self.combo(operand, &registers)) as f64)
-                    .trunc() as usize
-            }
-            Self::Cdv => {
-                registers.c = (registers.a as f64 / (2 ^ self.combo(operand, &registers)) as f64)
-                    .trunc() as usize
-            }
+            Self::Bdv => registers.b = registers.a >> self.combo(operand, &registers),
+            Self::Cdv => registers.c = registers.a >> self.combo(operand, &registers),
         }
-        return true;
+        if !jumped {
+            *pc += 1;
+        }
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct Instruction {
     opcode: Operation,
     operand: usize,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct RegisterState {
     a: usize,
     b: usize,
@@ -97,7 +93,7 @@ fn parse_input(raw_input: &str) -> (RegisterState, Vec<Instruction>) {
     let (regs, prgm) = raw_input.split_once("\n\n").unwrap();
     let regs_fmt = regs
         .split("\n")
-        .map(|f| &f["(Register A: ".len() - 1..])
+        .map(|f| f["(Register A: ".len() - 1..].trim())
         .map(|f| f.parse::<usize>().unwrap())
         .collect::<Vec<usize>>();
     let prgm_fmt = prgm["Program: ".len() - 1..]
@@ -128,14 +124,12 @@ pub fn solve1(raw_input: &str) -> String {
     let mut pc = 0;
     let mut output = vec![];
     while pc < instructions.len() {
-        if instructions[pc].opcode.perform(
+        instructions[pc].opcode.perform(
             instructions[pc].operand,
             &mut registers,
             &mut pc,
             &mut output,
-        ) {
-            pc += 1;
-        }
+        );
     }
 
     let mut output_fmt = output
@@ -146,8 +140,42 @@ pub fn solve1(raw_input: &str) -> String {
 
     return output_fmt.to_string();
 }
-pub fn solve2(raw_input: &str) -> String {
-    let input = parse_input(raw_input);
 
-    return 0.to_string();
+//By reverse enginnering, we know a ends with zero.
+//b is some relation to a, but more importantly, a >> 3 each time. (So we will <<)
+//We compute the output for each of the 8 possibilities and only go for a correct one.
+pub fn solve2(raw_input: &str) -> String {
+    let (init_registers, instructions) = parse_input(raw_input);
+
+    let instr_layed_out = instructions
+        .iter()
+        .map(|inst| [inst.opcode as usize, inst.operand])
+        .flatten()
+        .collect::<Vec<usize>>();
+
+    let mut starting_a = 0;
+
+    for index in (0..instr_layed_out.len()).rev() {
+        starting_a <<= 3;
+        for step in 0..8 {
+            let mut registers = init_registers.clone();
+            registers.a = starting_a | step;
+            let mut pc = 0;
+            let mut output = vec![];
+            while pc < instructions.len() {
+                instructions[pc].opcode.perform(
+                    instructions[pc].operand,
+                    &mut registers,
+                    &mut pc,
+                    &mut output,
+                );
+            }
+            if output[0] == instr_layed_out[index] {
+                starting_a |= step;
+                break;
+            }
+        }
+    }
+
+    return starting_a.to_string();
 }
