@@ -48,7 +48,7 @@ pub fn solve1(raw_input: &str) -> String {
     )
     .expect("Path");
 
-    return path.len().to_string();
+    return 0.to_string();
 }
 pub fn solve2(raw_input: &str) -> String {
     let input = parse_input(raw_input);
