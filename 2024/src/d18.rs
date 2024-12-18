@@ -1,5 +1,7 @@
 use pathfinding::prelude::{bfs, dfs};
 
+const SIZE: usize = 70;
+
 #[derive(Clone, Copy, Hash, Debug, PartialEq, Eq, PartialOrd)]
 struct Pos(usize, usize);
 
@@ -12,7 +14,7 @@ impl Pos {
             Pos(self.0, self.1.saturating_sub(1)),
         ]
         .iter()
-        .filter(|pos| pos.0 <= 70 && pos.1 <= 70)
+        .filter(|pos| pos.0 <= SIZE && pos.1 <= SIZE)
         .filter(|d| {
             map.iter()
                 .position(|pos| *pos == **d)
@@ -44,14 +46,27 @@ pub fn solve1(raw_input: &str) -> String {
     let path = bfs(
         &(Pos(0, 0), 1024),
         |(pos, iteration)| pos.successors(&input, *iteration),
-        |(pos, _it)| *pos == Pos(70, 70),
+        |(pos, _it)| *pos == Pos(SIZE, SIZE),
     )
     .expect("Path");
 
-    return 0.to_string();
+    return (path.len() - 1).to_string();
 }
 pub fn solve2(raw_input: &str) -> String {
     let input = parse_input(raw_input);
 
-    return 0.to_string();
+    let mut index = 0;
+    while bfs(
+        &(Pos(0, 0), index),
+        |(pos, iteration)| pos.successors(&input, *iteration),
+        |(pos, _it)| *pos == Pos(SIZE, SIZE),
+    )
+    .is_some()
+        && index < input.len()
+    {
+        index += 1;
+    }
+    let Pos(a, b) = input[index - 1];
+
+    return format!("{},{}", a, b);
 }
