@@ -25,24 +25,20 @@ pub fn p2(input: &str) -> String {
         let mult = if left { -1 } else { 1 };
         let rel = i32::from_str_radix(&line[1..], 10).expect("int") * mult;
 
-        //We are currently over-counting by 3 for my input...
-        let crosses = (rot + rel).div_euclid(100);
+        //Backcount as we will overcount.
+        if left && rot == 0 {
+            count -= 1;
+        }
+        let crosses = (rot + rel + if left { -1 } else { 0 }).div_euclid(100);
         let new_rot = (rot + rel).rem_euclid(100);
 
         count += crosses.abs();
-        if rot < 0 || rot >= 100 {
-            panic!();
-        }
-        //Correct for left roll over from 0.
-        if rot == 0 && new_rot != 0 && left && rel > -100 && rel < 0 {
-            count -= 1;
-            println!("FIX NEEDED?");
-        }
+
         rot = new_rot;
-        println!("{} | {}", rot, count);
+        // println!("{} | {}", rot, count);
     }
 
-    println!("END OF P1");
+    // println!("END OF P1");
     println!("REAL: {}", p2_(&input));
     return count.to_string();
 }
