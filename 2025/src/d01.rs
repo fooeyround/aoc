@@ -1,5 +1,3 @@
-use std::{os::unix::raw, panic};
-
 pub fn p1(input: &str) -> String {
     let mut count = 0;
     let mut rot = 50;
