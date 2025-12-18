@@ -18,7 +18,7 @@ pub struct Day {
 
 inventory::collect!(Day);
 
-seq!(N in 01..=01 {
+seq!(N in 01..=02 {
     mod d~N;
     inventory::submit! {
         Day {
