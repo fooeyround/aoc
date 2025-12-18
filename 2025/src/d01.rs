@@ -25,7 +25,7 @@ pub fn p2(input: &str) -> String {
         let mult = if left { -1 } else { 1 };
         let rel = i32::from_str_radix(&line[1..], 10).expect("int") * mult;
 
-        //Backcount as we will overcount.
+        //will over-count on the 0 boundary; div_euclid follows different edge bounds than the question requires.
         if left && rot == 0 {
             count -= 1;
         }
@@ -35,67 +35,7 @@ pub fn p2(input: &str) -> String {
         count += crosses.abs();
 
         rot = new_rot;
-        // println!("{} | {}", rot, count);
     }
 
-    // println!("END OF P1");
-    println!("REAL: {}", p2_(&input));
-    return count.to_string();
-}
-
-pub fn p2_(body: &str) -> String {
-    let start = 50;
-    let mut pos = start;
-    let mut count: i32 = 0;
-    let mut i = 0;
-
-    for movement in body.lines() {
-        i = i + 1;
-        let direction = movement.starts_with("L");
-        let mut movement_count: i32 = i32::from_str_radix(&movement[1..], 10).expect("int");
-        count += movement_count / 100;
-        movement_count = movement_count % 100;
-        match direction {
-            true => {
-                let new_pos = pos - movement_count;
-                let corrected_pos = match new_pos {
-                    x if x < 0 => {
-                        if pos > 0 {
-                            // println!("Went through zero, added 1 to the password");
-                            count = count + 1;
-                        };
-                        100 + new_pos
-                    }
-                    x if x >= 0 => new_pos,
-                    _ => panic!(),
-                };
-                pos = corrected_pos;
-            }
-            false => {
-                let new_pos = pos + movement_count;
-                let corrected_pos = match new_pos {
-                    x if x <= 99 => new_pos,
-                    x if x > 100 => {
-                        // println!("Went through zero, added 1 to the password");
-                        count = count + 1;
-                        new_pos - 100
-                    }
-                    100 => 0,
-                    _ => panic!(),
-                };
-                pos = corrected_pos;
-            }
-            _ => panic!(),
-        };
-        match pos {
-            0 => count = count + 1,
-            _ => (),
-        };
-        // println!(
-        //     "{}. Moved {} {}, ended up at {}",
-        //     i, direction, movement_count, pos
-        // );
-        // println!("{} | {}", pos, count)
-    }
     return count.to_string();
 }
